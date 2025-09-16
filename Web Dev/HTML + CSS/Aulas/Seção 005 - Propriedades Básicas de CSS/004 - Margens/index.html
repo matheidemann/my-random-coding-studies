@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang=”pt-BR”>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Margens</title>
+</head>
+<body>
+	<div class="center">
+		<h1 class="cap">5 - PROPRIEDADES BÁSICAS DE CSS</h1>
+
+		<h1 class="sec">4 - Margens</h1>
+		<p>As margens no CSS são utilizadas para criar espaço em volta dos elementos, fora de qualquer borda.</p>
+
+		<p><b>1) margin-top:</b> define a margem superior para o elemento.</p>
+
+		<p><b>Exemplo:</b></p>
+		<p class="marg1">Elemento de parágrafo com margin-top de 50px</p>
+		<br>
+
+		<p><b>2) margin-right:</b> define a margem da direita para o elemento.</p>
+
+		<p><b>Exemplo:</b></p>
+		<p class="marg2">Elemento de parágrafo com margin-right de 50px</p>
+		<br>
+
+		<p><b>3) margin-bottom:</b> define a margem inferior para o elemento.</p>
+
+		<p><b>Exemplo:</b></p>
+		<p class="marg3">Elemento de parágrafo com margin-bottom de 50px</p>
+		<br>
+
+		<p><b>4) margin-left:</b> define a margem da esquerda para o elemento.</p>
+
+		<p><b>Exemplo:</b></p>
+		<p class="marg4">Elemento de parágrafo com margin-left de 50px</p>
+		<br>
+
+		<p><b>5) margin:</b> é a shorthand property para as margens.</p>
+
+		<p><b>Exemplo:</b></p>
+		<p class="marg5">Elemento de parágrafo com margin de 50px</p>
+
+		<br>
+		<div class="obs">
+			<p><b>OBS¹:</b> um valor muito usado para margens é o valor “auto”, que basicamente significa “automático”, e sua função em margens costuma ser para centralizar algum elemento. Isto é, colocado um valor apenas para as margens superior e inferior, e então o valor dos lados é deixado como “auto”, para assim o valor da margem da esquerda e direita serem idênticos, fazendo com que o elemento fique horizontalmente centralizado, sem precisar quebrar a cabeça para saber onde é o meio do documento html.</p>
+			<p><b>OBS²:</b> é possível ocorrer um margin collapse (colapsso de margens) com as margens superior e inferior, apenas (não ocorre com as margens laterais). Quando um elemento possui uma margem inferior de 70px e outro elemento logo abaixo uma margem superior de 20px, tecnicamente o segundo elemento deveria ir mais para baixo, dando 20px de espaço da margem de 70px do primeiro elemento, resultando assim em uma distância de 90px do elemento 1 ao elemento 2. Contudo, não é isso que ocorre, pois o elemento 2 irá criar uma margem de 20px para cima, literalmente entrando dentro da margem do elemento 1, e portando, o elemento 2 não irá descer 20px, mesmo que tenha especificado uma margem de 20px superior.</p>
+			<p><b>OBS³:</b> na propriedade "margin", é possível definir cada valor individualmente com "margin: top right bottom left;", e ainda, é possível definir apenas os valores da vertical e da horizontal com "margin: vertical horizontal;".</p>
+		</div><!--obs-->
+	</div>
+</body>
+</html> 

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang=”pt-BR”>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"
+		  content="width=device-width, inital-scale=1.0, maximum-scale=1.0">
+	<meta name="description"
+		  content="Descrição do site.">
+	<meta name="keywords"
+		  content="palavras-chave, separadas, por, vírgula">
+	<meta name="author"
+		  content="Autor da page">
+	<link rel="stylesheet"
+		  type="text/css"
+		  href="css/style.css">
+	<title>Display Grid</title>
+</head>
+
+<body>
+	<div class="center">
+		<h1 class="cap">7 - HTML5 e CSS3</h1>
+		<h1 class="sec">10 - Display Grid</h1>
+
+		<p>O display grid é um módulo complexo (e não uma única propriedade) focada na otimização da criação de grandes layouts responsivos para desktops e mobile. </p>
+		<p>Ele funciona junto do display-flex, atuando de forma macro, enquanto o flex atua de forma micro. Entretando, o ideal é utilizar ambos para atingir o melhor resultado possível de um design responsivo prático. </p>
+		<p>O display grid é um módulo complexo (e não uma única propriedade) focada na otimização da criação de grandes layouts responsivos para desktops e mobile.</p>
+		<p>Diferente do flex, o grid é bidimensional (possui duas dimensões), podendo trabalhar com linhas e colunas simultaneamente, enquanto o flex trabalha ou só com colunas, ou só com linhas. </p>
+
+		<h1 class="title">Propriedades de contêiner e Propriedades de itens</h1>
+		<p>O grid é divido em dois grupos, sendo que cada um dos grupos possui propriedades específicas:</p>
+		<p><b>- Grid container:</b> é o contêiner com o display grid, sendo que dentro dele haverão outros elementos. Aqui são encontradas as propriedades:</p>
+		<p>Propriedades padrão</p>
+		<ul>
+			<li>display</li>
+			<li>grid-template-columns</li>
+			<li>grid-template-rows</li>
+			<li>gap</li>
+			<ul>
+				<li>row-gap</li>
+				<li>column-gap</li>
+			</ul>
+			<li>grid-template-areas</li>
+		</ul><br>
+		<p>Propriedades de alinhamento</p>
+		<ul>
+			<li>justify-content</li>
+			<li>align-content</li>
+		</ul><br>
+
+		<p><b>- Grid item:</b> são os itens que estarão dentro de um grid containêr. Aqui são encontradas as seguintes propriedades:</p>
+		<p>Propriedades padrão</p>
+		<ul>
+			<li>grid-column</li>
+			<ul>
+				<li>grid-column-start</li>
+				<li>grid-column-end</li>
+			</ul>
+			<li>grid-row</li>
+			<ul>
+				<li>grid-row-start</li>
+				<li>grid-row-end</li>
+			</ul>
+			<li>grid-area</li>
+		</ul><br>
+		<p>Propriedades de alinhamento</p>
+		<ul>
+			<li>justify-items</li>
+			<li>align-items</li>
+			<li>justify-self</li>
+			<li>align-self</li>
+		</ul>
+
+		<h1 class="title">Colunas e linhas no Grid</h1>
+		<p>O grid se divide na <b>linha vertical</b> (colunas) e na <b>linha horizontal</b>(linhas). Portanto, não é como o flex, que se divide no eixo principal e eixo transverssal.</p>
+		<p>As <b>colunas</b> são da seguinte maneira:</p>
+		<img src="images/grid_columns.png">
+
+		<p>As <b>linhas</b> são da seguinte maneira:</p>
+		<img src="images/grid_rows.png">
+
+		<p>Junto das colunas e linhas há a existência das <b>linhas virtuais</b>, que são divididas em linhas virtuais de coluna e linhas virtuais de linhas:</p>
+		<img src="images/grid_lines.png">
+
+		<p>E ainda, há os <b>"gaps"</b> (vãos) entre cada elemento de uma grid, que pode existir ou não:</p>
+		<img src="images/grid_gaps.png">
+
+		<h1 class="title">Propriedades de Grid Conteiner</h1>
+		<p>O grid se divide na <b>linha vertical</b> (colunas) e na <b>linha horizontal</b>(linhas). Portanto, não é como o flex, que se divide no eixo principal e eixo transverssal.</p><br>
+
+		<p><b>1) grid-template-columns:</b> é a propriedade utilizada para definir a quantidade de colunas do grid, assim como seus respectivos tamanhos.</p>
+		<p>O valor da propriedade deve possui a quantidade de colunas definindo seus respectivos tamanhos (auto auto = duas colunas de tamanho automático).</p>
+		<p>É importante destacar que esta propriedade pode receber qualquer tipo de valor e mais um chamado "0fr", o qual cria flex conteiners.</p>
+
+		<p><b>Exemplo com grid-template-columns: auto auto auto;:</b>.</p>
+		<div class="conteiner-1">
+			<div>div1</div>
+			<div>div2</div>
+			<div>div3</div>
+			<div>div4</div>
+			<div>div5</div>
+			<div>div6</div>
+			<div>div7</div>
+			<div>div8</div>
+			<div>div9</div>
+		</div><!-- conteiner-1 -->
+
+		<p><b>2) grid-template-columns:</b> é a propriedade utilizada para definir a quantidade de colunas do grid, assim como seus respectivos tamanhos.</p>
+		<p>É importante destacar que esta propriedade pode receber qualquer tipo de valor e mais um chamado "0fl", o qual cria flex conteiners.</p>
+
+		<p><b>Exemplo com "grid-template-rows: 80px 40px auto;":</b>.</p>
+		<div class="conteiner-2">
+			<div>div1</div>
+			<div>div2</div>
+			<div>div3</div>
+			<div>div4</div>
+			<div>div5</div>
+			<div>div6</div>
+			<div>div7</div>
+			<div>div8</div>
+			<div>div9</div>
+		</div><!-- conteiner-2 -->
+
+		<p><b>2) gap:</b> é a shothand property para adicionar vãos entre cada elemento do grid.</p>
+
+		<div class="space1">
+			<p><b>2.1) row-gap:</b> define o vão entre uma linha e outra, isto é, o vão entre itens da grid na linha vertical.</p>
+
+			<p><b>Exemplo com "row-gap: 80px;":</b>.</p>
+			<div class="conteiner-3">
+				<div>div1</div>
+				<div>div2</div>
+				<div>div3</div>
+				<div>div4</div>
+				<div>div5</div>
+				<div>div6</div>
+				<div>div7</div>
+				<div>div8</div>
+				<div>div9</div>
+			</div><!-- conteiner-3 -->
+
+			<p><b>2.2) column-gap:</b> define o vão entre uma coluna e outra, isto é, o vão entre itens da grid na linha horizontal.</p>
+
+			<p><b>Exemplo com "column-gap: 80px;":</b>.</p>
+			<div class="conteiner-4">
+				<div>div1</div>
+				<div>div2</div>
+				<div>div3</div>
+				<div>div4</div>
+				<div>div5</div>
+				<div>div6</div>
+				<div>div7</div>
+				<div>div8</div>
+				<div>div9</div>
+			</div><!-- conteiner-4 -->
+		</div><!-- space-1 -->
+
+		<h1 class="title">Propriedade de alinhamento do Grid Conteiner</h1>
+
+		<p><b>1) justify-content:</b> é a propriedade utilizada para definir o alinhamento horizontal de todo o grid.</p>
+
+		<p><b>Exemplo com justify-content: center:</b>.</p>
+		<div class="conteiner-5">
+			<div>div1</div>
+			<div>div2</div>
+			<div>div3</div>
+			<div>div4</div>
+			<div>div5</div>
+			<div>div6</div>
+			<div>div7</div>
+			<div>div8</div>
+			<div>div9</div>
+		</div><!-- conteiner-5 -->
+
+		<p><b>2) align-content:</b> é a propriedade utilizada para definir o alinhamento vertical de todo o grid.</p>
+
+		<p><b>Exemplo com align-content: center:</b>.</p>
+		<div class="conteiner-6">
+			<div>div1</div>
+			<div>div2</div>
+			<div>div3</div>
+			<div>div4</div>
+			<div>div5</div>
+			<div>div6</div>
+			<div>div7</div>
+			<div>div8</div>
+			<div>div9</div>
+		</div><!-- conteiner-6 -->
+
+		<h1 class="title">Propriedades de Grid Item</h1>
+
+		<p><b>1) grid-column:</b> define em qual coluna um grid item irá começar e em qual coluna irá terminar.</p>
+
+		<p><b>Exemplo:</b></p>
+		<div class="conteiner-7">
+			<div>div1</div>
+			<div>div2</div>
+			<div>div3</div>
+			<div>div4</div>
+			<div>div5</div>
+			<div>div6</div>
+			<div>div7</div>
+			<div>div8</div>
+			<div>div9</div>
+		</div><!-- conteiner-7 -->
+
+		<p><b>2) grid-row:</b> define em qual linha um grid item irá começar e em qual linha irá terminar.</p>
+
+		<p><b>Exemplo:</b></p>
+		<div class="conteiner-8">
+			<div>div1</div>
+			<div>div2</div>
+			<div>div3</div>
+			<div>div4</div>
+			<div>div5</div>
+			<div>div6</div>
+			<div>div7</div>
+			<div>div8</div>
+			<div>div9</div>
+		</div><!-- conteiner-8 -->
+
+		<h1 class="title">Propriedade de alinhamento dos Grid Items</h1>
+
+		<p><b>1) justify-items:</b> é a propriedade utilizada para definir o alinhamento horizontal de cada grid item dentro de sua própria célula.</p>
+
+		<p><b>Exemplo com justify-items: end:</b>.</p>
+		<div class="conteiner-9">
+			<div>div1</div>
+			<div>div2</div>
+			<div>div3</div>
+			<div>div4</div>
+			<div>div5</div>
+			<div>div6</div>
+			<div>div7</div>
+			<div>div8</div>
+			<div>div9</div>
+		</div><!-- conteiner-9 -->
+
+		<p><b>2) align-items:</b> é a propriedade utilizada para definir o alinhamento vertical de cada grid item dentro de sua própria célula.</p>
+
+		<p><b>Exemplo com align-items: end:</b>.</p>
+		<div class="conteiner-10">
+			<div>div1</div>
+			<div>div2</div>
+			<div>div3</div>
+			<div>div4</div>
+			<div>div5</div>
+			<div>div6</div>
+			<div>div7</div>
+			<div>div8</div>
+			<div>div9</div>
+		</div><!-- conteiner-10 -->
+
+		<p><b>3) justify-self:</b> é a propriedade utilizada para definir o alinhamento horizontal de apenas um único grid item dentro de sua própria célula.</p>
+
+		<p><b>Exemplo com justify-self: end:</b>.</p>
+		<div class="conteiner-11">
+			<div>div1</div>
+			<div>div2</div>
+			<div>div3</div>
+			<div>div4</div>
+			<div>div5</div>
+			<div>div6</div>
+			<div>div7</div>
+			<div>div8</div>
+			<div>div9</div>
+		</div><!-- conteiner-11 -->
+
+		<p><b>4) align-self:</b> é a propriedade utilizada para definir o alinhamento vertical de apenas um único grid item dentro de sua própria célula.</p>
+
+		<p><b>Exemplo com align-self: end:</b>.</p>
+		<div class="conteiner-12">
+			<div>div1</div>
+			<div>div2</div>
+			<div>div3</div>
+			<div>div4</div>
+			<div>div5</div>
+			<div>div6</div>
+			<div>div7</div>
+			<div>div8</div>
+			<div>div9</div>
+		</div><!-- conteiner-12 -->
+
+		<h1 class="title">Grid area</h1>
+
+		<p>O grid area é um conjunto de propriedades e funções utilizadas para facilitar ainda mais a utilização do grid, adiconando a opção de criar uma estrutura completa do layout da página com nomes personalizados para cada célula do grid.</p>
+		<p>O grid area trabalha com as seguintes propriedades:</p>
+
+		<p><b>1) grid-template-areas: </b> define o nome de cada célula do grid. Por exemplo, o documento pode possuir 3 colunas e 3 linhas, sendo que o header ocupará toda a primeira linha (grid-row: 1 /4) e apenas a primeira linha (grid-column: 1 / 2), e uma sidebar ocupará apenas uma coluna (grid-column: 1 / 2) e do fim do header ao fim da página (grid-row: 2 / 4).</p>
+		<p>Para visualizar melhor a propriedade, observe o esquema abaixo:</p>
+		<p class="pre">grid-template-areas:
+			"header header header"
+			"nav main main"
+			"nav main main";;</p><br>
+
+		<p><b>2) grid-areas: </b> define para cada célula do grid sua posição dentro da área criada no template. Ou seja, caso eu possua uma div que será o header, basta aplicar o valor "header" (caso assim esteja no grid-template-areas) e esta div automaticamente ficará da como foi definido no grid-template-areas.</p>
+		<p>Para visualizar melhor a propriedade, observe o esquema abaixo:</p>
+		<p class="pre">div1 = grid-area: header;</p>
+		<p class="pre">div2 = grid-area: nav;</p>
+
+		<p><b>Exemplo do grid-template-areas e grid-area, com base nos dados acima:</b>.</p>
+		<div class="conteiner-13">
+			<div>div1</div>
+			<div>div2</div>
+			<div>div3</div>
+			<div>div4</div>
+			<div>div5</div>
+			<div>div6</div>
+		</div><!-- conteiner-13 -->
+
+	</div><!-- center -->
+</body>
+
+</html>

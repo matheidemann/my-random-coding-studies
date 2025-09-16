@@ -1,0 +1,97 @@
+.center {
+	width        : 1280px;
+	margin       : 0px auto;
+	font-family  : "Arial";
+	margin-bottom: 20px;
+}
+
+.cap {
+	background: red;
+	color     : white;
+	padding   : 5px;
+}
+
+.sec {
+	background: black;
+	color     : white;
+	padding   : 5px;
+}
+
+.obs p {
+	margin         : 0px;
+	padding        : 6px;
+	border         : 1px solid black;
+	border-collapse: collapse;
+}
+
+.mydiv1 span{
+	font-family: "Comic Sans MS"
+}
+
+.mydiv2 {
+	margin-left: 50px;
+}
+
+.mydiv3 {
+	margin-left: 50px;
+}
+
+span {
+	margin: 16px 0px;
+	display: block;
+}
+
+pre {
+	font-size: 16px;
+
+	margin: 16px 0px;
+	display: block;
+}
+
+
+
+
+/*PSEUDO-CLASSES*/
+
+
+.text1:first-child {
+	background-color: yellow;
+}
+
+.text2:last-child {
+	background-color: lightblue;
+}
+
+.text4:first-of-type{
+	background-color: lightgreen;
+}
+
+.text5:last-of-type{
+	background-color: lightgrey;
+}
+
+.text7:nth-child(2) {
+	background-color: lightpink;
+}
+
+.text9:nth-last-child(2) {
+	background-color: yellow;
+}
+
+.text11:nth-of-type(2) {
+	background-color: lightblue;
+}
+
+.text12:nth-last-of-type(1) {
+	background-color: lightgreen;
+}
+
+.text13:only-of-type {
+	background-color: lightgrey;
+}
+
+.text14:only-child {
+	background-color: lightpink;
+}
+
+

@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+body {
+	background-color: hsl(205.7, 36.8%, 96.3%);
+	color: hsl(208.8, 61%, 16.1%);
+	font-family: 'Open Sans';
+}
+
+.center {
+	max-width: 1280px;
+	margin: 0px auto;
+	padding: 5rem 4%;
+	text-align: center;
+}
+
+.center h1 {
+	font-size: 1.8rem;
+	color: hsl(208.8, 61%, 16.1%);
+	font-weight: bold;
+	letter-spacing: 0.2rem;
+	text-transform: uppercase;
+	margin-bottom: 2.5rem;
+}
+
+.center label {
+	font-size: 1.4rem;
+	color: hsl(208.8, 61%, 16.1%);
+	letter-spacing: 0.2rem;
+	text-transform: capitalize;
+	margin-bottom: 2.5rem;
+}
+
+.center input {
+	border: 0;
+	width: 4rem;
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+	color: #000000;
+	margin-right: 1rem;
+}
+
+.error-text {
+	height: 1.2rem;
+	margin: 20px 0;
+	font-size: 1.2rem;
+	color: #d41d1d;
+	font-weight: 600;
+	letter-spacing: 0.1rem;
+}
+
+.lorem-text p {
+	font-size: 1.1em;
+	margin: 20px auto;
+	max-width: 75ch;
+	letter-spacing: 0.1rem;
+	line-height: 1.3rem;
+}
+
+.center button {
+	background-color: transparent;
+	background-color: #49a8ec;
+	outline: 2px solid #49a8ec;
+	outline-offset: -2px;
+	padding: 0.5rem;
+	text-transform: uppercase;
+	border-radius: 0.5rem;
+	letter-spacing: 0.1rem;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.center button:hover {
+	background-color: #89c5f0;
+	outline: 2px solid #89c5f0;
+	color: #128fe9;
+}

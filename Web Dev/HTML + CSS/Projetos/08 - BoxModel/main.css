@@ -1,0 +1,67 @@
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #ebfaff;
+}
+
+.card{
+  background: #ffffff;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  max-width: 300px;
+  margin: 3rem;
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+  margin: 3rem auto;
+}
+
+.card-1{
+  border-color: #ff69a6;
+}
+
+.card-2{
+  border-color: #68a3ff;
+}
+
+.icon {
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.card-1 .icon {
+  background: #ff69a6;
+}
+
+.card-2 .icon {
+  background: #68a3ff;
+}
+
+.title {
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+
+.text {
+  line-height: 1.5;
+  color: #7a7a7a;
+}
+
+.btn {
+  text-transform: capitalize;
+  border: transparent;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.btn-pink {
+  background: #ffddeb;
+  color: #ff69a6;
+}
+
+.btn-blue {
+  background: #dbe9ff;
+  color: #68a3ff;
+}

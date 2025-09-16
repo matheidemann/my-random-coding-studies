@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang=”pt-BR”>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Descrição do site.">
+    <meta name="keywords" content="palavras-chave, separadas, por, vírgula">
+    <meta name="author" content="Autor da page">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Transições e Animações</title>
+</head>
+
+<body>
+    <div class="center">
+        <h1 class="cap">7 - HTML5 e CSS3</h1>
+
+        <h1 class="sec">6 - Transições e Animações</h1>
+        <p>Como o próprio nome sugeste, as transições são utilizadas para
+            "transicionar" os elementos de uma estilização para outra, com um efeito
+            suave, podendo variar sua duração, atraso, maneira de transição etc.</p>
+
+        <!-- TRASIÇÕES -->
+        <p><b>1) transition:</b> é a shorthand property para o uso das
+            transições. No seu valor deve ser colocado a propriedade a ser alterada,
+            a duração para ocorrer a transição total, a forma de transição e o
+            atraso (transition:width 2s ease 1s, height 3s linear 0.5s;).</p>
+
+        <p><b>Exemplo:</b></p>
+        <div class="box0"></div>
+
+        <div class="space1">
+            <p><b>1.1) transition-duration:</b> é a duração total da
+                transição.</p>
+
+            <p><b>Exemplo com duração de 2s:</b></p>
+            <div class="box1"></div>
+
+            <p><b>1.2) transition-delay:</b> é o atraso para o início da
+                transição.</p>
+
+            <p><b>Exemplo com delay de 1s:</b></p>
+            <div class="box2"></div>
+
+            <p><b>1.3) transition-property:</b> define quais propriedades serão
+                alteradas na transição. Caso dentro da estilização do hover haja
+                outras propriedades que não a definida nesta propriedades, estas
+                outras ficarão sem transição.</p>
+
+            <p><b>Exemplo atacando apenas o width:</b></p>
+            <div class="box3"></div>
+
+            <p><b>1.4) transition-timing-fuction:</b> define qual será a forma
+                de animação de transição, podendo compreender vários valores:</p>
+
+            <div class="space2">
+                <p><b>1.4.1) ease:</b> começa devagar, fica rápido e então
+                    termina devegar.</p>
+
+                <p><b>Exemplo:</b></p>
+                <div class="box4"></div>
+
+                <p><b>1.4.2) linear:</b> do início ao fim terá a mesma velocidade.</p>
+
+                <p><b>Exemplo:</b></p>
+                <div class="box5"></div>
+
+                <p><b>1.4.3) ease-in:</b> começa devegar e depois fica na
+                    velocidade linear.</p>
+
+                <p><b>Exemplo:</b></p>
+                <div class="box6"></div>
+
+                <p><b>1.4.4) ease-in:</b> começa linear e termina em uma
+                    velocidade devagar.</p>
+
+                <p><b>Exemplo:</b></p>
+                <div class="box7"></div>
+
+                <p><b>1.4.5) ease-in-out:</b> começar devagar, depois fica
+                    linear e então termina devagar.</p>
+
+                <p><b>Exemplo:</b></p>
+                <div class="box8"></div>
+            </div>
+            <!--space2-->
+        </div>
+        <!--space1-->
+
+        <!-- ANIMAÇÕES -->
+        <p><b>2) animation:</b> é a shorthand property para o uso das
+            animações. No seu valor deve ser colocado o nome da animação, a
+            duração da animação, a forma de transição, o atraso, a quantidade de
+            vezes que a animação será tocada e a direção da animação
+            (animation: animacao1 4s linear 1s infinite alternate;).</p>
+        <p>As animações sáo extremamente semelhantes as transições, sendo
+            sua maior diferença o fato de ser uma propriedade mais poderosa,
+            podendo animar cada keyframe da animação (com o seletor de keyframe
+            da animação).</p>
+        <p>E por fim, vale destacar que para mover os elementos com as
+            transições/animações é necessário que o elemento seja posicionado
+            (posição diferente de static).</p>
+
+        <p><b>Exemplo:</b></p>
+        <div class="box9"></div>
+
+        <div class="space1">
+            <p class="marginb"><b>2.1) animation-name:</b> é o nome da animação, sendo que
+                este nome será usado para utilizar o seletor de keyframes (para
+                especificar qual animação deve ser estilizada).</p>
+
+            <p><b>2.2) animation-duration:</b> é a duração total da
+                animação.</p>
+
+            <p><b>Exemplo com duração de 2s:</b></p>
+            <div class="box10"></div>
+
+            <p><b>2.3) animation-delay:</b> é o atraso para o início da
+                animação.</p>
+
+            <p><b>Exemplo com delay de 1s:</b></p>
+            <div class="box11"></div>
+
+            <p><b>2.4) animation-iteration-count:</b> é a quantidade de
+                vezes que a animação será tocada, podendo inclusive ser
+                tocada infinitamente.</p>
+
+            <p><b>Exemplo com animação sendo tocada infinitamente:</b></p>
+            <div class="box12"></div>
+
+            <p><b>2.5) animation-direction:</b> define se a animação
+                deve ser tocada do começo pro fim (normal), do fim para o
+                começo (reverse), primeiro do começo e depois do fim
+                (alternate) ou se a animação deve ser tocada do fim e depois
+                do começo (alternate-reverse).</p>
+
+            <p><b>Exemplo com direção alternate:</b></p>
+            <div class="box13"></div>
+
+            <p class="marginb"><b>2.6) transition-timing-fuction:</b> define qual será a forma
+                de animação, podendo compreender todos os valores das
+                transições.</p>
+
+            <p><b>2.7) animation-fill-mode:</b> define se a animação, ao
+                chegar no primeiro ou último keyframe, manterá sua
+                estilização de quando estava no início (backwards), fim
+                (fowards), ou ambos (both).</p>
+
+            <p><b>Exemplo com forwards:</b></p>
+            <div class="box14"></div>
+
+        </div>
+        <!--space1-->
+
+        <!-- KEYFRAMES -->
+        <p><b>3) keyframes:</b> os keyframes são utilizados para estilizar
+            certos momentos específicos de animações, como por exemplo "quando a
+            animação estiver em 50% do tempo, ou "quando a animação estiver em
+            99% do tempo" etc.</p>
+
+        <p><b>Exemplo de animação com 4 tempos diferentes (0%, 25%, 90%, 100%):</b></p>
+        <div class="box15"></div>
+
+    </div>
+    <!--center-->
+</body>
+
+</html>

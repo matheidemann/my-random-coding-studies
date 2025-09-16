@@ -1,0 +1,39 @@
+• VocÊ precisa colocar a primeira letra da função em CAIXA ALTA para o React identificar que é um componente
+
+Regras do JSX
+- Precisa retornar alguma coisa, mesmo que seja um JSX vazio
+- Tudo precisa estar dentro de um elemento, não podem haver, por ex, duas divs no mesmo local dentro do return (pode usar React.Fragment para não usar uma div para englobar tudo)
+- é necessário usar a camelCase
+- é necessário fechar todas as tags (ex: img)
+- os paranteses depois do return são utilizados quando o JSX possui mais de uma linha de código, isto é, caso seu JSX retorne apenas uma tag, ele pode ser escrito na mesma na linha, e nunca poderá ser colocado uma linha abaixo sem os parenteses
+
+
+• Para usar JS dentro do JSX, vocÊ precisa abrir {}
+• Usando o CSS dentro do JS dentro JSX, você precisa criar um objeto criando {} dentro do outro {}, e portanto, por ser JS (e não CSS) você deve escrever as propriedades de CSS no estilo de um objeto do JS
+Ex: style={{ color:'black', fontSize:'1rem', marginTop:'10px' }}
+• O CSS no JSX é colocado como inline, portanto, tem prioridade maior em relação ao CSS interno ou externo
+• Dentro do JSX você deve retornar uma expression, nunca um statment
+• os props vão dentro do componente, e você passa eles para outro componente
+• os componentes podem ter props children, e o nome deve ser children
+• O react não pode simplesmente renderizar objetos, mas pode, por exemplo, renderizar apenas strings
+• Num method map, você pode retornar direto JSX no React, não precisando criar o HTML em si com template string
+• Você pode apenas escrever o nome do array com objetos para passa-lo como propriedade, e então, colocalo dentro do props, e acessa-lo com props.nomedoarray	
+• O segundo parametro do method map é o "index"
+O spread operator ... passa direto todas as propriedades de um item
+• Se você precisar passar um argumento para uma função que está dentro de um evento, ela será executada assim que o programa rodar, para evitar esse comportamento basta passa-la como uma arrow function (dentro do evento)
+• Hooks são "named exports", então deve estar entre chaves
+
+
+REGRAS DE HOOKS
+• Deve começar com "use"
+• O Hook precisa estar dentro de um componente ou de uma função
+• Não é possível criar Hooks condicionalmente
+
+useState
+• Retorna um array, sendo o primeiro um valor e o segundo uma função que controla o valor
+• Para criar o useState de forma mais eficiente se usa destructuring "const [value, setValue] = useState('default value')"  - o "setText" é uma função, e portanto, pode ser acessada para modificar o "value"
+
+useEffect
+• por padrão, ele é executado toda vez que o componente é re-renderizado
+• no parâmetro do useEffect, você coloca um array de dependências, se ele estiver vazio, significa que o useEffect será executado apenas quando você renderizar a página a primeira vez
+• existe a "cleanup function" para remover os efeitos colaterais que alguma função irá realizar, como por exemplo, adicionar submits, eventos etc

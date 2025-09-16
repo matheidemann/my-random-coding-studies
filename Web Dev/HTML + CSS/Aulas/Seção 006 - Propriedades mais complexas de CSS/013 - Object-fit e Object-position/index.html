@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang=”pt-BR”>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Object-fit e Object-position</title>
+</head>
+<body>
+
+	<div class="center">
+		
+		<h1 class="cap">6 - PROPRIEDADES MAIS COMPLEXAS DE CSS</h1>
+
+		<h1 class="sec">13 - Object-fit e Object-position</h1>
+		<p>O Object-fit define como uma imagem deve ser redimensionada para caber dentrode seu contêiner. Essas duas propriedades são extremamente importantes para o design responsivo de imagens e vídeos.</p>
+
+		<p><b>1) object-fit: fill:</b> a imagem será redimensionada para preencher as dimensões definidas (a imagem pode ficar distorcida). É o valor padrão.</p>
+
+		<p><b>Exemplo (img de 1920x1080 em um espaço de 500x500):</b></p>
+		<img class="foto1" src="images/space1.jpg"><br><br>
+
+		<p><b>2) object-fit: contain:</b> o aspect ratio da imagem é preservado, mas a imagem é redimensionada para preencher as dimensões definidas.</p>
+
+		<p><b>Exemplo (img de 1920x1080 em um espaço de 500x500):</b></p>
+		<img class="foto2" src="images/space1.jpg"><br><br>
+
+		<p><b>3) object-fit: cover:</b> o aspect ratio da imagem é preservado, mas a imagem é redimensionada para preencher as dimensões definidas, cortando certas partes da imagem para evitar a distorção ou diminuição da imagem.</p>
+
+		<p><b>Exemplo (img de 1920x1080 em um espaço de 500x500):</b></p>
+		<img class="foto3" src="images/space1.jpg"><br><br>
+
+		<p>Agora, o Object-position é uma propriedade que é utilizada para definir a posição de imagens ou vídeos dentro de seu contêiner. E ainda, é utilizada para a propriedade "cover".</p>
+		<p>O object-position aceita valores númericos, mas é mais prático se utilizado com porcentagem.</p>
+
+		<p><b>Exemplo (img de 1920x1080 em um espaço de 500x500, com "object-fit: cover" e posicionada na extrema esquerda com o "object-position: 0% 0%;"):</b></p>
+		<img class="foto4" src="images/space1.jpg"><br><br>
+
+		<p><b>Exemplo (img de 1920x1080 em um espaço de 500x500, com "object-fit: cover" e posicionada na extrema direita com o "object-position: 100% 0%;"):</b></p>
+		<img class="foto5" src="images/space1.jpg"><br><br>
+
+
+
+
+
+
+
+
+	</div>
+
+</body>
+</html> 

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang=”pt-BR”>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Float</title>
+</head>
+<body>
+	<div class="center">
+		<h1 class="cap">6 - PROPRIEDADES MAIS COMPLEXAS DE CSS</h1>
+
+		<h1 class="sec">4 - Float</h1>
+
+		<p><b>1) float:</b> define como um elemento deve flutuar (literalmente). É como se a page tivesse duas folhas, e quando o elemento começa a flutuar, ele vai para a página de cima. O float compreende os valores "left", "right", "none" (valor padrão de todos os elementos).</p>
+		<p>Foi inicialmente criado para fazer com que elementos ficassem em volta (wraping) do elemento flutuando na esquerda ou na direita (como um texto em volta de uma imagem, sendo que, o texto ficaria ao lado da imagem, e após atingido o valor máximo de altura da imagem, o texto começaria ser escrito abaixado da imagem também).</p>
+
+		<p><b>Exemplo (a imagem está sem a propriedade float):</b></p>
+		<img src="images/landscape1.jpg"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor nibh eget dolor euismod, quis sollicitudin ante fermentum. Aenean in venenatis ex. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc scelerisque purus et nulla tincidunt, ac posuere dui ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam id cursus metus, vitae vehicula purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque turpis sodales, mattis lectus in, condimentum nisl. Donec felis eros, dapibus at tempor a, vulputate quis nulla. Nulla et tempus ligula. Nam nec feugiat ante, eu ultrices enim. Maecenas imperdiet tempus quam et pulvinar. Praesent faucibus mi et augue ultricies pretium. Etiam finibus pretium nisi tincidunt gravida. Mauris vehicula sagittis ligula vehicula facilisis. Aenean quis arcu ac ligula tempus finibus. Suspendisse posuere non dui sit amet aliquam. Ut ultrices tincidunt massa. Mauris cursus justo quam, quis ultricies dui molestie a. Nulla iaculis blandit est, quis sagittis erat viverra non. Duis nec purus nulla. Curabitur sed condimentum lacus. Sed elit est, egestas vitae dictum ut, eleifend id metus. Donec a sapien tristique, pharetra arcu sit amet, faucibus orci. Praesent tempor felis quis gravida pharetra. Suspendisse convallis turpis quis velit vulputate, at volutpat sem ultrices. Donec fermentum elit in augue ornare, vel mollis neque facilisis. Suspendisse vel vehicula metus. Fusce pretium erat quis congue tempus. Etiam id leo sit amet nibh mattis condimentum sed vel justo. Nulla facilisi. Sed fringilla nisl sed quam auctor ultricies. Sed volutpat faucibus nunc, ac congue urna volutpat sed. Maecenas mattis faucibus nisl vel vehicula. Mauris ultrices ipsum diam, in imperdiet enim dictum id. Nam finibus vestibulum mauris, nec blandit tellus. Nam tincidunt neque ut dolor sollicitudin tempus. Pellentesque lacinia mi eget est pharetra, vitae pulvinar est facilisis. Pellentesque eleifend eros a lorem suscipit, in volutpat nisi sodales. Nunc purus nisi, dapibus commodo iaculis vel, condimentum a leo. Mauris ultrices suscipit tristique. Maecenas diam lorem, consectetur vulputate arcu sed, consequat tempor lectus. Morbi maximus congue congue. In ultricies lobortis diam in pharetra. Donec luctus facilisis dignissim. Duis orci nisl, iaculis id volutpat at, varius in orci. Phasellus auctor nec arcu nec mattis. Integer pharetra ligula non tincidunt porta. Nunc pretium porttitor erat, sit amet maximus tortor sodales a. Fusce sed nunc eu velit volutpat luctus a nec nibh. Donec ullamcorper tincidunt nunc nec congue. Duis vel risus quis ligula porta porttitor at in ex. Nunc tristique, libero vehicula ultrices pharetra, enim urna lacinia elit, at elementum eros turpis nec tellus. Vestibulum eu consequat ex. Suspendisse id facilisis massa, volutpat cursus quam. Curabitur condimentum aliquam orci, efficitur rutrum purus tincidunt a. Nunc posuere cursus vestibulum.</p>
+
+		<br>
+		<p><b>Exemplo (a imagem está com "float: left;"):</b></p>
+		<img class="img1" src="images/landscape1.jpg"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor nibh eget dolor euismod, quis sollicitudin ante fermentum. Aenean in venenatis ex. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc scelerisque purus et nulla tincidunt, ac posuere dui ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam id cursus metus, vitae vehicula purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque turpis sodales, mattis lectus in, condimentum nisl. Donec felis eros, dapibus at tempor a, vulputate quis nulla. Nulla et tempus ligula. Nam nec feugiat ante, eu ultrices enim. Maecenas imperdiet tempus quam et pulvinar. Praesent faucibus mi et augue ultricies pretium. Etiam finibus pretium nisi tincidunt gravida. Mauris vehicula sagittis ligula vehicula facilisis. Aenean quis arcu ac ligula tempus finibus. Suspendisse posuere non dui sit amet aliquam. Ut ultrices tincidunt massa. Mauris cursus justo quam, quis ultricies dui molestie a. Nulla iaculis blandit est, quis sagittis erat viverra non. Duis nec purus nulla. Curabitur sed condimentum lacus. Sed elit est, egestas vitae dictum ut, eleifend id metus. Donec a sapien tristique, pharetra arcu sit amet, faucibus orci. Praesent tempor felis quis gravida pharetra. Suspendisse convallis turpis quis velit vulputate, at volutpat sem ultrices. Donec fermentum elit in augue ornare, vel mollis neque facilisis. Suspendisse vel vehicula metus. Fusce pretium erat quis congue tempus. Etiam id leo sit amet nibh mattis condimentum sed vel justo. Nulla facilisi. Sed fringilla nisl sed quam auctor ultricies. Sed volutpat faucibus nunc, ac congue urna volutpat sed. Maecenas mattis faucibus nisl vel vehicula. Mauris ultrices ipsum diam, in imperdiet enim dictum id. Nam finibus vestibulum mauris, nec blandit tellus. Nam tincidunt neque ut dolor sollicitudin tempus. Pellentesque lacinia mi eget est pharetra, vitae pulvinar est facilisis. Pellentesque eleifend eros a lorem suscipit, in volutpat nisi sodales. Nunc purus nisi, dapibus commodo iaculis vel, condimentum a leo. Mauris ultrices suscipit tristique. Maecenas diam lorem, consectetur vulputate arcu sed, consequat tempor lectus. Morbi maximus congue congue. In ultricies lobortis diam in pharetra. Donec luctus facilisis dignissim. Duis orci nisl, iaculis id volutpat at, varius in orci. Phasellus auctor nec arcu nec mattis. Integer pharetra ligula non tincidunt porta. Nunc pretium porttitor erat, sit amet maximus tortor sodales a. Fusce sed nunc eu velit volutpat luctus a nec nibh. Donec ullamcorper tincidunt nunc nec congue. Duis vel risus quis ligula porta porttitor at in ex. Nunc tristique, libero vehicula ultrices pharetra, enim urna lacinia elit, at elementum eros turpis nec tellus. Vestibulum eu consequat ex. Suspendisse id facilisis massa, volutpat cursus quam. Curabitur condimentum aliquam orci, efficitur rutrum purus tincidunt a. Nunc posuere cursus vestibulum..</p>
+
+		<div class="clear"></div>
+		<br>
+		<p><b>Exemplo (a imagem está com "float: right;"):</b></p>
+		<img class="img2" src="images/landscape1.jpg"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor nibh eget dolor euismod, quis sollicitudin ante fermentum. Aenean in venenatis ex. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc scelerisque purus et nulla tincidunt, ac posuere dui ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam id cursus metus, vitae vehicula purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque turpis sodales, mattis lectus in, condimentum nisl. Donec felis eros, dapibus at tempor a, vulputate quis nulla. Nulla et tempus ligula. Nam nec feugiat ante, eu ultrices enim. Maecenas imperdiet tempus quam et pulvinar. Praesent faucibus mi et augue ultricies pretium. Etiam finibus pretium nisi tincidunt gravida. Mauris vehicula sagittis ligula vehicula facilisis. Aenean quis arcu ac ligula tempus finibus. Suspendisse posuere non dui sit amet aliquam. Ut ultrices tincidunt massa. Mauris cursus justo quam, quis ultricies dui molestie a. Nulla iaculis blandit est, quis sagittis erat viverra non. Duis nec purus nulla. Curabitur sed condimentum lacus. Sed elit est, egestas vitae dictum ut, eleifend id metus. Donec a sapien tristique, pharetra arcu sit amet, faucibus orci. Praesent tempor felis quis gravida pharetra. Suspendisse convallis turpis quis velit vulputate, at volutpat sem ultrices. Donec fermentum elit in augue ornare, vel mollis neque facilisis. Suspendisse vel vehicula metus. Fusce pretium erat quis congue tempus. Etiam id leo sit amet nibh mattis condimentum sed vel justo. Nulla facilisi. Sed fringilla nisl sed quam auctor ultricies. Sed volutpat faucibus nunc, ac congue urna volutpat sed. Maecenas mattis faucibus nisl vel vehicula. Mauris ultrices ipsum diam, in imperdiet enim dictum id. Nam finibus vestibulum mauris, nec blandit tellus. Nam tincidunt neque ut dolor sollicitudin tempus. Pellentesque lacinia mi eget est pharetra, vitae pulvinar est facilisis. Pellentesque eleifend eros a lorem suscipit, in volutpat nisi sodales. Nunc purus nisi, dapibus commodo iaculis vel, condimentum a leo. Mauris ultrices suscipit tristique. Maecenas diam lorem, consectetur vulputate arcu sed, consequat tempor lectus. Morbi maximus congue congue. In ultricies lobortis diam in pharetra. Donec luctus facilisis dignissim. Duis orci nisl, iaculis id volutpat at, varius in orci. Phasellus auctor nec arcu nec mattis. Integer pharetra ligula non tincidunt porta. Nunc pretium porttitor erat, sit amet maximus tortor sodales a. Fusce sed nunc eu velit volutpat luctus a nec nibh. Donec ullamcorper tincidunt nunc nec congue. Duis vel risus quis ligula porta porttitor at in ex. Nunc tristique, libero vehicula ultrices pharetra, enim urna lacinia elit, at elementum eros turpis nec tellus. Vestibulum eu consequat ex. Suspendisse id facilisis massa, volutpat cursus quam. Curabitur condimentum aliquam orci, efficitur rutrum purus tincidunt a. Nunc posuere cursus vestibulum.</p>
+		<br>
+
+		<p>Porém o float não é apenas usado para fazer com texto se envola em volta de uma imagem, e sim ele funciona para diversos layouts. Nos divs, por exemplo, que são elemento com o "display: block" (possuem por padrão uma largura de 100% da viewport), uma vez aplicado o float, esta div passará a ser um elemento com "display: inline-block", fazendo com que não ocupe mais 100% da viewport, e ocupando apenas o tamanho necessário para mostrar seu conteúdo.</p>
+
+		<p><b>Exemplo (as divs estão sem a propriedade float, e portanto, são elementos com o "display: block", mesmo seus elementos sendo spans):</b></p>
+		<div class="div1"><span>Primeira div</span></div>
+		<div class="div2"><span>Segunda div</span></div>
+		<div class="div3"><span>Terceira div</span></div>
+		<br><br>
+
+		<p><b>Exemplo (as divs estão com propriedade "float: left", e portanto, agora passaram a ser elementos com o "display: inline-block"):</b></p>
+		<div class="divfloat1"><span>Primeira div</span></div>
+		<div class="divfloat2"><span>Segunda div</span></div>
+		<div class="divfloat3"><span>Terceira div</span></div>
+		<br><br><br>
+
+		<p>Algo que é necessário se atentar é que, com o float, o texto fica em volta do elemento flutuando, porém, certos elementos podem acabar ficando atrás de elementos flutuantes. Perceba como funciona com os exemplos abaixo:</p>
+
+		<p><b>Exemplo (divs em formato de quadrados, sem nenhuma propriedade de float):</b></p>
+		<div class="square1"></div>
+		<div class="square2"></div>
+		<div class="square3"></div>
+		<br><br>
+
+		<p><b>Exemplo (divs em formato de quadrados, sendo todos eles com a propriedade "float: left;"). O aconteceu aqui foi que todos os elementos passaram para "a folha de cima", e todos eles respeitam suas dimensões, por estarem no mesmo plano:</b></p>
+		<div class="square4"></div>
+		<div class="square5"></div>
+		<div class="square6"></div>
+		<br><br><br><br><br><br><br>
+
+		<p><b>Exemplo (apenas o quadrado vermelho está com "float: left;"). Perceba que o quadrado verde sumiu. Isso ocorre porque o quadrado vermelho flutuou e foi para a folha de cima, deixando um espaço vazio na folha de baixo, e assim, o quadrado verde, que está na folha de baixo, ocupou aquele espaço vazio, porém, como o quadrado vermelho continua na mesma posição, porém na folha de cima, ele fica bloqueando totalmente o quadrado verde. É como se o quadrado vermelho tivesse se tornado uma nuvem que está por cima do quadrado verde:</b></p>
+		<div class="square7"></div>
+		<div class="square8"></div>
+		<div class="square9"></div>
+		<br><br>
+
+		<p><b>Exemplo (apenas o quadrado vermelho está com "float: left;"). Perceba que, agora que foi adicionado uma margem à esquerda de 30px do quadrado verde, é possível vê-lo novamente:</b></p>
+		<div class="square7"></div>
+		<div class="square10"></div>
+		<div class="square9"></div>
+		<br><br>
+
+		<p>Porém, o que seria feito caso eu não quisesse que o quadrado verde fosse para cima e ficasse atrás do quadrado vermelho? Bem, para solucionar isso, há uma propriedade que anda lado a lado com a propriedade float, e esta propriedade se da o nome de "clear".</p><br>
+
+		<p><b>2) clear:</b> é utilizada para definir se elementos flutuantes poderão flutuar do lado de determinado elemento. Quando se utiliza o "clear" em um elemento, é como se fosse dito "não é permitido que nenhum elemento flutue do lado esquerdo ou direito deste elemento". O clear compreende os valores "left" (nenhum elemento flutuante poderá ficar à esquerda do elemento), "right" (nenhum elemento flutuante poderá ficar à direita do elemento) e "both" (nenhum elemento flutuante poderá ficar à esquerda ou direita do elemento).</p>
+
+		<p><b>Exemplo (apenas o quadrado vermelho está com "float: left;"). É exatamente igual o último exemplo demonstrado (sem a margem de 30px), porém, desta vez, o quadrado verde está com a propriedade "clear: left", que significa que nenhum elemento flutuante poderá ficar ao lado dele:</b></p>
+		<div class="square7"></div>
+		<div class="square11"></div>
+		<div class="square9"></div>
+		<br><br>
+
+		<p>Ainda, vale destacar que um elemento com a propriedade "clear: left" ou "clear: right" ainda pode ser um elemento flutuante, e fazer com que algum elemento fique abaixo dele.</p>
+
+		<p><b>Exemplo (o quadrado vermelho está com "float: left;", o quadrado verde está com "clear: left" e "float: left;"). Neste exemplo é possível visualizar o que foi dito logo acima, pois o quadrado azul desapareceu, uma vez que ficou em baixo de um elemento flutuante (o quadrado verde), e o quadrado verde não ficou em baixo do quadrado vermelho, pois sua propriedade de clear não permite elementos flutuantes a sua esquerda (foi adicionada uma margin-left de 30px no quadrado azul para poder ser visualizado):</b></p>
+		<div class="square7"></div>
+		<div class="square12"></div>
+		<div class="square13"></div>
+		<br><br><br><br><br><br><br><br>
+
+		<p>Outro detalhe importante é sobre o comportamento de uma div com texto dentro. A div que está por baixo de um elemento flutuante ficará literalmente atrás do elemento flutuante, portanto, a cor de fundo também ficará por trás, porém o texto não, o texto ainda assim ficará em volta do elemento flutuante, mesmo que seu fundo esteja sendo parcialmente coberto pelo mesmo.</p>
+
+		<p><b>Exemplo (o quadrado vermelho está com "float: left; e com "opacity: 0.5", o quadrado verde está com float: right;" e com "opacity: 0.5"):</b></p>
+		<div class="divoverflow1">
+			<div class="square15"></div>
+			<div class="square14"></div>
+			<div class="midsquare"><p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor nibh eget dolor euismod, quis sollicitudin ante fermentum. Aenean in venenatis ex. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc scelerisque purus et nulla tincidunt, ac posuere dui ultricies.</p></div>
+		</div>
+		
+		<br><br><br><br>
+
+		<p>Porém há um problema no exemplo acima: e caso eu quisesse mostrar toda minha imagem até a altura máxima dos elementos flutuantes? Para isso seria utilizado o "overflow: auto".</p>
+
+		<p><b>Exemplo (o quadrado vermelho está com "float: left; e com "opacity: 0.5", o quadrado verde está com float: right;" e com "opacity: 0.5"). Para resolver o impasse do último exemplo, a div que engloba todas outras divs precisa da propriedade "overflow: auto":</b></p>
+
+		<div class="divoverflow2">
+			<div class="square15"></div>
+			<div class="square14"></div>
+			<div class="midsquare"><p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor nibh eget dolor euismod, quis sollicitudin ante fermentum. Aenean in venenatis ex. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc scelerisque purus et nulla tincidunt, ac posuere dui ultricies.</p></div>
+		</div>
+		<p>Esta correção ocorreu pelos simples fato de que: antes a imagem estava sendo aplicada apenas para o elemento de parágrafo, pois a div que engloba todas as outras divs estava trabalhando apenas com elementos que estavam na "folha de baixo", portanto, ignorando a existência da altura dos quadrados. Porém, quando foi adicionada a propriedade "overflow: auto;" na div principal, logo foi considerada a altura dos quadrados, pois agora a "folha de cima" está sendo levada em conta também, e como seu overflow é de valor "auto", sua altura será automática, isto é, irá se basear na altura máxima presente dentro da div principal, que no caso era de 100px dos quadrados.</p>
+		<br>
+		<p>As últimas informações dadas no exemplo podem ser utilizadas inclusive para coisas mais simples e reais, como no caso de uma foto com texto e com uma borda em volta. Isso é chamado de "clearfix".</p>
+
+		<p><b>Exemplo sem o clearfix (a borda ficou apenas em volta do parágrafo e ignorou completamente a imagem flutuante):</b></p>
+		<div class="noclearfix">
+			<img class="img2" src="images/landscape1.jpg">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor nibh eget dolor euismod, quis sollicitudin ante fermentum. Aenean in venenatis ex. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc scelerisque purus et nulla tincidunt, ac posuere dui ultricies.</p>
+		</div><br><br><br><br><br><br><br><br><br><br>
+
+		<p><b>Exemplo com o clearfix (agora a borda fica em volta de toda a div, inclusive da iamgem flutuante):</b></p>
+		<div class="clearfix">
+			<img class="img2" src="images/landscape1.jpg">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor nibh eget dolor euismod, quis sollicitudin ante fermentum. Aenean in venenatis ex. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc scelerisque purus et nulla tincidunt, ac posuere dui ultricies.</p>
+		</div><br><br>
+
+		<div class="obs">
+			<p><b>OBS¹:</b> divs são elemento em bloco, portanto, elas ocupam por padrão uma largura de 100% da viewport;</p>
+			<p><b>OBS²:</b> elementos flutuantes ficam sobre elementos, mas nunca sobre conteúdos;</p>
+			<p><b>OBS²:</b> elementos flutuantes na mesma direção ficarão lado a lado até não couber mais, e partir dai, eles irão para a "próxima linha".</p>
+		</div><!--obs-->
+
+	</div>
+
+</body>
+</html> 

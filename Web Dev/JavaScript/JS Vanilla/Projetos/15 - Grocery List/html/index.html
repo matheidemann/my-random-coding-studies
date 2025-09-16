@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang=”pt-BR”>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, inital-scale=1.0, maximum-scale=1.0">
+	<meta name="description" content="Descrição do site.">
+	<meta name="keywords" content="palavras-chave, separadas, por, vírgula">
+	<meta name="author" content="Autor da page">
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+
+	<title>Lista de compras</title>
+</head>
+
+<body>
+	<section class="section-center">
+		<form class="grocery-form">
+			<p class="alert"></p>
+			<h3>lista de compras</h3>
+			<div class="form-control grid">
+				<input type="text" id="grocery" placeholder="por ex. Ovos">
+				<button type="submit" class="submit-btn">Adicionar</button>
+			</div><!-- form-control grid -->
+		</form><!-- grocery-form -->
+		<div class="clear-confirmation grid">
+			<div class="clear-form grid">
+				<div class="clear-text">
+					<h4>Você quer apagar todos os itens da lista?</h4>
+				</div><!-- clear-text -->
+				<div class="clear-btns">
+					<button class="yes-btn" type="button">Sim</button>
+					<button class="no-btn" type="button">Não</button>
+				</div><!-- clear-btns -->
+			</div><!-- clear-form -->
+		</div><!-- clear-confirmation -->
+		<div class="grocery-container show-container">
+			<div class="grocery-list">
+
+			</div><!-- grocery-list -->
+			<button class="clear-btn">Limpar items</button>
+		</div><!-- grocery-container -->
+	</section><!-- section-center -->
+
+	<script src="https://kit.fontawesome.com/646353da8e.js" crossorigin="anonymous"></script>
+	<script src="../js/functions.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang=”pt-BR”>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Pseudo-elementos</title>
+</head>
+<body>
+	<div class="center">
+
+		<h1 class="cap">6 - PROPRIEDADES MAIS COMPLEXAS DE CSS</h1>
+
+		<h1 class="sec">10 - Pseudo-elementos</h1>
+		<p>As pseudo-elementos são utilizados para estilizar uma parte específica de um elemento, como a primeira linha, a primeira letra, colocar algum conteúdo antes ou após o elemento etc.</p>
+
+		<p><b>1) ::first-line:</b> estiliza a primeira linha de um elemento. Detalhe que este pseudo-elemento pode apenas ser aplicado em elementos que possuem seu display em bloco;</p>
+		<p><b>Exemplo (.p1::first-line):</b></p>
+		<p class="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel magna nec dui ultrices placerat eget euismod urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat erat quis dapibus blandit. Pellentesque neque quam, varius eu tortor nec, accumsan porttitor lectus. Duis gravida, odio eu fringilla suscipit, diam elit luctus mauris, id dignissim turpis sem at magna. Fusce pulvinar nulla sit amet dui vestibulum, imperdiet facilisis urna interdum.</p><br>
+
+		<p><b>2) ::first-letter:</b> estiliza a primeira letra de um elemento;</p>
+		<p><b>Exemplo (.p2::first-letter):</b></p>
+		<p class="p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel magna nec dui ultrices placerat eget euismod urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat erat quis dapibus blandit. Pellentesque neque quam, varius eu tortor nec, accumsan porttitor lectus. Duis gravida, odio eu fringilla suscipit, diam elit luctus mauris, id dignissim turpis sem at magna. Fusce pulvinar nulla sit amet dui vestibulum, imperdiet facilisis urna interdum.</p>
+
+		<p><b>3) ::before:</b> insere algum conteúdo antes de algum determinado elemento;</p>
+		<p><b>Exemplo (.p3::before):</b></p>
+		<p class="p3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel magna nec dui ultrices placerat eget euismod urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat erat quis dapibus blandit. Pellentesque neque quam, varius eu tortor nec, accumsan porttitor lectus. Duis gravida, odio eu fringilla suscipit, diam elit luctus mauris, id dignissim turpis sem at magna. Fusce pulvinar nulla sit amet dui vestibulum, imperdiet facilisis urna interdum.</p><br>
+
+		<p><b>4) ::after:</b> insere algum conteúdo após algum determinado elemento;</p>
+		<p><b>Exemplo (.p4::after):</b></p>
+		<p class="p4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel magna nec dui ultrices placerat eget euismod urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat erat quis dapibus blandit. Pellentesque neque quam, varius eu tortor nec, accumsan porttitor lectus. Duis gravida, odio eu fringilla suscipit, diam elit luctus mauris, id dignissim turpis sem at magna. Fusce pulvinar nulla sit amet dui vestibulum, imperdiet facilisis urna interdum.</p><br>
+
+		<p><b>5) ::marker:</b> estiliza apenas os marcadores de determinados elementos (com as bolinhas em uma lista não-ordenada);</p>
+		<p><b>Exemplo (.p5::marker):</b></p>
+		<ul>
+			<li class="p5">Item 1</li>
+			<li class="p5">Item 2</li>
+			<li class="p5">Item 3</li>
+		</ul><br>
+
+		<p><b>6) ::selection:</b> estiliza a seleção de determinados elementos;</p>
+		<p><b>Exemplo (.p6::selection) - tente selecionar o texto com o mouse:</b></p>
+		<p class="p6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel magna nec dui ultrices placerat eget euismod urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat erat quis dapibus blandit. Pellentesque neque quam, varius eu tortor nec, accumsan porttitor lectus. Duis gravida, odio eu fringilla suscipit, diam elit luctus mauris, id dignissim turpis sem at magna. Fusce pulvinar nulla sit amet dui vestibulum, imperdiet facilisis urna interdum.</p><br>
+
+		<div class="obs">
+			<p><b>OBS¹:</b> perceba que, diferentemente das pseudo-classe, os pseudo-elementos utilizam dois pontos "::". Isso é algo que foi introduzido no CSS3, enquanto nas versões anteriores (CSS1 e CSS2) ambos utilizavam apenas um dois pontos ":".</p>
+		</div><!--obs-->
+
+
+	</div>
+	
+</body>
+</html> 

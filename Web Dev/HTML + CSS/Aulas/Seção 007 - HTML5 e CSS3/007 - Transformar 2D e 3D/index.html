@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang=”pt-BR”>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, inital-scale=1.0, maximum-scale=1.0">
+	<meta name="description" content="Descrição do site.">
+	<meta name="keywords" content="palavras-chave, separadas, por, vírgula">
+	<meta name="author" content="Autor da page">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Transformar 2D e 3D</title>
+</head>
+
+<body>
+	<div class="center">
+		<h1 class="cap">7 - HTML5 e CSS3</h1>
+
+		<h1 class="sec">7 - Transformar 2D e 3D</h1>
+		<p>A propriedade de transformação serve para alterar a posição, rotação
+			e escala de elementos.</p>
+
+		<p><b>Transform 2D:</b> transforma os elementos em duas dimensões,
+			compreendendo os seguintes métodos de trasnformação:</p>
+
+		<p><b>1) translate():</b> move o elemento a partir da sua posição atual,
+			sendo usado como referência seu ponto central (diferente de outras
+			propriedades do CSS, que utilizam o canto superior esquerdo dos
+			elementos). Ele pode ser escrito como shorthand ou então separando o
+			valor horizontal (translateX) e vertical (translateY).</p>
+
+		<p><b>Exemplo (perceba que o que está no centro é canto superior
+				esquerdo da div box1):</b></p>
+		<div class="box0">
+			<div class="circle"></div>
+			<div class="box1">
+				<p>sem o translate(-50%, -50%)</p>
+			</div>
+		</div>
+
+		<div class="box0">
+			<div class="circle"></div>
+			<div class="box1-1">
+				<p>com o translate(-50%, -50%)</p>
+			</div>
+		</div>
+
+		<p><b>2) rotate():</b> rotaciona o elemento em sentido horário ou
+			anti-horário. Vale destacar que o valor a ser utilizado para o rotate
+			deve ser em graus.</p>
+
+		<p><b>Exemplo:</b></p>
+		<div class="box0">
+			<div class="circle"></div>
+			<div class="box2">
+				<p>com o rotate em 45deg, mas sem o translate(-50%, -50%)</p>
+			</div>
+		</div>
+
+		<p><b>Exemplo:</b></p>
+		<div class="box0">
+			<div class="circle"></div>
+			<div class="box3">
+				<p>com o rotate em 45deg e com o translate(-50%, -50%). Os mais
+					diversos valores devem ser aplicados todos dentro do mesmo
+					transform.</p>
+			</div>
+		</div>
+
+		<p><b>3) scale():</b> aumenta ou diminui a escala (tamanho) do elemento,
+			sendo seu primeiro valor o horizontal e o segundo o vertical. Ainda, é
+			possível alterar apenas um deste valores com "scaleX()" e
+			"scaleY()".</p>
+
+		<p><b>Exemplo:</b></p>
+		<div class="box0">
+			<div class="circle"></div>
+			<div class="box4">
+				<p>com o translate(-50%, -50%) e scale(2, 1.9) </p>
+			</div>
+		</div>
+
+		<p><b>4) skew():</b> modifica o enviesamento do elemento, deixa ela
+			oblíquo, em itálico. Ainda, é possível alterar apenas um deste valores
+			com "skewX()" e "skewY()". Vale destacar que o valor a ser utilizado
+			para o rotate deve ser em graus.</p>
+
+		<p><b>Exemplo:</b></p>
+		<div class="box0">
+			<div class="circle"></div>
+			<div class="box5">
+				<p>com o rotate em 15deg e skew(25deg, 25deg)</p>
+			</div>
+		</div>
+
+		<p><b>Transform 3D:</b> transforma os elementos em três dimensões,
+			compreendendo todos os métodos de duas dimensões e mais os mesmos
+			métodos, porém, dessa vez, compreendendo o valor do eixo Z.</p>
+	</div>
+
+</body>
+
+</html>

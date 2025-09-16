@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang=”pt-BR”>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Estilização de tabelas</title>
+</head>
+<body>
+	<div class="center">
+		<h1 class="cap">5 - PROPRIEDADES BÁSICAS DE CSS</h1>
+
+		<h1 class="sec">14 - Estilização de tabelas</h1>
+		<p>Para personalizar tabelas podemos utilizar diversas propriedades a serem aplicadas tanto na tabela, quanto nas colunas ou nas linhas. Vale destacar que este tópico não tem apenas a finalidade de demonstrar como as listas podem ser personalizadas, mas sim como todos elementos de HTML podem ser estilizados com as mais diversas propriedades possíveis, isto é, a grande maioria das propriedades deste tópico se aplicam também, por exemplo, para as listas.</p>
+
+		<p><b>1) Adicionar umas borda da tabela:</b> adicionar a propriedade “border”;</p>
+
+		<p><b>Exemplo de tabela com "border: 5px groove green;":</b></p>
+		<table class="table1">
+			<tr>
+				<th>Coluna 1 (th)</th>
+				<th>Coluna 2 (th)</th>
+				<th>Coluna 3 (th)</th>
+			</tr>
+			<tr>
+				<td>Item 1 (td)</td>
+				<td>Item 2 (td)</td>
+				<td>Item 3 (td)</td>
+			</tr>
+			<tr>
+				<td>Item 1 (td)</td>
+				<td>Item 2 (td)</td>
+				<td>Item 3 (td)</td>
+			</tr>
+			<tr>
+				<td>Item 1 (td)</td>
+				<td>Item 2 (td)</td>
+				<td>Item 3 (td)</td>
+			</tr>
+		</table>
+		<br>
+
+		<p><b>2) Remover as “bordas duplas”:</b> utilizar a propriedade “border-collapse” com o valor “colapse”. Isto fara com que as linhas se colapsem, removendo o efeito de “bordas duplas”;</p>
+
+		<p><b>Exemplo de tabela com "border-collapse: collapse;":</b></p>
+		<table class="table2" border="1">
+			<tr>
+				<th>Coluna 1 (th)</th>
+				<th>Coluna 2 (th)</th>
+				<th>Coluna 3 (th)</th>
+			</tr>
+			<tr>
+				<td>Item 1 (td)</td>
+				<td>Item 2 (td)</td>
+				<td>Item 3 (td)</td>
+			</tr>
+			<tr>
+				<td>Item 1 (td)</td>
+				<td>Item 2 (td)</td>
+				<td>Item 3 (td)</td>
+			</tr>
+			<tr>
+				<td>Item 1 (td)</td>
+				<td>Item 2 (td)</td>
+				<td>Item 3 (td)</td>
+			</tr>
+		</table>
+		<br>
+
+		<p><b>Exemplo de tabela sem o "border-collapse: collapse;":</b></p>
+		<table border="1">
+			<tr>
+				<th>Coluna 1 (th)</th>
+				<th>Coluna 2 (th)</th>
+				<th>Coluna 3 (th)</th>
+			</tr>
+			<tr>
+				<td>Item 1 (td)</td>
+				<td>Item 2 (td)</td>
+				<td>Item 3 (td)</td>
+			</tr>
+			<tr>
+				<td>Item 1 (td)</td>
+				<td>Item 2 (td)</td>
+				<td>Item 3 (td)</td>
+			</tr>
+			<tr>
+				<td>Item 1 (td)</td>
+				<td>Item 2 (td)</td>
+				<td>Item 3 (td)</td>
+			</tr>
+		</table>
+		<br>
+
+		<p><b>3) Modificar propriedades gerais da tabela, dos heads ou itens:</b> utilizar as mais diversas propriedades no CSS para modificar cada elemento (&lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, &lt;td&gt;);</p>
+
+		<p><b>Exemplo de tabela com várias propriedades alteradas:</b></p>
+		<table class="table3" border="1">
+			<tr>
+				<th>Coluna 1 (th)</th>
+				<th>Coluna 2 (th)</th>
+				<th>Coluna 3 (th)</th>
+			</tr>
+			<tr>
+				<td>Item 1 (td)</td>
+				<td>Item 2 (td)</td>
+				<td>Item 3 (td)</td>
+			</tr>
+			<tr>
+				<td>Item 1 (td)</td>
+				<td>Item 2 (td)</td>
+				<td>Item 3 (td)</td>
+			</tr>
+			<tr>
+				<td>Item 1 (td)</td>
+				<td>Item 2 (td)</td>
+				<td>Item 3 (td)</td>
+			</tr>
+		</table>
+		<br>
+
+		<p><b>4) Alinhar heads ou itens horizontalmente:</b> utilizar a propriedade “text-align” e definir o valor desejado;</p>
+
+		<p><b>Exemplo de tabela com "text-align: right;" para os elementos &lt;th&gt; e "text-align: center;" para os elemntos &lt;td&gt;:</b></p>
+		<table class="table4" border="1">
+			<tr>
+				<th>Coluna 1 (th)</th>
+				<th>Coluna 2 (th)</th>
+				<th>Coluna 3 (th)</th>
+			</tr>
+			<tr>
+				<td>Item 1 (td)</td>
+				<td>Item 2 (td)</td>
+				<td>Item 3 (td)</td>
+			</tr>
+			<tr>
+				<td>Item 1 (td)</td>
+				<td>Item 2 (td)</td>
+				<td>Item 3 (td)</td>
+			</tr>
+			<tr>
+				<td>Item 1 (td)</td>
+				<td>Item 2 (td)</td>
+				<td>Item 3 (td)</td>
+			</tr>
+		</table>
+		<br>
+
+		<p><b>5) Alinhar heads ou itens verticalmente:</b> utilizar a propriedade “vertical-align” e definir o valor desejado (a tabela deve conter espaço suficiente para o item poder realmente se mover);</p>
+
+		<p><b>Exemplo de tabela com "vertical-align: bottom;" nos elementos &lt;td&gt;:</b></p>
+		<table class="table5" border="1">
+			<tr>
+				<th>Coluna 1 (th)</th>
+				<th>Coluna 2 (th)</th>
+				<th>Coluna 3 (th)</th>
+			</tr>
+			<tr>
+				<td>Item 1 (td)</td>
+				<td>Item 2 (td)</td>
+				<td>Item 3 (td)</td>
+			</tr>
+			<tr>
+				<td>Item 1 (td)</td>
+				<td>Item 2 (td)</td>
+				<td>Item 3 (td)</td>
+			</tr>
+			<tr>
+				<td>Item 1 (td)</td>
+				<td>Item 2 (td)</td>
+				<td>Item 3 (td)</td>
+			</tr>
+		</table>
+		<br>
+
+		<p><b>6) Alinhar a tabela ao centro:</b> utilizar a propriedade “margin” com os valores “0px auto” para a tag “table”;</p>
+
+		<p><b>Exemplo de tabela com "margin: 0px auto;":</b></p>
+		<table class="table6" border="1">
+			<tr>
+				<th>Coluna 1 (th)</th>
+				<th>Coluna 2 (th)</th>
+				<th>Coluna 3 (th)</th>
+			</tr>
+			<tr>
+				<td>Item 1 (td)</td>
+				<td>Item 2 (td)</td>
+				<td>Item 3 (td)</td>
+			</tr>
+			<tr>
+				<td>Item 1 (td)</td>
+				<td>Item 2 (td)</td>
+				<td>Item 3 (td)</td>
+			</tr>
+			<tr>
+				<td>Item 1 (td)</td>
+				<td>Item 2 (td)</td>
+				<td>Item 3 (td)</td>
+			</tr>
+		</table>
+		<br>
+
+		<p><b>7) Aumentar o tamanho de cada linha:</b> utilizar a propriedade “padding” com o valor desejado;</p>
+
+		<p><b>Exemplo de tabela com "padding: 30px;" nos elementos &lt;th&gt;:</b></p>
+		<table class="table7" border="1">
+			<tr>
+				<th>Coluna 1 (th)</th>
+				<th>Coluna 2 (th)</th>
+				<th>Coluna 3 (th)</th>
+			</tr>
+			<tr>
+				<td>Item 1 (td)</td>
+				<td>Item 2 (td)</td>
+				<td>Item 3 (td)</td>
+			</tr>
+			<tr>
+				<td>Item 1 (td)</td>
+				<td>Item 2 (td)</td>
+				<td>Item 3 (td)</td>
+			</tr>
+			<tr>
+				<td>Item 1 (td)</td>
+				<td>Item 2 (td)</td>
+				<td>Item 3 (td)</td>
+			</tr>
+		</table>
+		<br>
+
+		<p><b>8) Colocar uma borda apenas na parte inferior de cada linha:</b> utilizar a propriedade “border-bottom” para cada head e item;</p>
+
+		<p><b>Exemplo de tabela com "border-bottom”: 2px;":</b></p>
+		<table class="table8">
+			<tr>
+				<th>Coluna 1 (th)</th>
+				<th>Coluna 2 (th)</th>
+				<th>Coluna 3 (th)</th>
+			</tr>
+			<tr>
+				<td>Item 1 (td)</td>
+				<td>Item 2 (td)</td>
+				<td>Item 3 (td)</td>
+			</tr>
+			<tr>
+				<td>Item 1 (td)</td>
+				<td>Item 2 (td)</td>
+				<td>Item 3 (td)</td>
+			</tr>
+			<tr>
+				<td>Item 1 (td)</td>
+				<td>Item 2 (td)</td>
+				<td>Item 3 (td)</td>
+			</tr>
+		</table>
+		<br>
+
+		<p><b>9) Mudar a certas propriedades visuais de cada linha ao passar o mouse por cima:</b> utilizar o seletor “:hover” no <tr>, e então definir as declarações desejadas;</p>
+
+		<p><b>Exemplo de tabela com "hover” nos elementos &lt;td&gt; (passe o mouse por cima deles):</b></p>
+		<table class="table9">
+			<tr>
+				<th>Coluna 1 (th)</th>
+				<th>Coluna 2 (th)</th>
+				<th>Coluna 3 (th)</th>
+			</tr>
+			<tr>
+				<td>Item 1 (td)</td>
+				<td>Item 2 (td)</td>
+				<td>Item 3 (td)</td>
+			</tr>
+			<tr>
+				<td>Item 1 (td)</td>
+				<td>Item 2 (td)</td>
+				<td>Item 3 (td)</td>
+			</tr>
+			<tr>
+				<td>Item 1 (td)</td>
+				<td>Item 2 (td)</td>
+				<td>Item 3 (td)</td>
+			</tr>
+		</table>
+		<br>
+
+	</div>
+</body>
+</html> 

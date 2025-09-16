@@ -1,0 +1,35 @@
+.center {
+	width        : 1280px;
+	margin       : 0px auto;
+	font-family  : "Arial";
+	margin-bottom: 20px;
+}
+
+.cap{
+	background: red;
+	color     : white;
+	padding   : 5px;
+}
+
+.sec{
+	background: black;
+	color     : white;
+	padding   : 5px;
+}
+
+.obs p {
+	margin         : 0px;
+	padding        : 6px;
+	border         : 1px solid black;
+	border-collapse: collapse;
+}
+
+.imgspace{
+	max-width: 480px;
+	max-height: 270px;
+}
+
+.imgland{
+	min-width: 1280px;
+	min-height: 720px;
+}

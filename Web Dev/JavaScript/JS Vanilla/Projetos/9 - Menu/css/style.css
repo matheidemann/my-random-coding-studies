@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+body {
+	background-color: #ebeff2;
+	color: #b98c48;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.center {
+	max-width: 1280px;
+	margin: 0px auto;
+	padding: 4% 2%;
+}
+
+.flex {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 3rem;
+}
+
+/* HEADER */
+
+.header {
+	margin-bottom: 4vh;
+}
+
+.header h1 {
+	font-size: 2.6rem;
+	margin-bottom: 15px;
+	font-weight: bold;
+	color: #252525;
+	letter-spacing: 0.2rem;
+}
+
+.line {
+	width: 100px;
+	height: 5px;
+	background-color: #b98c48;
+}
+
+/* MENU */
+
+.filter-select {
+	margin-bottom: 8vh;
+	flex-flow: row wrap;
+}
+
+.btn {
+	padding: 5px 10px;
+	margin: 5px 5px;
+	border: 2px solid #b98c48;
+	color: #b98c48;
+	background-color: transparent;
+	text-transform: capitalize;
+	border-radius: 0.5rem;
+	letter-spacing: 0.05rem;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.btn:hover {
+	background-color: #b98c48;
+	color: #f6f6f6;
+}
+
+/* OPTION */
+
+.option {
+	grid-template-columns: 225px 1fr;
+	gap: 1rem;
+	color: #252525;
+	max-width: 40rem;
+}
+
+.option-img img {
+	border-radius: 0.5rem;
+	border: 3px solid #b98c48;
+	height: 145px;
+	object-position: center;
+	object-fit: cover;
+}
+
+.option-header {
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	padding-bottom: 10px;
+	border-bottom: 2px dotted #838383;
+}
+
+.option-header h4 {
+	font-size: 1.1rem;
+	font-weight: bold;
+	letter-spacing: 0.1rem;
+	text-transform: capitalize;
+}
+
+.option-header h4:nth-of-type(2) {
+	color: #b98c48;
+}
+
+.option-text {
+	color: #555555;
+	padding-top: 20px;
+	text-align: justify;
+	line-height: 1.5rem;
+}
+
+.order-now {
+	padding: 5px 10px;
+	margin: 0px 5px;
+	border: 2px solid #b98c48;
+	color: #b98c48;
+	background-color: transparent;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+/* MEDIA-QUERIES */
+
+/* 1200PX */
+@media screen and (max-width: 1200px) {
+	.menu-options {
+		grid-template-columns: 1fr;
+		justify-items: center;
+	}
+}
+
+/* 600PX */
+@media screen and (max-width: 600px) {
+	.filter-select {
+		margin-bottom: 0px;
+	}
+
+	.option {
+		grid-template-columns: 1fr;
+		max-width: none;
+		padding: 25px;
+	}
+}
+
+/* 400PX */
+@media screen and (max-width: 400px) {
+	.option-header {
+		flex-flow: column wrap;
+	}
+
+	.option-header h4 {
+		padding: 5px 0px;
+	}
+}

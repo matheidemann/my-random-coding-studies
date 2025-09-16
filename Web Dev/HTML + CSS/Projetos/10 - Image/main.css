@@ -1,0 +1,67 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav {
+  background: #222222;
+  height: 5rem;
+  padding: 1rem 0;
+}
+
+.nav-title {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+.nav-center {
+  width: 90vw;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.hero {
+  -webkit-filter: grayscale(50%);
+  filter: grayscale(50%);
+  background: linear-gradient(to right,rgba(105,62,27,0.5),rgba(105,62,27,1) ),url(https://www.popsci.com/uploads/2023/10/05/capybara-riverbank.png?auto=webp);
+  min-height: calc(100vh - 5rem);
+  
+}
+
+.hero-center{
+  width: 90vw;
+  max-width: 1280px;
+  margin: 0 auto;
+  color: #ffffff;
+  padding: 5rem 0;
+}
+
+.hero-center h1 {
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  margin-bottom: 0.75rem; 
+}
+
+.hero-center p {
+  margin-bottom: 1.5rem;
+  max-width: 35em;
+  line-height: 1.5rem;
+}
+
+.hero-btn {
+  background: transparent;
+  border: 1px solid #ffffff;
+  padding: 0.75rem 1.25rem;
+  color: #ffffff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+}

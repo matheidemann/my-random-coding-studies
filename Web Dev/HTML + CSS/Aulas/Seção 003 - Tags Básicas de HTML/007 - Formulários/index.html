@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang=”pt-BR”>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Formulários</title>
+</head>
+<body>
+	<div class="center">
+		<h1 class="cap">3 - TAGS BÁSICAS DE HTML</h1>
+
+		<h1 class="sec">7 - Formulários</h1>
+		<p>Aqui são compreendidas tags utilizadas para a criação e envio de formulários na web.</p>
+
+		<p><b>1) &lt;form&gt;:</b> é a tag padrão para criação de formulários.</p>
+
+		<p><b>2) &lt;input&gt;:</b> é a tag para adicionar caixas de texto onde é possível escrever.</p>
+
+		<div class="space1">
+			<p><b>2.1) type</b> é utilizado para definir o tipo do input, podendo ser “text”, “password“, “button” ou “submit”</p>
+		</div>
+
+		<div class="space2">
+			<p><b>2.1.1) type="text"</b> o texto dentro da caixa ficará normal.</p>
+
+			<p><b>Exemplo:</b></p>
+			<input type="text" name="texto">
+			<br><br>
+			
+
+			<p><b>2.1.2) type="password"</b> o texto dentro da caixa ficará todo em asterisco (*).</p>
+			
+			<p><b>Exemplo:</b></p>
+			<input type="password" name="texto">
+			<br><br>
+			
+
+			<p><b>2.1.3) type="button"</b> transforma a caixa de texto em um botão que não envia um formulário para o site quando clicado. Esse tipo de input não faz nada por padrão, e são comumente usados para atuar com o JavaScript ou AJAX.</p>
+			
+			<p><b>Exemplo:</b></p>
+			<input type="button" name="botao" value='"type="button"'>
+			<br><br>
+			
+
+			<p><b>2.1.4) type="submit"</b> transforma a caixa de texto em um botão que envia um formulário para o site, é a função padrão dele (é o botão usado para salvar o login de um site, por exemplo). Isso é melhor compreendido quando se estuda Back-End.</p>
+			<p><b>Exemplo:</b></p>
+			<input type="submit" name="submit" value='"type="submit"'>
+			<br><br>
+
+			<p><b>2.1.5) type="radio"</b> cria uma região onde é possível marcar apenas uma opção. É importante definir o name para que os inputs saibam que eles fazem parte de uma mesma seção (fazendo com que não seja possível marcar duas bolinhas).</p>
+			<p><b>Exemplo:</b></p>
+			<input type="radio" name="cidade" value=""><span>Opção 1</span><br>
+			<input type="radio" name="cidade" value=""><span>Opção 2</span><br>
+			<input type="radio" name="cidade" value=""><span>Opção 3</span>
+			<br><br>
+
+			<p><b>2.1.6) type="checkbox"</b> cria uma região onde é possível marcar mais de uma opção. É importante definir o name para que os inputs saibam que eles fazem parte de uma mesma seção.</p>
+			<p><b>Exemplo:</b></p>
+			<input type="checkbox" name="cidade" value=""><span>Opção 1</span><br>
+			<input type="checkbox" name="cidade" value=""><span>Opção 2</span><br>
+			<input type="checkbox" name="cidade" value=""><span>Opção 3</span>
+			<br><br>
+		</div>
+		
+		<div class="space1">
+			<p><b>2.2) placeholder</b> é o texto que ficará escrito quando não houver nada escrito na caixa de texto.</p>
+
+			<p><b>Exemplo:</b></p>
+			<input type="text" name="texto" placeholder="aqui está o placeholder">
+			<br><br>
+			
+
+			<p><b>2.3) value</b> é o texto que ficará escrito no botão, seja ele de tipo “button” ou “submit”.</p>
+
+			<p><b>Exemplo:</b></p>
+			<input type="button" name="texto" value="aqui está o value">
+			<br><br>
+			
+
+			<p><b>2.4) name</b> é usado apenas para envio de valores no Back-End, nada interessa ao Front-End.</p>
+			<br>
+		</div>
+		
+
+		<p><b>3) &lt;textarea&gt;:</b> é utilizado para criar uma caixa de texto da qual é possível redimensiona-la em tempo real. Vale destacar que ela aceita certos atributos como "placeholder" e "name".</p>
+
+
+		<p><b>Exemplo:</b></p>
+		<textarea name="mytextare" placeholder="Eu sou um placeholder (tente redimensionar esta caixa de texto)"></textarea><br><br>
+
+		<p><b>4) &lt;section&gt;:</b> é utilizado para um menu que possui opções diferentes para serem selecionadas.</p>
+		<p><b>Exemplo:</b></p>
+		<select>
+			<option disabled selected>Selecione uma opção</option>
+			<option>Opção 1</option>
+			<option>Opção 2</option>
+			<option>Opção 3</option>
+		</select>
+
+	</div>
+</body>
+</html> 

@@ -1,0 +1,54 @@
+.center {
+	width        : 1280px;
+	margin       : 0px auto;
+	font-family  : "Arial";
+	margin-bottom: 20px;
+}
+
+.cap {
+	background: red;
+	color     : white;
+	padding   : 5px;
+}
+
+.sec {
+	background: black;
+	color     : white;
+	padding   : 5px;
+}
+
+.obs p {
+	margin         : 0px;
+	padding        : 6px;
+	border         : 1px solid black;
+	border-collapse: collapse;
+}
+
+.mydiv1, .mydiv3, .mydiv5, .mydiv7 {
+	margin-left: 50px; 
+}
+
+.mydiv2, .mydiv4, .mydiv6, .mydiv8 {
+	margin-left: 50px;
+}
+
+.mydiv1 p {
+	background-color: lightgrey;
+}
+
+.mydiv3 > p {
+	background-color: lightblue;
+}
+
+.mydiv5 + p {
+	background-color: lightpink;
+}
+
+.mydiv7 ~ p {
+	background-color: lightgreen;
+}
+
+
+img {
+	width: 1280px;
+}

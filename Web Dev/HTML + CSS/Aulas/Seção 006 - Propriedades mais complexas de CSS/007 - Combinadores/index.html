@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang=”pt-BR”>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Combinadores</title>
+</head>
+<body>	
+	<div class="center">
+		<h1 class="cap">6 - PROPRIEDADES MAIS COMPLEXAS DE CSS</h1>
+
+		<h1 class="sec">7 - Combinadores</h1>
+
+		<p>Antes de entender os combinadores, é necessário entender o que são é o "parent" (pai), "child" (filho) e "sibling" (irmão):</p>
+		<img src="images/scheme.jpg">
+
+		<br><br>
+		<p>Os combinadores fazem parte dos seletores, e eles definem alguma relação dentro do seletor. Há quatro tipos diferentes de seletores:</p>
+
+		<p><b>1) Descendant selector (seletor de descendentes):</b> este combinador corresponde a todos os elementos que são descendentes de um elemento especificado.</p>
+		<p>Ou seja, este combinador selecionará todos os elementos especificados dentro de um elemento, classe ou id.</p>
+
+		<p><b>Exemplo (.mydiv1 p):</b></p>
+		<span>Span fora de qualquer div</span>
+		<p>Parágrafo fora de qualquer div</p>
+		<p>Parágrafo fora de qualquer div</p>
+		<div class="mydiv1">EU SOU A DIV 1
+			<p>Parágrafo dentro da div1</p>
+			<span>Span dentro da div1</span>
+			<p>Parágrafo dentro da div1</p>
+			<div class="mydiv2">EU SOU A DIV 2
+				<p>Parágrafo dentro da div2</p>
+				<p>Parágrafo dentro da div2</p>
+				<span>Span dentro da div2</span>
+			</div>
+			<p>Parágrafo dentro da div1</p>
+			<span>Span dentro da div1</span>
+			<p>Parágrafo dentro da div1</p>
+		</div>
+		<p>Parágrafo fora de qualquer div</p>
+		<span>Span fora de qualquer div</span>
+		<p>Parágrafo fora de qualquer div</p>
+
+		<br>
+		<p><b>2) Child selector (seletor de filhos):</b> este combinador corresponde a todos os elementos que são filhos de um elemento especificado</p>
+		<p>Ou seja, este combinador selecionará todos os elementos especificados que são filhos diretos de um elemento, classe ou id.</p>
+
+		<p><b>Exemplo (.mydiv3 > p):</b></p>
+		<span>Span fora de qualquer div</span>
+		<p>Parágrafo fora de qualquer div</p>
+		<p>Parágrafo fora de qualquer div</p>
+		<div class="mydiv3">EU SOU A DIV 3
+			<p>Parágrafo dentro da div1</p>
+			<span>Span dentro da div1</span>
+			<p>Parágrafo dentro da div1</p>
+			<div class="mydiv4">EU SOU A DIV 4
+				<p>Parágrafo dentro da div2</p>
+				<p>Parágrafo dentro da div2</p>
+				<span>Span dentro da div2</span>
+			</div>
+			<p>Parágrafo dentro da div1</p>
+			<span>Span dentro da div1</span>
+			<p>Parágrafo dentro da div1</p>
+		</div>
+		<p>Parágrafo fora de qualquer div</p>
+		<span>Span fora de qualquer div</span>
+		<p>Parágrafo fora de qualquer div</p>
+
+		<br>
+		<p><b>3) Adjacent sibling selector (seletor adjacente de irmãos):</b> este combinador corresponde a todos os elementos irmãos seguidos que estão logo após um elemento específicado.</p>
+		<p>Ou seja, este combinador selecionará todos os elementos especificados que são irmãos de um elemento, classe ou id.</p>
+
+		<p><b>Exemplo (.mydiv5 + p):</b></p>
+		<span>Span fora de qualquer div</span>
+		<p>Parágrafo fora de qualquer div</p>
+		<p>Parágrafo fora de qualquer div</p>
+		<div class="mydiv5">EU SOU A DIV 5
+			<p>Parágrafo dentro da div1</p>
+			<span>Span dentro da div1</span>
+			<p>Parágrafo dentro da div1</p>
+			<div class="mydiv6">EU SOU A DIV 6
+				<p>Parágrafo dentro da div2</p>
+				<p>Parágrafo dentro da div2</p>
+				<span>Span dentro da div2</span>
+			</div>
+			<p>Parágrafo dentro da div1</p>
+			<span>Span dentro da div1</span>
+			<p>Parágrafo dentro da div1</p>
+		</div>
+		<p>Parágrafo fora de qualquer div</p>
+		<span>Span fora de qualquer div</span>
+		<p>Parágrafo fora de qualquer div</p>
+		<div class="mydiv5">EU SOU A DIV 5 NOVAMENTE
+			<p>Parágrafo fora de qualquer div</p>
+			<span>Span fora de qualquer div</span>
+			<p>Parágrafo fora de qualquer div</p>
+		</div>
+		<p>Parágrafo fora de qualquer div</p>
+		<span>Span fora de qualquer div</span>
+		<p>Parágrafo fora de qualquer div</p>
+
+		<br>
+		<p><b>4) General sibling selector (seletor geral de irmãos):</b> este combinador corresponde a todos os elementos irmãos seguidos de um elemento específicado.</p>
+		<p>Ou seja, este combinador selecionará todos os elementos especificados que são irmãos de um elemento, classe ou id.</p>
+
+		<p><b>Exemplo (.mydiv7 ~ p):</b></p>
+		<span>Span fora de qualquer div</span>
+		<p>Parágrafo fora de qualquer div</p>
+		<p>Parágrafo fora de qualquer div</p>
+		<div class="mydiv7">EU SOU A DIV 5
+			<p>Parágrafo dentro da div1</p>
+			<span>Span dentro da div1</span>
+			<p>Parágrafo dentro da div1</p>
+			<div class="mydiv8">EU SOU A DIV 6
+				<p>Parágrafo dentro da div2</p>
+				<p>Parágrafo dentro da div2</p>
+				<span>Span dentro da div2</span>
+			</div>
+			<p>Parágrafo dentro da div1</p>
+			<span>Span dentro da div1</span>
+			<p>Parágrafo dentro da div1</p>
+		</div>
+		<p>Parágrafo fora de qualquer div</p>
+		<span>Span fora de qualquer div</span>
+		<p>Parágrafo fora de qualquer div</p>
+		<div class="mydiv5">EU SOU A DIV 5 NOVAMENTE
+			<p>Parágrafo fora de qualquer div</p>
+			<span>Span fora de qualquer div</span>
+			<p>Parágrafo fora de qualquer div</p>
+		</div>
+		<p>Parágrafo fora de qualquer div</p>
+		<span>Span fora de qualquer div</span>
+		<p>Parágrafo fora de qualquer div</p>
+
+		<br>
+		<div class="obs">
+			<p><b>OBS¹:</b> A única diferença entre o General sibling selector e o Adjacente Sibling selector é que o General seleciona todos os elementos irmãos seguidos do elemento, classe ou id específicado(a), enquanto o adjacente seleciona apenas os elementos irmãos que estão após o  elemento, classe ou id específicado(a).</p>
+		</div><!--obs-->
+
+	</div>
+
+</body>
+</html> 

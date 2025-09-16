@@ -1,0 +1,421 @@
+/* HEADER */
+
+.header {
+	width: 100%;
+	height: 120px;
+	background-color: #ffffff;
+	border-bottom: 3px solid #eb2d2d;
+}
+
+.header .flex {
+	justify-content: space-between;
+}
+
+.logo {
+	width: 200px;
+	height: 80px;
+	transition: transform 0.2s ease;
+}
+
+.logo:hover {
+	transform: scale(1.05);
+}
+
+.navbar ul li a {
+	font-size: 26px;
+	padding: 0px 20px;
+	font-style: italic;
+	cursor: pointer;
+	display: block;
+	transition: transform 0.2s ease;
+}
+
+.navbar ul li a:hover {
+	transform: scale(1.05);
+}
+
+/* VENDA */
+.sale {
+	margin: 50px 0px;
+}
+
+/* SIDEBAR */
+.sale-box .sidebar {
+	width: 30%;
+}
+
+.price-filter {
+	margin-bottom: 40px;
+}
+
+.price-filter h2 {
+	font-size: 26px;
+	margin-bottom: 20px;
+}
+
+.price-bar {
+	position: relative;
+	margin-bottom: 50px;
+}
+
+.price-bar .bar-bg {
+	width: 100%;
+	height: 20px;
+	border: 1px solid #bbbbbb;
+	border-radius: 10px;
+	position: absolute;
+}
+
+.price-bar .bar-fill {
+	width: 30%;
+	height: 20px;
+	background: linear-gradient(to bottom, #f0f0f0, #bbbbbb);
+	border: 1px solid #bbbbbb;
+	border-radius: 10px;
+	position: absolute;
+}
+
+.price-bar .bar-pointer {
+	width: 7%;
+	height: 26px;
+	background: linear-gradient(to bottom, #f0f0f0, #bbbbbb);
+	border: 1px solid #6e6e6e;
+	border-radius: 8px;
+	position: absolute;
+	top: -3px;
+	left: 30%;
+	transform: translateX(-50%);
+	cursor: pointer;
+}
+
+.price-filter .flex {
+	justify-content: space-between;
+}
+
+.age-filter h2 {
+	font-size: 26px;
+	margin-bottom: 20px;
+}
+
+.age-filter span {
+	font-size: 20px;
+	margin-left: 12px;
+}
+
+.age-filter > .flex {
+	flex-flow: column wrap;
+	align-items: flex-start;
+}
+
+.age-inputs > .flex {
+	justify-content: flex-start;
+}
+
+.age-wrapper {
+	margin-bottom: 20px;
+}
+
+.age-wrapper input {
+	display: none;
+}
+
+.age-wrapper label {
+	display: inline-block;
+	position: relative;
+	width: 26px;
+	height: 26px;
+	border: 1px solid #b3b3b3;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.circle {
+	width: 10px;
+	height: 10px;
+	display: none;
+	border-radius: 5px;
+	background: #252525;
+	position: absolute;
+	left: 7px;
+	top: 7px;
+}
+
+.age-wrapper input[type="checkbox"]:checked + label > .circle {
+	display: block;
+}
+
+/* CARS-FOR-SALE */
+
+.sale .conteiner > .flex {
+	align-items: flex-start;
+	gap: 30px;
+}
+
+.sale-box .cars-for-sale {
+	width: 70%;
+}
+
+.cars-for-sale .flex {
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.car-box {
+	width: calc(95% / 3);
+	height: 100%;
+	margin-bottom: 40px;
+}
+
+.car-box:nth-of-type(7),
+.car-box:nth-of-type(8),
+.car-box:nth-of-type(9) {
+	margin-bottom: 0px;
+}
+
+.car-conteiner .flex {
+	flex-flow: column nowrap;
+	align-items: flex-start;
+}
+
+.car-img {
+	width: 100%;
+	min-height: 200px;
+	position: relative;
+}
+
+.car-img img {
+	width: 100%;
+	height: 100%;
+}
+
+.overlay {
+	width: 100%;
+	height: 100%;
+	background-color: #000000;
+	position: absolute;
+	opacity: 0.3;
+	transition: opacity 0.2s ease;
+	cursor: pointer;
+}
+
+.overlay:hover {
+	opacity: 0;
+}
+
+.car-description p:nth-of-type(1) {
+	font-size: 18px;
+	margin: 8px 0px;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.car-description p:nth-of-type(2) {
+	font-size: 14px;
+	margin-bottom: 8px;
+}
+
+/* CONTACT */
+
+.contact .conteiner:nth-of-type(2) {
+	max-width: 800px;
+}
+
+.w100 {
+	display: inline-block;
+	width: 100%;
+	padding: 10px 0px;
+}
+
+.w50 {
+	display: inline-block;
+	width: 50%;
+	margin-right: -4px;
+	padding: 10px 0px;
+}
+
+.contact .conteiner .w50:nth-of-type(2) {
+	padding-right: 10px;
+}
+
+.contact .conteiner .w50:nth-of-type(3) {
+	padding-left: 10px;
+}
+
+.contact .conteiner .w100:nth-of-type(1) {
+	padding-top: 0px;
+}
+
+.contact .conteiner input:not(input[type="submit"]) {
+	width: 100%;
+	line-height: 4rem;
+	padding-left: 10px;
+	border: 1px solid #dadada;
+	font-size: 18px;
+}
+
+.contact .conteiner input:not(input[type="submit"]):focus {
+	outline: none;
+	background-color: #fafafa;
+}
+
+.contact .conteiner textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #dadada;
+	height: 15rem;
+	font-size: 18px;
+	resize: none;
+}
+
+.contact .conteiner textarea:focus {
+	outline: none;
+	background-color: #fafafa;
+}
+
+.submit {
+	padding-top: 10px;
+}
+
+.contact .conteiner input[type="submit"] {
+	width: 30%;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+
+/* FOOTER */
+
+.footer {
+	width: 100%;
+	height: 100px;
+	background-color: #252525;
+	padding: 20px 0px;
+}
+
+.footer > .flex {
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer .conteiner .navbar a,
+.footer .conteiner .copyright p {
+	color: #ffffff;
+	font-size: 20px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1150px) {
+	.car-box {
+		width: calc(95% / 2);
+	}
+
+	.car-box:nth-of-type(7),
+	.car-box:nth-of-type(8) {
+		margin-bottom: 40px;
+	}
+
+	.car-img {
+		height: 200px;
+	}
+}
+
+@media screen and (max-width: 830px) {
+	/* HEADER */
+	.header {
+		height: 264px;
+	}
+
+	.header .flex {
+		flex-flow: column nowrap;
+	}
+
+	.logo {
+		margin: 15px;
+	}
+
+	.header .conteiner .navbar {
+		margin-bottom: 15px;
+	}
+
+	.navbar ul li a {
+		padding: 4px 20px;
+	}
+
+	/* SALE */
+	.sale .conteiner > .flex {
+		flex-flow: column nowrap;
+		align-items: center;
+		gap: 30px;
+	}
+
+	.sale-box > .sidebar {
+		width: 100%;
+		text-align: center;
+	}
+
+	.age-filter {
+		width: auto;
+		display: inline-block;
+	}
+
+	.sale-box > .cars-for-sale {
+		width: 100%;
+	}
+
+	.car-box {
+		width: 95%;
+		margin-bottom: 40px;
+	}
+
+	.car-box:nth-of-type(7),
+	.car-box:nth-of-type(8) {
+		margin-bottom: 40px;
+	}
+
+	.car-box:nth-of-type(9) {
+		margin-bottom: 0px;
+	}
+
+	.car-img {
+		height: auto;
+	}
+
+	.car-description p:nth-of-type(1) {
+		font-size: 30px;
+	}
+
+	.car-description p:nth-of-type(2) {
+		font-size: 22px;
+	}
+
+	/* CONTACT */
+	/* CONTACT */
+	.w50 {
+		width: 100%;
+	}
+
+	.contact .conteiner .w50:nth-of-type(2) {
+		padding-right: 0px;
+	}
+
+	.contact .conteiner .w50:nth-of-type(3) {
+		padding-left: 0px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	/* FOOTER */
+	.footer {
+		height: auto;
+		background-color: #252525;
+	}
+
+	.footer .flex {
+		flex-flow: column nowrap;
+	}
+
+	.footer .conteiner .navbar {
+		margin-bottom: 20px;
+	}
+}

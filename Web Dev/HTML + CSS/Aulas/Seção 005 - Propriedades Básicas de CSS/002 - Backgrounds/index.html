@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang=”pt-BR”>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Backgrounds</title>
+</head>
+<body>
+	<div class="center">
+		<h1 class="cap">5 - PROPRIEDADES BÁSICAS DE CSS</h1>
+
+		<h1 class="sec">2 - Backgrounds</h1>
+		<p>Há várias formas para definir uma cor no CSS. Diversos elementos podem ter suas cores editadas, como texto, background, bordas etc. Para modificar as cores podemos utilizar valores em:</p>
+		
+		<p><b>1) background-color:</b> é utilizada para definir a cor de fundo de um elemento.</p>
+
+		<p><b>Exemplo:</b></p>
+		<p class="bgc1">Elemento de parágrafo com a cor azul clara de fundo</p>
+		<br>
+
+		<p><b>2) background-image:</b> é utilizada para definir uma imagem como fundo de algum elemento. É necessário um atributo “url” para especificar qual será a imagem que ficará de fundo. Ainda, por padrão, a imagem é repetida no eixo horizontal e vertical, isto é, quando a imagem acaba, ela começa de novo no fundo. </p>
+
+		<p><b>Exemplo:</b></p>
+		<p class="bgc2">Elemento de parágrafo com imagem de fundo (tamanho de 480x270px).</p>
+		<br>
+
+		<p><b>3) background-repeat:</b> é utilizada para definir se a imagem irá se repetir ou não. É possível utilizar os valores:</p>
+
+		<div class="space1">
+			<p><b>3.1) repeat-x:</b> a imagem será repetida apenas na horizontal;</p>
+
+			<p><b>Exemplo:</b></p>
+			<p class="bgc3">Elemento de parágrafo com imagem sendo repetida apenas na horizontal.</p>
+			<br>
+
+			<p><b>3.2) repeat-y:</b> a imagem será repetida apenas na vertical;</p>
+
+			<p><b>Exemplo:</b></p>
+			<p class="bgc4">Elemento de parágrafo com imagem sendo repetida apenas na vertical.</p>
+			<br>
+
+			<p><b>3.3) no-repeat:</b> a imagem não será repetida;</p>
+
+			<p><b>Exemplo:</b></p>
+			<p class="bgc5">Elemento de parágrafo com imagem não sendo repetida.</p>
+			<br>
+		</div>
+		
+		<p><b>4) background-position:</b> altera a posição padrão do background. É possível utilizar diversos valores de medidas aqui, desde os padrões (top, bottom, top left, bottom right, center etc) até os mais complexos (cm, em, ch, %, etc).</p>
+
+		<p><b>Exemplo:</b></p>
+		<p class="bgc6">Elemento de parágrafo com imagem na posição 'top right"</p>
+		<br>
+
+		<p><b>5) background-attachment:</b> é utilizada para definir se a imagem ficará fixa ou não quando se rola o scroll do mouse.</p>
+
+		<p><b>Exemplo:</b></p>
+		<p>Olhe para o canto superior direito da tela. O valor definido foi "fixed, pois o valor "scroll" já é o valor padrão.</p>
+		<br>
+
+		<p><b>6) background:</b> é a shorthand property para as configurações de background.</p>
+
+		<p><b>Exemplo:</b></p>
+		<p class="bgc7">Elemento de parágrafo com imagem sendo estilizada por diversas propriedades em apenas uma linha + opacity.</p>
+
+		<br><br>
+		<div class="obs">
+			<p><b>OBS¹:</b> é possível alterar a cor de fundo de qualquer elemento, seja um parágrafo (&gt;p&gt;), um título (&gt;h1&gt;) ou toda a página (&lt;body&gt;) etc. </p>
+			<p><b>OBS²:</b> é possível alterar a opacidade de elementos com a declaração “opacity”; </p>
+			<p><b>OBS³:</b> na questão da posição do background, é possível colocar a horizontal ou vertical em qualquer sequência, isto é, tanto "top right" quanto "right top" trarão o mesmo resultado.</p>
+		</div><!--obs-->
+	</div>
+</body>
+</html> 

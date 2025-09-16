@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang=”pt-BR”>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Formatação de texto</title>
+</head>
+
+<body>
+	<div class="center">
+		<h1 class="cap">5 - PROPRIEDADES BÁSICAS DE CSS</h1>
+
+		<h1 class="sec">9 - Formatação de texto</h1>
+		<p>Sobre a formatação do texto no CSS, podemos definir diversas
+			propriedades, sendo elas relacionadas a cor, alinhamento, decoração,
+			transformação, espaçamento e fonte.</p>
+
+		<p><b>1) Propriedades de cor:</b></p>
+		<div class="space1">
+			<p><b>1.1) color:</b> utilizada para mudar a cor do texto,
+				compreende quaisquer valores de cor;</p>
+
+			<p><b>Exemplo:</b></p>
+			<p class="text1">Elemento de parágrafo com "color: red;"</p>
+			<br><br>
+
+			<p><b>1.2) background-color:</b></p>
+			<p><b>Exemplo:</b></p>
+			<p class="text2">Elemento de parágrafo com "background-color:
+				lightgrey;"</p>
+			<br><br>
+		</div>
+
+		<p><b>2) Propriedades de alinhamento:</b></p>
+		<div class="space1">
+			<p><b>2.1) text-align:</b> utilizada para definir o alinhamento
+				horizontal do texto segundo onde ele está presente. Compreende os
+				valores “middle”, “left”, “right” e “justify” (justificar
+				texto);</p>
+
+			<p><b>Exemplo:</b></p>
+			<p class="text3">Elemento de parágrafo com "text-align: right;".</p>
+			<br>
+
+			<p><b>2.2) vertical-align:</b> utilizada para definir o alinhamento
+				vertical do texto segundo onde ele está presente. Compreende os
+				valores “top”, “middle”, e “bottom”;</p>
+
+			<p><b>Exemplo:</b></p>
+			<p>Elemento de parágrafo com uma imagem em "vertical-align: middle;"
+				<img class="text4" src="images/landscape1.jpg">
+			</p>
+			<br>
+
+			<p><b>2.3) direction e unicode-bidi:</b> utilizada para colocar o
+				texto sendo escrito da direita para a esquerda e com as letras
+				invertidas. É provavelmente utilizado para escritas que precisem
+				começar da direita, como o Árabe. Para usar essas propriedades, o
+				direction deve ter o valor “rtl” e o Unicode-bidi o valor
+				“bidi-override”.</p>
+
+			<p><b>Exemplo:</b></p>
+			<p class="text5">Elemento de parágrafo com "direction: rtl;" e
+				"unicode-bidi: bidi-override;"</p>
+			<br>
+		</div>
+
+		<p><b>3) Propriedades de decoração:</b></p>
+		<div class="space1">
+			<p><b>3.1) text-decoration:</b> utilizada para colocar decorações no
+				texto. Compreende os valores “none”,“overline”, “line-through” e
+				“underline”;</p>
+
+			<p><b>Exemplo:</b></p>
+			<p class="text6">Elemento de parágrafo com "text-decoration:
+				overline;"</p>
+			<br>
+
+			<p><b>3.2) text-shadow:</b> utilizada para adicionar uma sombra
+				atrás do texto. Para definir seus valores, é necessário colocar
+				“text-shadow: tamanho tamanho desfoque cor”.</p>
+
+			<p><b>Exemplo:</b></p>
+			<p class="text7">Elemento de parágrafo com "text-shadow: 1px 1px
+				red;"</p>
+			<br>
+		</div>
+
+		<p><b>4) Propriedades de transformação:</b></p>
+		<div class="space1">
+			<p><b>4.1) text-transform:</b> utilizada para transformar as letras
+				do texto, podendo deixa-las em maiúsculas, minúsculas ou de forma
+				capitalizada (cada palavra começa com uma letra maiúscula).
+				Compreende os valores “uppercase”, “lowercase” e “capitalize”.</p>
+
+			<p><b>Exemplo:</b></p>
+			<p class="text8">Elemento de parágrafo com "text-transform:
+				capitalize;"</p>
+			<br>
+		</div>
+
+		<p><b>5) Propriedades de espaçamento:</b></p>
+		<div class="space1">
+			<p><b>5.1) text-indent:</b> utilizada para definir um recuo no
+				início do texto. Compreende valores de tamanho;</p>
+
+			<p><b>Exemplo:</b></p>
+			<p class="text9">Elemento de parágrafo com "text-indent: 15px"</p>
+			<br>
+
+			<p><b>5.2) letter-spacing:</b> utilizada para definir o espaço entre
+				as letras. Compreende valores de tamanho;</p>
+
+			<p><b>Exemplo:</b></p>
+			<p class="text10">Elemento de parágrafo com "letter-spacing:
+				5px;"</p>
+			<br>
+
+			<p><b>5.3) line-height:</b> utilizada para definir o espaço entre as
+				linhas. Compreende valores de tamanho;
+			</p>
+
+			<p><b>Exemplo:</b></p>
+			<p class="text11">Elemento de parágrafo com "line-height: 45px;"
+				LINE HEIGHT - LINE HEIGHT - LINE HEIGHT - LINE HEIGHT - LINE HEIGHT
+				- LINE HEIGHT - LINE HEIGHT - LINE HEIGHT - LINE HEIGHT - LINE
+				HEIGHT - LINE HEIGHT - LINE HEIGHT - LINE HEIGHT - LINE HEIGHT -
+				LINE HEIGHT - LINE HEIGHT - LINE HEIGHT - LINE HEIGHT - </p>
+			<br>
+
+			<p><b>5.4) word-spacing:</b> utilizada para definir o espaço entre
+				as linhas. Compreende valores de tamanho;
+			</p>
+
+			<p><b>Exemplo:</b></p>
+			<p class="text12">Elemento de parágrafo com "word-spacing:
+				15px;"</p>
+			<br>
+
+			<p><b>5.5) white-space:</b> utilizada para desabilitar a quebra
+				automática de texto, assim como desrespeitar os limites de tamanho
+				horitontal do elemento inserido (nowrap), para modificar um
+				elemento e permitir texto pré-formatado (pre) ou então para permitir
+				texto pré-formatado sem respeitar os múltiplos espaços (pre-line).</p>
+
+			<p><b>Exemplo do nowrap:</b></p>
+			<p class="text13">Elemento de parágrafo com "white-space: nowrap;" -
+			" Elemento de parágrafo com "white-space: nowrap;" -
+			" Elemento de parágrafo com "white-space: nowrap;" -
+			" Elemento de parágrafo com "white-space: nowrap;" -
+			" Elemento de parágrafo com "white-space: nowrap;" -
+			" </p>
+			<br>
+
+			<p><b>Exemplo do pre:</b></p>
+			<p class="text14">Elemento de pa       rágrafo com "pre" - Elemento de
+				parágrafo       com 
+				       "pre" -     Eleme  nto de parágrafo com "pre" - Elemento de
+				parágrafo com "pre" - Ele
+				
+				
+				
+				ment       o de parágrafo com "pre" - Elemento de
+				parágrafo com     
+				 "pre"</p>
+			<br>
+
+			<p><b>Exemplo do pre-line:</b></p>
+			<p class="text15">Elemento de pa       rágrafo com "pre" - Elemento de
+				parágrafo       com 
+				       "pre" -     Eleme  nto de parágrafo com "pre" - Elemento de
+				parágrafo com "pre" - Ele
+				
+				
+				
+				ment       o de parágrafo com "pre" - Elemento de
+				parágrafo com     
+				 "pre"</p>
+
+			<div class="obs">
+				<p><b>OBS¹:</b> também é possível utilizar a propriedade de
+					sombra em outros elementros, e para isso se utiliza a
+					propriedade "box-shadow".</p>
+			</div>
+			<!--obs-->
+
+		</div>
+	</div>
+</body>
+
+</html>

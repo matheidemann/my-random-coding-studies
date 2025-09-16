@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
+* {
+	font-family: "Open Sans", sans-serif;
+}
+
+.conteiner {
+	max-width: 1100px;
+	margin: 0px auto;
+	padding: 0px 20px;
+	position: relative;
+}
+
+.flex {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	gap: 80px;
+}
+
+.card {
+	display: inline-block;
+	background-color: #ffffff;
+	padding: 10px;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.card {
+	transition: transform 0.15s ease;
+}
+
+.card:hover {
+	transform: scale(0.97);
+}
+
+/* MARGIN PADDING */
+
+.m-y1 {
+	margin-bottom: 1rem;
+}
+
+.m-y4 {
+	margin-bottom: 4rem;
+}
+
+.p-y4 {
+	padding: 4rem 0;
+}

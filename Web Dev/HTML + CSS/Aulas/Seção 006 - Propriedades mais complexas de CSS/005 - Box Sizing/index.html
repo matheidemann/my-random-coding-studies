@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang=”pt-BR”>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Box Sizing</title>
+</head>
+<body>
+	<div class="center">
+		<h1 class="cap">6 - PROPRIEDADES MAIS COMPLEXAS DE CSS</h1>
+
+		<h1 class="sec">5 - Box Sizing</h1>
+		<p>A propriedade box-sizing permite que seja tanto o espaçamento interno quanto a borda seja incluída sem desrespeitar o tamanho definido no elemento.</p>
+		<p>A largura e altura dos elementos são calculadas da seguinte forma por padrão: width + height + padding + border = tamanho total.</p>
+		<p>Ou seja, por padrão, o padding e a border serão somadas com o tamanho total do elemento, e portanto, de nada adianta querer um elemento de 100x100px, caso seu padding seja de 50px, pois o elemento passará a ter 150x150px. O nome deste tipo de box-sizing é "content-box", o valor padrão para todos os elementos.</p>
+		<p>Agora, com o valor "border-box" a largura e altura dos elementos serão calculadas da seguinte forma: width + height = tamanho total (não irã somar o tamanho do padding e da border).</p>
+		
+		<p><b>Exemplo com o "box-sizing: content-box;" (valor padrão de todos os elementos):</b></p>
+		<p class="box1">Quadrado com 600x400px de tamanho + 100px de padding para cada lado + 50px de border para cada lado (tamanho total de 900px de largura e 700px de altura).</p>
+
+		<p><b>Exemplo com o "box-sizing: border-box;":</b></p>
+		<p class="box2">Quadrado com 600x400px de tamanho + 100px de padding para cada lado + 50px de border para cada lado (tamanho total de 900px de largura).</p>
+
+		<p><b>Exemplo de um quadrado de 600x400px e outro com 300x400px, ambos sem propriedades de padding e border:</b></p>
+		<p class="box3">Quadrado com 600x400px de tamanho, sem padding ou border.</p>
+		<p class="box4">Quadrado com 300x400px de tamanho, sem padding ou border.</p>
+		<p class="box5">TAMANHO TOTAL DOS DOIS QUADRADOS SOMADOS: 900PX DE LARGURA E 700PX DE ALTURA.</p>
+		<p class="box6">Quadrado com 300x400px de tamanho, sem padding ou border.</p>
+	</div>
+	
+</body>
+</html> 

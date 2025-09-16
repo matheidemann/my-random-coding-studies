@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang=”pt-BR”>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Estilização de listas</title>
+</head>
+<body>
+	<div class="center">
+		<h1 class="cap">5 - PROPRIEDADES BÁSICAS DE CSS</h1>
+
+		<h1 class="sec">13 - Estilização de listas</h1>
+		<p>Há dois tipos de listas no HTML: unordered (listas marcadas com símbolos/imagens) e ordered (listas marcadas com números ou letras). Com o CSS é possível: colocar diferentes marcadores para listas ordenadas e não ordenadas, colocar uma imagem como marcador, adicionar um background para cada lista e itens da lista.</p>
+
+		<p><b>1) list-style-type:</b> define qual será o marcador da lista. Aceita os valores “none” para quaisquer listas, “circle”, “disc” e “square” para listas não ordenadas e “decimal”, “decimal-leading-zero”, “upper-roman”, “lower-roman”, “upper-alpha” e “lower-alpha” para listas ordenadas (há outros valores, porém dificilmente serão utilizados alguma vez, como “hiragana” ou “armenian”);</p>
+
+		<p><b>Exemplo de lista com "list-style-type: square;":</b></p>
+			<ul class="list1">
+					<li>Item 1</li>
+					<li>Item 2</li>
+					<li>Item 3</li>
+			</ul>
+		<br>
+
+		<p><b>2) list-style-image:</b> define qual será o marcador da lista. Aceita os valores “none” para quaisquer listas, “circle”, “disc” e “square” para listas não ordenadas e “decimal”, “decimal-leading-zero”, “upper-roman”, “lower-roman”, “upper-alpha” e “lower-alpha” para listas ordenadas (há outros valores, porém dificilmente serão utilizados alguma vez, como “hiragana” ou “armenian”);</p>
+
+		<p><b>Exemplo de lista com "list-style-image;":</b></p>
+			<ul class="list2">
+					<li>Item 1</li>
+					<li>Item 2</li>
+					<li>Item 3</li>
+			</ul>
+		<br>
+
+		<p><b>3) list-style-position:</b> define se os marcadores ficarão dentro ou fora dos itens da lista, isto é, caso os itens estejam para fora dos itens da lista, logo eles ficarão fora de uma “border”. Aceita os valores “inside” e “outside”;</p>
+
+		<p><b>Exemplo de lista com "list-style-position: outside;":</b></p>
+			<ul class="list3">
+					<li>Item 1</li>
+					<li>Item 2</li>
+					<li>Item 3</li>
+			</ul>
+		<br>
+		<p><b>Exemplo de lista com "list-style-position: inside;":</b></p>
+			<ul class="list4">
+					<li>Item 1</li>
+					<li>Item 2</li>
+					<li>Item 3</li>
+			</ul>
+		<br>
+
+		<p><b>4) list-style:</b> é a shothand property para a estilização da lista.</p>
+
+		<p><b>Exemplo de lista com "list-style: upper-roman outside;":</b></p>
+			<ul class="list5">
+					<li>Item 1</li>
+					<li>Item 2</li>
+					<li>Item 3</li>
+			</ul>
+		<br>
+
+		<div class="obs">
+			<p><b>OBS¹:</b> as listas já vem com margin e padding definidos, portanto, para remove-los basta adicionar para a lista desejada as propriedades “margin:0px; padding: 0px;” no CSS. Obviamenta também é necessária a “list-style-type” definida como “none” para remover até mesmo os marcadores.</p>
+			<p><b>OBS¹:</b> obviamente é possível personalizar as listas e seus itens com diversas outras propriedades (de texto, fonte, cor etc), porém, as apresentadas aqui são especificamente para listas. O CSS oferece uma grande variedade para estilização, portanto, é sempre necessário manter em mente todas as propriedades disponíveis para coisas consideradas “gerais”.</p>
+		</div><!--obs-->
+	</div>
+</body>
+</html> 

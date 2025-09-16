@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+body {
+	color: #f8f8f8;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 0.1rem;
+	position: relative;
+}
+
+.background {
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url(../images/mountains.jpg);
+	background-size: cover;
+	background-position: center;
+	z-index: 1;
+}
+
+.flex {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+}
+
+.center {
+	max-width: 1280px;
+	margin: 0px auto;
+}
+
+/* STYLE */
+
+.navbar {
+	display: block;
+	width: 100%;
+	height: 80px;
+	background-color: rgba(0, 0, 0, 0.685);
+	padding: 0px 20px;
+	position: relative;
+	z-index: 2;
+}
+
+.navbar-header h1 {
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	transition: 0.2s;
+	cursor: pointer;
+}
+
+.navbar-header h1:hover {
+	color: #dddddd;
+}
+
+.navbar-toggle {
+	display: none;
+	background-color: transparent;
+}
+
+.navbar-toggle i {
+	font-size: 2rem;
+	transition: 0.4s;
+	color: #f8f8f8;
+	cursor: pointer;
+}
+
+.navbar-toggle i:hover {
+	transform: rotate(-90deg);
+}
+
+.links {
+	transition: 0.2s;
+	overflow: hidden;
+}
+
+.links li a {
+	font-size: 1.2rem;
+	padding: 2px 0px;
+	margin: 0px 10px;
+	color: #f8f8f8;
+	font-weight: 200;
+	cursor: pointer;
+	transition: 0.2s;
+	border-bottom: 1px solid transparent;
+}
+
+.links li a:hover {
+	border-bottom: 1px solid #f8f8f8;
+}
+
+.center .flex:nth-of-type(2) {
+	justify-content: space-evenly;
+}
+
+.social-media {
+	width: 222px;
+}
+
+.social-media li i {
+	font-size: 1.6rem;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.social-media li i:hover {
+	color: #b9b9b9;
+	transform: rotate(15deg) scale(1.2);
+}
+
+/* JS CLASS */
+
+.links-show {
+	height: 301px !important;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 960px) {
+	.social-media {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 760px) {
+	.navbar {
+		padding: 0;
+		height: auto;
+	}
+
+	.navbar-toggle {
+		display: block;
+	}
+
+	.navbar-header {
+		width: 100%;
+		padding: 20px;
+	}
+
+	.navbar > .flex {
+		flex-flow: column nowrap !important;
+	}
+
+	.center > .links {
+		flex-flow: column nowrap;
+		width: 100%;
+		height: 0px;
+		align-items: flex-start;
+	}
+
+	.links li {
+		display: inline-block;
+		width: 100%;
+	}
+
+	.links li a {
+		display: inline-block;
+		width: 100%;
+		margin: 0px;
+		padding: 20px;
+	}
+
+	.links li a:hover {
+		border-bottom: 1px solid transparent;
+		background-color: #f8f8f8;
+		color: #181818;
+	}
+}

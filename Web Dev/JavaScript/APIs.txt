@@ -1,0 +1,12 @@
+Node
+
+Docgen = Create simple API docs
+Heroku = Upload API to cloud
+Cloudnary = Upload images to cloud
+SwaggerUI = Create an usable API GUI
+Nodemailer = Used to send emaila
+All keys generator = Used to generate a JWT Secret (Encryption key - 256bit)
+Crypto = Generate random buffer
+Ethereal Email
+SendGrid
+Axios

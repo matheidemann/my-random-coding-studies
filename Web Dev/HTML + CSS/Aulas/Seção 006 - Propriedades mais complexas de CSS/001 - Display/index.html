@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang=”pt-BR”>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Display</title>
+</head>
+<body>
+	<div class="center">
+		<h1 class="cap">6 - PROPRIEDADES MAIS COMPLEXAS DE CSS</h1>
+
+		<h1 class="sec">1 - Display</h1>
+		<p>A propriedade “display” especifica se ou como um elemento é mostrado.</p>
+		<p>Todo elemento de HTML possui um valor padrão de display, dependendo do elemento que é, sendo os mais comuns o “block” e o “inline”.</p>
+
+		<p><b>1) block:</b> um elemento em bloco sempre utiliza todo o espaço disponível de um lado ao outro e adiciona uma quebra de linha automática. Alguns elementos com display em block são: &lt;div&gt;, &lt;h1&gt;, &lt;p&gt;, &lt;form&gt;, &lt;header&gt;, &lt;footer&gt; e &lt;section&gt;;</p>
+
+		<p><b>Exemplo (perceba que a cor de fundo fica até o limite horizontal da page):</b></p>
+		<h1 class="block1">Exemplo de elemento H1 com "display: block"</h1>
+		<p class="block2">Exemplo de elemento P com "display: block"</p>
+		<br>
+
+		<p><b>2) inline:</b> um elemento em linha não utiliza todo o espaço disponível de um lado ao outro e não também não adiciona nenhuma quebra de linha, isto é, eles utilizam apenas o espaço necessário para o seu conteúdo, e assim, portanto, outros elementos colocados logo após ele estarão do seu lado, e não da linha de baixo.</p>
+		<p>Ainda, elementos inline não podem ter sua altura e largura modificadas, elas sempre se adequarão automaticamente ao conteúdo.</p>
+		<p>As margens e espaçamento interno (margin e padding) de elementos inline não respeita o espaço de outros elementos na page, ou seja, caso um elemento inline possua 100px de espaçamento interno, este espaçamento interno ficará sobre outros elementos, bloqueando-os visualmente.</p>
+		<p>Alguns elementos com display em inline são: &lt;span&gt;, &lt;a&gt; e &lt;img&gt;</p>
+
+		<p><b>Exemplo (perceba que a cor de fundo fica até o limite horizontal do elemento em si, e não da page):</b></p>
+		<span class="block1">Exemplo de elemento SPAN com "display: block"</span>
+		<a class="block2">Exemplo de elemento A com "display: block"</a>
+		<br><br><br>
+
+		<p><b>3) inline-block:</b> um elemento de bloco em linha é uma junção do "block" e do "inline". Basicamente, o inline-block permite que blocos possam ficar de forma inline.
+		<p>Ele difere do inline, pois é possível modificar a largura e altura dos elementos, e porque as margens e espaçamento interno são respeitados pelo resto dos elementos, isto é, estas propriedades não ficarão visualmente sobre outros elementos, o resto do conteúdo se adequará em volta do elemento de bloco de linha.</p> 
+		<p>Ainda, se difere do elemento em bloco pois não adiciona quebras de linha automáticas, portanto, neste quesito ele tem exatamente o mesmo comportamento de elementos inline.</p>
+
+		<p><b>Exemplo (perceba que a cor de fundo fica até o limite horizontal do elemento em si por conta da altura e largura definida, e ainda, mesmo sendo elementos em blocos, eles ficam lado a lado):</b></p>
+		
+		<p class="block3">Exemplo de elemento P com "display: inline-block"</p>
+		<span class="block3">Exemplo de elemento SPAN com "display: inline-block"</span>
+		<p class="block3">Exemplo de elemento P com "display: inline-block"</p>
+		<span class="block3">Exemplo de elemento SPAN com "display: inline-block"</span><br><br><br><br>
+
+		<p class="nomarg"><b>3) none:</b> um elemento “none” (nada) é aquele que não ocupa espaço na tela e que é invisível;</p>
+		<br>
+
+		<p><b>4) visibility:hidden:</b> um elemento “hidden” (escondido) é aquele que ocupa espaço na tela e que é invisível;</p>
+		<br>
+		
+		<div class="obs">
+			<p><b>OBS¹:</b> o “none“ e “hidden” são comumente usados em JavaScript, para esconder e mostrar elementos sem a necessidade de os excluir e recriar.</p>
+		</div><!--obs-->
+
+
+	</div>
+	
+
+</body>
+</html> 

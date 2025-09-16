@@ -1,0 +1,264 @@
+div.center {
+    width        : 1280px;
+    margin       : 0px auto;
+    font-family  : "Arial";
+    margin-bottom: 20px;
+}
+
+.cap {
+    background: red;
+    color     : white;
+    padding   : 5px;
+}
+
+.sec {
+    background: black;
+    color     : white;
+    padding   : 5px;
+}
+
+div.space1 {
+    margin-left: 30px;
+}
+
+div.space2 {
+    margin-left: 30px;
+}
+
+.marginb {
+    margin-bottom: 30px;
+}
+
+
+/* GERAL */
+
+
+div.box0,
+div.box1,
+div.box2,
+div.box3,
+div.box4,
+div.box5,
+div.box6,
+div.box7,
+div.box8,
+div.box9,
+div.box10,
+div.box11,
+div.box12,
+div.box13,
+div.box14,
+div.box15 {
+    width        : 100px;
+    height       : 100px;
+    margin-bottom: 30px;
+}
+
+div.box0:hover,
+div.box1:hover,
+div.box2:hover,
+div.box3:hover,
+div.box4:hover,
+div.box5:hover,
+div.box6:hover,
+div.box7:hover,
+div.box8:hover {
+    width           : 300px;
+    height          : 150px;
+    background-color: red;
+}
+
+
+/* BOX TRANSIÇÕES */
+
+
+div.box0 {
+    background-color: rgb(87, 67, 199);
+    transition      : width 2s ease 1s, height 3s linear 0.5s, background-color 1.5s ease;
+}
+
+div.box1 {
+    background-color   : aqua;
+    transition-duration: 2s;
+}
+
+div.box2 {
+    background-color   : yellow;
+    transition-duration: 2s;
+    transition-delay   : 1s;
+}
+
+div.box3 {
+    background-color   : green;
+    transition-duration: 2s;
+    transition-delay   : 1s;
+    transition-property: width;
+}
+
+div.box4 {
+    background-color          : blue;
+    transition-duration       : 3s;
+    transition-timing-function: ease;
+}
+
+div.box5 {
+    background-color          : gray;
+    transition-duration       : 3s;
+    transition-timing-function: linear;
+}
+
+div.box6 {
+    background-color          : orange;
+    transition-duration       : 3s;
+    transition-timing-function: ease-in;
+}
+
+div.box7 {
+    background-color          : lightblue;
+    transition-duration       : 3s;
+    transition-timing-function: ease-out;
+}
+
+div.box8 {
+    background-color          : lightgreen;
+    transition-duration       : 3s;
+    transition-timing-function: ease-in-out;
+}
+
+
+/* BOX ANIMAÇÕES */
+
+
+div.box9 {
+    background-color: rgb(87, 67, 199);
+    position        : relative;
+    animation       : animacao1 4s linear 1s infinite alternate;
+}
+
+div.box10 {
+    background-color  : aqua;
+    animation         : animacao2;
+    animation-duration: 2s;
+}
+
+div.box11 {
+    background-color  : yellow;
+    animation         : animacao3;
+    animation-duration: 2s;
+    animation-delay   : 1s;
+}
+
+div.box12 {
+    background-color         : green;
+    animation                : animacao4;
+    animation-duration       : 2s;
+    animation-delay          : 1s;
+    animation-iteration-count: infinite;
+}
+
+div.box13 {
+    background-color         : blue;
+    animation                : animacao5;
+    animation-duration       : 2s;
+    animation-delay          : 1s;
+    animation-iteration-count: infinite;
+    animation-direction      : alternate;
+}
+
+div.box14 {
+    background-color         : gray;
+    animation                : animacao6;
+    animation-duration       : 2s;
+    animation-delay          : 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode      : forwards;
+}
+
+div.box15 {
+    animation : animacao7 5s ease 1s infinite alternate;
+    position  : relative;
+    box-sizing: border-box;
+}
+
+
+/* ANIMAÇÕES KEYFRAMES */
+
+
+@keyframes animacao1 {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left            : 100px;
+        background-color: black;
+    }
+}
+
+@keyframes animacao2 {
+    from {}
+
+    to {
+        background-color: black;
+    }
+}
+
+@keyframes animacao3 {
+    from {}
+
+    to {
+        background-color: rgb(168, 168, 168);
+    }
+}
+
+@keyframes animacao4 {
+    from {}
+
+    to {
+        background-color: rgb(255, 0, 212);
+    }
+}
+
+@keyframes animacao5 {
+    from {}
+
+    to {
+        background-color: rgb(194, 27, 186);
+    }
+}
+
+@keyframes animacao6 {
+    from {}
+
+    to {
+        background-color: rgb(255, 0, 0);
+    }
+}
+
+
+/* KEYFRAMES */
+
+
+@keyframes animacao7 {
+    0% {
+        background-color: rgb(255, 217, 0);
+        left            : 0px;
+    }
+
+    25% {
+        background-color: rgb(0, 255, 34);
+        border          : 20px groove black;
+        left            : 20px;
+    }
+
+    90% {
+        background-color: rgb(0, 255, 255);
+        border          : none;
+        left            : 100px;
+    }
+
+    100% {
+        background-color: rgb(0, 0, 0);
+        left            : 0px;
+    }
+}

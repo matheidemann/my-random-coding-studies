@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang=”pt-BR”>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Bordas</title>
+</head>
+<body>
+	<div class="center">
+		<h1 class="cap">5 - PROPRIEDADES BÁSICAS DE CSS</h1>
+
+		<h1 class="sec">3 - Bordas</h1>
+		<p>É possível modificar diversos aspectos da propriedade “border”, como estilo, tamanho e cor.</p>
+
+		<p><b>1) border-width:</b> é utilizada para definir a grossura da borda. Esta propriedade aceita diversas medidas diferentes (px, pt, cm, em, etc), e também possui algumas padrões como thin (fina), medium (média) e thick (grossa). A grossura padrão é de 1px.</p>
+
+		<p><b>Exemplo:</b></p>
+		<p class="border1">Elemento de parágrafo com uma borda de 15px.</p>
+		<br>
+
+		<p><b>2) border-style:</b> é utilizada para definir o estilo da borda. Há diversos estilos de borda, sendo eles: dotted, dashed, solid, double, groove, ridge, inset, outset, none e hidden. O estilo padrão é o solid.</p>
+
+		<p><b>Exemplo:</b></p>
+		<p class="border2">Elemento de parágrafo com uma borda no estilo "dotted".</p>
+		<br>
+
+		<p><b>3) border-color:</b> é utilizada para definir a cor da borda. Todos os valores de cor são aceitos aqui (rgb, rgba, hex, hsl, hsla e name). A cor padrão da borda é preto.</p>
+
+		<p><b>Exemplo:</b></p>
+		<p class="border3">Elemento de parágrafo com uma borda de cor vermelha.</p>
+		<br>
+
+		<p><b>4) border:</b> é a shorthand property para as configurações de borda.</p>
+		<p><b>Exemplo:</b></p>
+		<p class="border4">Elemento de parágrafo com uma borda de 20px, verde e no estilo "groove".</p>
+		<br>
+
+		<p><b>5) border-radius:</b> é utilizada para deixar as bordas mais redondas. É algo que não vem por padrão, e também não pode ser colocada na mesma linha dos valores da shorthand property “border”.</p>
+
+		<p><b>Exemplo:</b></p>
+		<p class="border5">Elemento de parágrafo com o raio da borda em 25px.</p><br>
+
+		<p><b>6) border-image:</b> é utilizada para definir o estilo da borda com uma imagem.</p>
+
+		<p><b>Exemplo:</b></p>
+		<p class="border6">Elemento de parágrafo com borda de imagem em forma "round" com 30 de slice.</p>
+
+		<p class="border7">Elemento de parágrafo com borda de imagem em forma "round" com 15 de slice.</p>
+		<p class="border8">Elemento de parágrafo com borda de imagem em forma "stretch" com 30  de slice.</p>
+		<p class="border9">Elemento de parágrafo com borda de imagem em forma "stretch" com 15  de slice.</p>
+
+		<br>
+		<div class="obs">
+			<p><b>OBS¹:</b> definir apenas a grossura e cor da borda não funciona, isto é, precisa ser definido pelo menos o estilo da borda para que ela seja visível;</p>
+			<p><b>OBS²:</b> é possível definir apenas um lado da borda para ser arredondado, e para isso basta colocar a propriedade e os valores "border-radius: superior-esquerdo superior-direito inferior-direito inferior-esquerdo";</p>
+			<p><b>OBS³:</b> é possível colocar uma barra "/" para dois valores do border-radius, podendo criar bordas elípticas, por exemplo "border-radius: 50px / 15px;"</p>
+		</div><!--obs-->
+	</div>
+</body>
+</html> 

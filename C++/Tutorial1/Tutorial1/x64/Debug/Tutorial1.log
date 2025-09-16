@@ -1,0 +1,7 @@
+﻿  Actor.cpp
+  Object.cpp
+  Pawn.cpp
+  Source.cpp
+C:\Users\sysadmin\Documents\Programming\C++\Tutorial1\Tutorial1\Source.cpp(341,17): warning C4305: 'initializing': truncation from 'double' to 'float'
+  Generating Code...
+  Tutorial1.vcxproj -> C:\Users\sysadmin\Documents\Programming\C++\Tutorial1\x64\Debug\Tutorial1.exe

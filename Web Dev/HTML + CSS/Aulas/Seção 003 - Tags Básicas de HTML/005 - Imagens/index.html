@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang=”pt-BR”>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Imagens</title>
+</head>
+<body>
+	<div class="center">
+		<h1 class="cap">3 - TAGS BÁSICAS DE HTML</h1>
+		
+		<h1 class="sec">5 - Imagens</h1>
+		<p>As imagens são definidas pela tag &lt;img&gt;, junto de seus atributos internos, como “src”, “width” e “height”. A imagem pode ser colocada com uma URL relativa ou absoluta, isto é, pode-se utilizar uma imagem que está na pasta do documento em HTML ou na web.</p>
+
+		<p><b>1) &lt;img&gt;:</b> é a tag base para inserir uma imagem.</p>
+		<div class="space1">
+			<p><b>1.1) src</b> é o source (fonte) da imagem, isto é, o nome da sua imagem com sua extensão ou então o link da web onde a foto está hospedada.</p>
+
+			<p><b>1.2) alt</b> caso a imagem não possa ser mostrada por qualquer motivo, o valor (texto) definido neste atributo será mostrado.</p>
+
+			<p><b>1.3) title</b> quando o mouse ficar parado em cima do elemento (neste caso, uma imagem) será mostrada uma caixa de texto com o valor (texto) definido neste atributo.</p>
+
+			<p><b>1.4) width</b> é a largura da imagem.</p>
+
+			<p><b>1.5) height</b> é a altura da imagem.</p>
+		</div>
+		
+		<br>
+		<p><b>Exemplo com uma imagem de tamanho 480x270px:</b></p>
+		<p>Imagem relativa sem nenhuma configuração de seus atributos internos.</p>
+		<img src="images\landscape1.jpg">
+
+		<br><br>
+		<p>Imagem absoluta sem nenhuma configuração de seus atributos internos.</p>
+		<img src="https://www.osmais.com/wallpapers/201210/paisagem-maravilhosa-wallpaper-1280x720.jpg">
+
+		<br><br>
+		<p>Imagem relativa com atributos de width, alt, title, width e height.</p>
+		<img src="images\landscape1.jpg" alt="Foto de uma Paisagem" title="Paisagem" width="500px" height="500px">
+
+		<br><br>
+		<div class="obs">
+			<p><b>OBS¹:</b> caso seja definido apenas um atributo de tamanho (largura ou altura), a imagem se ajustará automaticamente para não causar distorções na imagem;</p>
+			<p><b>OBS²:</b> a tag de &lt;img&gt; não precisa de uma tag fechando-a, como &lt;/img&gt;.</p>
+		</div><!--div - obs-->
+	</div>
+</body>
+</html> 

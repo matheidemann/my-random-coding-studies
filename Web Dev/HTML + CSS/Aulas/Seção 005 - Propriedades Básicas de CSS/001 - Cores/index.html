@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang=”pt-BR”>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Cores</title>
+</head>
+<body>
+	<div class="center">
+		<h1 class="cap">5 - PROPRIEDADES BÁSICAS DE CSS</h1>
+
+		<h1 class="sec">1 - Cores</h1>
+		<p>Há várias formas para definir uma cor no CSS. Diversos elementos podem ter suas cores editadas, como texto, background, bordas etc. Para modificar as cores podemos utilizar valores em:</p>
+		<div class="cores">
+			<p><b>1) RGB:</b> rgb(50,0,0)</p>
+			<p><b>2) RGBA:</b> rgba(50,0,0)</p>
+			<p><b>3) HEX:</b> #d261ff</p>
+			<p><b>4) HSL:</b> hsl(200,100%,50%)</p>
+			<p><b>5) HSLA:</b> hsla(66,100%,69%,0.55)</p>
+			<p><b>6) Nome:</b> lightgreen</p>
+		</div><br>
+
+		<p>Além de utilizar cores simples, é possível utilizar gradientes lineares ou radiais:</p>
+
+		<p><b>1) Gradiente linear:</b> faz com que o elemento tenha uma cor gradiente de forma linear, isto é, vai para baixo, direita, esquerda, para cima ou na diagonal:</p>
+		<p><b>Exemplos:</b></p>
+		<div class="linear">
+			<p>background: linear-gradient(red, yellow);</p>
+			<p>background: linear-gradient(to right, green, blue);</p>
+			<p>background: linear-gradient(to bottom left, green, blue);</p>
+			<p>background: linear-gradient(red, yellow, blue, purple);</p>
+			<p>background: background: linear-gradient(70deg, rgb(255,153,153), rgb(0,153,0));</p>
+		</div><br>
+		
+		<p><b>2) Gradiente radial:</b> faz com que o elemento tenha uma cor gradiente de forma radial, isto é, vai do centro para fora:</p>
+		<p><b>Exemplos:</b></p>
+		<div class="radial">
+			<p>background: radial-gradient(red, yellow);</p>
+			<p>background: radial-gradient(green, blue);</p>
+			<p>background: radial-gradient(red, yellow, blue, purple);</p>
+			<p>background: radial-gradient(rgb(255,153,153), rgb(0,153,0));</p>
+		</div>
+
+		
+
+		
+
+		<br>
+		<div class="obs">
+			<p><b>OBS¹:</b> não há uma declaration específica para o texto, como por exemplo “font-color”. O correto, para modificar a cor do texto, é apenas escrever “color”. Porém, outros elementos possuem certas declarations específicas, como “background-color” e “border-color”.</p>
+		</div><!--obs-->
+	</div>
+</body>
+</html> 

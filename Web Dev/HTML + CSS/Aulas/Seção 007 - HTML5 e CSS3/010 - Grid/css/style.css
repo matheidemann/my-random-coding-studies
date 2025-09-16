@@ -1,0 +1,239 @@
+* {
+	font-family: "Arial";
+}
+
+.center {
+	max-width: 1280px;
+	margin: 0px auto;
+}
+.cap {
+	background: red;
+	color: white;
+	padding: 5px;
+}
+
+.sec {
+	background: black;
+	color: white;
+	padding: 5px;
+}
+
+.space1 {
+	margin-left: 30px;
+}
+
+h1.title {
+	font-size: 24 px;
+	background-color: black;
+	width: 100%;
+	color: white;
+}
+
+.center > img {
+	display: block;
+	margin: 30px 0px 60px 0px;
+}
+
+.pre {
+	white-space: pre;
+}
+
+/* GRIDS DEFAULT */
+
+.conteiner-1,
+.conteiner-2,
+.conteiner-3,
+.conteiner-4,
+.conteiner-5,
+.conteiner-6,
+.conteiner-7,
+.conteiner-8,
+.conteiner-9,
+.conteiner-10,
+.conteiner-11,
+.conteiner-12,
+.conteiner-13 {
+	display: grid;
+	margin-bottom: 60px;
+}
+
+.conteiner-1 > div,
+.conteiner-2 > div,
+.conteiner-3 > div,
+.conteiner-4 > div,
+.conteiner-7 > div,
+.conteiner-8 > div,
+.conteiner-13 > div {
+	background-color: lightcoral;
+	border: 1px solid black;
+	min-height: 150px;
+}
+
+.conteiner-5,
+.conteiner-6,
+.conteiner-9,
+.conteiner-10,
+.conteiner-11,
+.conteiner-12 {
+	width: 100%;
+	height: 400px;
+}
+
+.conteiner-5 > div,
+.conteiner-6 > div,
+.conteiner-9 > div,
+.conteiner-10 > div,
+.conteiner-11 > div,
+.conteiner-12 > div {
+	background-color: lightcoral;
+	border: 1px solid black;
+	height: 60%;
+	width: 60%;
+}
+
+/* GRIDS */
+
+.conteiner-1 {
+	grid-template-columns: auto 50% auto;
+}
+
+.conteiner-2 {
+	grid-template-columns: 10% 60% 30%;
+	grid-template-rows: 80px 40px auto;
+}
+
+.conteiner-3 {
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto auto;
+	background-color: grey;
+	row-gap: 80px;
+}
+
+.conteiner-4 {
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto auto;
+	background-color: grey;
+	column-gap: 80px;
+}
+
+.conteiner-5 {
+	grid-template-columns: 50px 50px 50px;
+	grid-template-rows: 50px 50px 50px;
+	background-color: grey;
+	justify-content: center;
+}
+
+.conteiner-6 {
+	grid-template-columns: 50px 50px 50px;
+	grid-template-rows: 50px 50px 50px;
+	background-color: grey;
+	align-content: center;
+}
+
+.conteiner-7 {
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto auto;
+	background-color: grey;
+}
+
+.conteiner-7 div:nth-of-type(1) {
+	grid-column: 1 / 4;
+	background-color: lightblue;
+}
+
+.conteiner-7 div:nth-of-type(9) {
+	grid-column: 2 / 4;
+	background-color: lightblue;
+}
+
+.conteiner-8 {
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto auto;
+	background-color: grey;
+}
+
+.conteiner-8 div:nth-of-type(1) {
+	grid-row: 1 / 5;
+	background-color: lightblue;
+}
+
+.conteiner-9 {
+	grid-template-columns: 100px 100px 100px;
+	grid-template-rows: 100px 100px 100px;
+	background-color: grey;
+	justify-items: end;
+}
+
+.conteiner-10 {
+	grid-template-columns: 100px 100px 100px;
+	grid-template-rows: 100px 100px 100px;
+	background-color: grey;
+	align-items: end;
+}
+
+.conteiner-11 {
+	grid-template-columns: 100px 100px 100px;
+	grid-template-rows: 100px 100px 100px;
+	background-color: grey;
+}
+
+.conteiner-11 div:nth-of-type(1) {
+	justify-self: end;
+}
+
+.conteiner-12 {
+	grid-template-columns: 100px 100px 100px;
+	grid-template-rows: 100px 100px 100px;
+	background-color: grey;
+}
+
+.conteiner-12 div:nth-of-type(1) {
+	align-self: end;
+}
+
+.conteiner-3:hover,
+.conteiner-4:hover {
+	gap: 0px;
+}
+
+.conteiner-5:hover {
+	justify-content: start;
+}
+
+.conteiner-6:hover {
+	align-content: start;
+}
+
+.conteiner-9:hover {
+	justify-items: start;
+}
+
+.conteiner-10:hover {
+	align-items: start;
+}
+
+.conteiner-11 div:nth-of-type(1):hover {
+	justify-self: start;
+}
+
+.conteiner-12 div:nth-of-type(1):hover {
+	align-self: start;
+}
+
+.conteiner-13 {
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto auto;
+	grid-template-areas:
+		"header header header"
+		"nav main main"
+		"nav main main";
+	background-color: khaki;
+}
+
+.conteiner-13 div:nth-of-type(1) {
+	grid-area: header;
+}
+
+.conteiner-13 div:nth-of-type(2) {
+	grid-area: nav;
+}

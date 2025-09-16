@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang=”pt-BR”>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Pseudo-classes - Parte 2</title>
+</head>
+<body>
+	<div class="center">
+		<h1 class="cap">6 - PROPRIEDADES MAIS COMPLEXAS DE CSS</h1>
+
+		<h1 class="sec">9 - Pseudo-classes - Parte 2</h1>
+		<p>As pseudo-classes são utilizadas para definir um estado especial de um elemento (ou mesmo para deixar o seletor mais específico). Há diversas pseudo-classes com diveras funcionalidades diferentes.</p>
+
+		<p><b>1) first-child (.text1:first-child):</b> seleciona o primeiro elemento child de cada parent;</p>
+		<p><b>Exemplo:</b></p>
+
+		<div class="mydiv1">DIV 1
+			<span class="text1">(Text1) 1° Span dentro da div1</span>
+			<p class="text1">(Text1) 1° Parágrafo dentro da div1</p>
+			<p class="text1">(Text1) 2° Parágrafo dentro da div1</p>
+			<div class="mydiv2">DIV 2
+				<p class="text1">(Text1) 1° Parágrafo dentro da div2</p>
+				<span class="text1">(Text1) 1° Span dentro da div2</span>
+				<p class="text1">(Text1) 2° Parágrafo dentro da div2</p>
+				<div class="mydiv3">DIV 3
+					<p class="text1">(Text1) 1° Parágrafo dentro da div3</p>
+					<p class="text1">(Text1) 2° Parágrafo dentro da div3</p>
+					<span class="text1">(Text1) 1° Span dentro da div3</span>
+				</div>
+				<p class="text1">(Text1) 3° Parágrafo dentro da div2</p>
+				<span class="text1">(Text1) 2° Span dentro da div2</span>
+				<p class="text1">(Text1) 4° Parágrafo dentro da div2</p>
+			</div>
+			<p class="text1">(Text1) 3° Parágrafo dentro da div1</p>
+			<span class="text1">(Text1) 2° Span dentro da div1</span>
+			<p class="text1">(Text1) 4° Parágrafo dentro da div1</p>
+		</div><br>
+
+		<p><b>2) last-child (.text2:last-child):</b> seleciona o último elemento child de cada parent;</p>
+		<p><b>Exemplo:</b></p>
+
+		<div class="mydiv1">DIV 1
+			<span class="text2">(Text2) Span dentro da div1</span>
+			<p class="text2">(Text2) Parágrafo dentro da div1</p>
+			<p class="text2">(Text2) Parágrafo dentro da div1</p>
+			<div class="mydiv2">DIV 2
+				<p class="text2">(Text2) Parágrafo dentro da div2</p>
+				<span class="text2">(Text2) Span dentro da div2</span>
+				<p class="text2">(Text2) Parágrafo dentro da div2</p>
+				<div class="mydiv3">DIV 3
+					<p class="text2">(Text2) Parágrafo dentro da div3</p>
+					<p class="text2">(Text2) Parágrafo dentro da div3</p>
+					<span class="text2">(Text2) Span dentro da div3</span>
+				</div>
+				<p class="text2">(Text2) Parágrafo dentro da div2</p>
+				<span class="text2">(Text2) Span dentro da div2</span>
+				<p class="text2">(Text2) Parágrafo dentro da div2</p>
+			</div>
+			<p class="text2">(Text2) Parágrafo dentro da div1</p>
+			<span class="text2">(Text2) Span dentro da div1</span>
+			<p class="text2">(Text2) Parágrafo dentro da div1</p>
+		</div><br>
+
+		<p><b>3) first-of-type:</b> seleciona os primeiros elementos child de um tipo particular de cada parent.</p>
+		<p>Ou seja, caso o primeiro elemento de uma div seja um parágrafo, mas eu queira selecionar apenas os dois primeiros spans dentro daquela dequela div, esta pseudo-classe fará isso.</p>
+		<p>No caso da utilização de classes, ele selecionára os primeiros elementos "únicos" de cada div;</p>
+		<p><b>Exemplo (text4:first-of-type):</b></p>
+
+		<div class="mydiv1">DIV 1
+			<span class="text4">(Text4) 1° Span dentro da div1</span>
+			<p class="text4">(Text4) 1° Parágrafo dentro da div1</p>
+			<p class="text3">(Text3) 2° Parágrafo dentro da div1</p>
+			<div class="mydiv2">DIV 2
+				<span class="text3">(Text3) 1° Span dentro da div2</span>
+				<pre class="text4">(Text4) 1° Pré-formatado dentro da div2</pre>
+				<p class="text4">(Text4) 2° Parágrafo dentro da div2</p>
+				<div class="mydiv3">DIV 3
+					<p class="text4">(Text4) 1° Parágrafo dentro da div3</p>
+					<p class="text3">(Text3) 2° Parágrafo dentro da div3</p>
+					<span class="text4">(Text4) 1° Span dentro da div3</span>
+				</div>
+				<p class="text4">(Text4) 3° Parágrafo dentro da div2</p>
+				<span class="text3">(Text3) 2° Span dentro da div2</span>
+				<p class="text3">(Text3) 4° Parágrafo dentro da div2</p>
+			</div>
+			<p class="text3">(Text3) 3° Parágrafo dentro da div1</p>
+			<span class="text4">(Text4) 2° Span dentro da div1</span>
+			<p class="text3">(Text3) 4° Parágrafo dentro da div1</p>
+		</div><br>
+
+		<p><b>4) last-of-type:</b> seleciona os últimos elementos child de um tipo particular de cada parent.</p>
+		<p>Ou seja, caso o último elemento de uma div seja um parágrafo, mas eu queira selecionar apenas os dois últimos spans dentro daquela dequela div, esta pseudo-classe fará isso.</p> 
+		<p>No caso da utilização de classes, ele selecionára os últimos elementos "únicos" de cada div;</p>
+		<p><b>Exemplo (text5:last-of-type):</b></p>
+
+		<div class="mydiv1">DIV 1
+			<span class="text6">(Text6) 1° Span dentro da div1</span>
+			<p class="text5">(Text5) 1° Parágrafo dentro da div1</p>
+			<p class="text5">(Text5) 2° Parágrafo dentro da div1</p>
+			<div class="mydiv2">DIV 2
+				<p class="text5">(Text5) 1° Parágrafo dentro da div2</p>
+				<span class="text6">(Text6) 1° Span dentro da div2</span>
+				<p class="text5">(Text5) 2° Parágrafo dentro da div2</p>
+				<div class="mydiv3">DIV 3
+					<p class="text5">(Text5) 1° Parágrafo dentro da div3</p>
+					<p class="text5">(Text5) 2° Parágrafo dentro da div3</p>
+					<span class="text5">(Text5) 1° Span dentro da div3</span>
+				</div>
+				<p class="text6">(Text6) 3° Parágrafo dentro da div2</p>
+				<span class="text5">(Text5) 1° Span dentro da div2</span>
+				<p class="text5">(Text5) 4° Parágrafo dentro da div2</p>
+			</div>
+			<p class="text5">(Text5) 3° Parágrafo dentro da div1</p>
+			<span class="text6">(Text6) 2° Span dentro da div1</span>
+			<p class="text5">(Text5) 4° Parágrafo dentro da div1</p>
+		</div><br>
+
+		<p><b>5) nth-child:</b> seleciona o elemento child específico de uma parent, com base em um número, palavra-chave ou fórmula.</p>
+		<p>Ou seja, caso o valor seja 2 para os elementos &lt;p&gt;, e eu possua um parágrafo na segunda posição de duas divs diferentes, esta pseudo-classe selecionará ambos os parágrafos. </p>
+		<p>No caso se utilizar classes, será a mesma coisa, porém com o valor 2 as segundas classes devem ser a específicada a ser selecionada (se eu quero selecionar text7 na posição 2, caso minha div tenha uma text8 na posição 2, ela não será selecionada);</p>
+		<p><b>Exemplo (.text7:nth-child(2)):</b></p>
+
+		<div class="mydiv1">DIV 1
+			<span class="text7">(Text7) 1° Span dentro da div1</span>
+			<p class="text7">(Text7) 1° Parágrafo dentro da div1</p>
+			<p class="text7">(Text7) 2° Parágrafo dentro da div1</p>
+			<div class="mydiv2">DIV 2
+				<p class="text7">(Text7) 1° Parágrafo dentro da div2</p>
+				<span class="text8">(Text8) 1° Span dentro da div2</span>
+				<p class="text8">(Text7) 2° Parágrafo dentro da div2</p>
+				<div class="mydiv3">DIV 3
+					<p class="text8">(Text8) 1° Parágrafo dentro da div3</p>
+					<p class="text7">(Text7) 2° Parágrafo dentro da div3</p>
+					<span class="text8">(Text8) 1° Span dentro da div3</span>
+				</div>
+				<p class="text7">(Text7) 3° Parágrafo dentro da div2</p>
+				<span class="text7">(Text7) 2° Span dentro da div2</span>
+				<p class="text8">(Text8) 4° Parágrafo dentro da div2</p>
+			</div>
+			<p class="text8">(Text8) 3° Parágrafo dentro da div1</p>
+			<span class="text7">(Text7) 2° Span dentro da div1</span>
+			<p class="text8">(Text8) 4° Parágrafo dentro da div1</p>
+		</div><br>
+
+		<p><b>6) nth-last-child:</b> seleciona o elemento child específico de uma parent, com base em um número, palavra-chave ou fórmula, porém, isso é feito de trás para frente.</p>
+		<p>Ou seja, caso o valor seja 2 para os elementos &lt;p&gt;, e eu possua dois parágrafos nas últimas posição de duas divs diferentes, esta pseudo-classe selecionará o penúltimo parágrafo.</p>
+		<p>No caso se utilizar classes, será a mesma coisa, porém com o valor 2 as penúltimas classes devem ser a específicada a ser selecionada (se eu quero selecionar text9 na posição 2 do fim para o início, caso minha div tenha uma text10 na penúltima posição, ela não será selecionada);</p>
+		<p><b>Exemplo (.text9:nth-last-child(2)):</b></p>
+
+		<div class="mydiv1">DIV 1
+			<span class="text9">(Text9) 1° Span dentro da div1</span>
+			<p class="text10">(Text10) 1° Parágrafo dentro da div1</p>
+			<p class="text10">(Text10) 2° Parágrafo dentro da div1</p>
+			<div class="mydiv2">DIV 2
+				<p class="text10">(Text10) 1° Parágrafo dentro da div2</p>
+				<span class="text9">(Text9) 1° Span dentro da div2</span>
+				<p class="text10">(Text10) 2° Parágrafo dentro da div2</p>
+				<div class="mydiv3">DIV 3
+					<p class="text10">(Text10) 1° Parágrafo dentro da div3</p>
+					<p class="text9">(Text9) 2° Parágrafo dentro da div3</p>
+					<span class="text10">(Text10) 1° Span dentro da div3</span>
+				</div>
+				<p class="text9">(Text9) 3° Parágrafo dentro da div2</p>
+				<span class="text10">(Text10) 2° Span dentro da div2</span>
+				<p class="text10">(Text10) 4° Parágrafo dentro da div2</p>
+			</div>
+			<p class="text9">(Text9) 3° Parágrafo dentro da div1</p>
+			<span class="text9">(Text9) 2° Span dentro da div1</span>
+			<p class="text9">(Text9) 4° Parágrafo dentro da div1</p>
+		</div><br>
+
+		<p><b>7) nth-of-type:</b> seleciona os elementos child de tipos diferentes de cada parent, com base em um número, palavra-chave ou fórmula. </p>
+		<p>Ou seja, caso o nth-of-type com valor 1, e eu possua 3 divs, sendo cada uma delas composta de elementos diferentes, o seletor selecionará todos os 3 elementos, pois ele seleciona o primeiro elemento "único" (valor 1) de cada div. </p>
+		<p>E ainda, para ficar melhor exemplificado, caso meu nth-of-type seja de valor 2, com o mesmo exemplo acima, nenhum elemento será selecionado, pois esta pseudo-classe faz a conta com base nos elementos "únicos", e se todos 3 elementos dentro das divs são diferentes, logo eu nunca terei o 2° parágrafo, ou span, ou link dentro de uma div;</p>
+		<p><b>Exemplo (.text11:nth-of-type(2)):</b></p>
+
+		<div class="mydiv1">DIV 1
+			<span class="text11">(Text11) 1° Span dentro da div1</span>
+			<p class="text11">(Text11) 1° Parágrafo dentro da div1</p>
+			<p class="text11">(Text11) 2° Parágrafo dentro da div1</p>
+			<div class="mydiv2">DIV 2
+				<p class="text11">(Text11) 1° Parágrafo dentro da div2</p>
+				<span class="text11">(Text11) 1° Span dentro da div2</span>
+				<p class="text11">(Text11) 2° Parágrafo dentro da div2</p>
+				<div class="mydiv3">DIV 3
+					<p class="text11">(Text11) 1° Parágrafo dentro da div3</p>
+					<pre class="text11">(Text11) 1° Pré-formatado dentro da div3</pre>
+					<span class="text11">(Text11) 1° Span dentro da div3</span>
+				</div>
+				<p class="text11">(Text11) 3° Parágrafo dentro da div2</p>
+				<span class="text11">(Text11) 2° Span dentro da div2</span>
+				<p class="text11">(Text11) 4° Parágrafo dentro da div2</p>
+			</div>
+			<p class="text11">(Text11) 3° Parágrafo dentro da div1</p>
+			<span class="text11">(Text11) 2° Span dentro da div1</span>
+			<p class="text11">(Text11) 4° Parágrafo dentro da div1</p>
+		</div><br>
+
+		<p><b>8) nth-last-of-type:</b> seleciona os elementos child de tipos diferentes de cada parent, com base em um número, palavra-chave ou fórmula, porém isto é feito de trás para frente. </p>
+		<p>Ou seja, caso o nth-last-of-type com valor 1, e eu possua 3 divs, sendo cada uma delas composta de elementos diferentes, o seletor selecionará todos os 3 elementos, pois ele seleciona o último elemento "único" (valor 1) de cada div. </p>
+		<p>E ainda, para ficar melhor exemplificado, caso meu nth-last-of-type seja de valor 2, com o mesmo exemplo acima, nenhum elemento será selecionado, pois esta pseudo-classe faz a conta com base nos elementos "únicos", e se todos 3 elementos dentro das divs são diferentes, logo eu nunca terei o 2° parágrafo, ou span, ou link dentro de uma div, lembrando que ele realiza esse processo de baixo para cima;</p>
+		<p><b>Exemplo (.text12:nth-last-of-type(1)):</b></p>
+
+		<div class="mydiv1">DIV 1
+			<span class="text12">(Text12) 1° Span dentro da div1</span>
+			<p class="text12">(Text12) 1° Parágrafo dentro da div1</p>
+			<p class="text12">(Text12) 2° Parágrafo dentro da div1</p>
+			<div class="mydiv2">DIV 2
+				<p class="text12">(Text12) 1° Parágrafo dentro da div2</p>
+				<span class="text12">(Text12) 1° Span dentro da div2</span>
+				<p class="text12">(Text12) 2° Parágrafo dentro da div2</p>
+				<div class="mydiv3">DIV 3
+					<p class="text12">(Text12) 1° Parágrafo dentro da div3</p>
+					<pre class="text12">(Text12) 1° Pré-formatado dentro da div3</pre>
+					<span class="text12">(Text12) 1° Span dentro da div3</span>
+				</div>
+				<p class="text12">(Text12) 3° Parágrafo dentro da div2</p>
+				<span class="text12">(Text12) 2° Span dentro da div2</span>
+				<span class="text12">(Text12) 3° Span dentro da div2</span>
+			</div>
+			<p class="text12">(Text12) 3° Parágrafo dentro da div1</p>
+			<span class="text12">(Text12) 2° Span dentro da div1</span>
+			<p class="text12">(Text12) 4° Parágrafo dentro da div1</p>
+		</div><br>
+
+		<p><b>9) only-of-type:</b> seleciona os elementos child únicos e não repetidos de cada parent.</p>
+		<p>Ou seja, utilizando classes, utilizando esta pseudo-classe, ela selecionará todos os elementos dentro de uma div que não possuírem outro igual, isto é, se houver um elemento de parágrafo dentro de uma div, ele será selecionado, mas caso haja dois, logo ele não será mais selecionado, pois passousse a repetir-se.</p>
+		<p><b>Exemplo (.text13:only-of-type):</b></p>
+
+		<div class="mydiv1">DIV 1
+			<span class="text13">(Text13) 1° Span dentro da div1</span>
+			<p class="text13">(Text13) 1° Parágrafo dentro da div1</p>
+			<p class="text13">(Text13) 2° Parágrafo dentro da div1</p>
+			<div class="mydiv2">DIV 2
+				<p class="text13">(Text13) 1° Parágrafo dentro da div2</p>
+				<span class="text13">(Text13) 1° Span dentro da div2</span>
+				<p class="text13">(Text13) 2° Parágrafo dentro da div2</p>
+				<div class="mydiv3">DIV 3
+					<p class="text13">(Text13) 1° Parágrafo dentro da div3</p>
+					<pre class="text13">(Text13) 1° Pré-formatado dentro da div3</pre>
+					<span class="text13">(Text13) 1° Span dentro da div3</span>
+				</div>
+				<p class="text13">(Text13) 3° Parágrafo dentro da div2</p>
+				<span class="text13">(Text13) 2° Span dentro da div2</span>
+				<span class="text13">(Text13) 3° Span dentro da div2</span>
+			</div>
+			<p class="text13">(Text13) 3° Parágrafo dentro da div1</p>
+			<span class="text13">(Text13) 2° Span dentro da div1</span>
+			<pre class="text13">(Text13) 1° Pré-formatado dentro da div1</pre>
+		</div><br>
+
+		<p><b>10) only-child:</b> seleciona apenas os elementos child que estiverem sozinhos em cada parent, mesmo que os elementos sejam únicos. Com classes ou com elementos pouco importa, esta pseudo-classe apenas selecionará elementos que estejam sozinhos dentro de alguma div;</p>
+		<p><b>Exemplo (.text14:only-child):</b></p>
+
+		<div class="mydiv1">DIV 1
+			<span class="text14">(Text14) 1° Span dentro da div1</span>
+			<p class="text14">(Text14) 1° Parágrafo dentro da div1</p>
+			<p class="text14">(Text14) 2° Parágrafo dentro da div1</p>
+			<div class="mydiv2">DIV 2
+				<p class="text14">(Text14) 1° Parágrafo dentro da div2</p>
+				<span class="text14">(Text14) 1° Span dentro da div2</span>
+				<p class="text14">(Text14) 2° Parágrafo dentro da div2</p>
+				<div class="mydiv3">DIV 3
+					<p class="text14">(Text14) 1° Parágrafo dentro da div3</p>
+				</div>
+				<p class="text14">(Text14) 3° Parágrafo dentro da div2</p>
+				<span class="text14">(Text14) 2° Span dentro da div2</span>
+				<span class="text14">(Text14) 3° Span dentro da div2</span>
+			</div>
+			<p class="text14">(Text14) 3° Parágrafo dentro da div1</p>
+			<span class="text14">(Text14) 2° Span dentro da div1</span>
+			<pre class="text14">(Text14) 1° Pré-formatado dentro da div1</pre>
+		</div><br>
+
+
+		<div class="obs">
+			<p><b>OBS¹:</b> "nth" faz referência aos números ordinários em inglês: nth = 1st, 2nd, 3rd, 4th, 5th, 6th etc. Por isso, quando o utilizamos, ele seleciona, por exemplo, o segundo elemento de algum lugar - nth-child(2).</p>
+		</div><!--obs-->
+
+	</div>
+
+</body>
+</html> 

@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="”pt-BR”">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport"
+		  content="width=device-width, inital-scale=1.0, maximum-scale=1.0" />
+	<meta name="description"
+		  content="Descrição do site." />
+	<meta name="keywords"
+		  content="palavras-chave, separadas, por, vírgula" />
+	<meta name="author"
+		  content="Autor da page" />
+	<link rel="stylesheet"
+		  type="text/css"
+		  href="css/style.css" />
+	<title>Display Flex</title>
+</head>
+
+<body>
+	<div class="center">
+		<h1 class="cap">7 - HTML5 e CSS3</h1>
+		<h1 class="sec">8 - Display Flex</h1>
+		<p>O display flex é um módulo complexo (e não uma única propriedade) focada na otimização da criação de pequenos layouts responsivos para desktops e mobile, descartando a obrigatoriedade de se utilizar o float ou posicionamento de elementos com o block, inline e inline-block. Vale destacar a frase "pequenos layouts responsivos", isto é, para grandes layouts responsivos a melhor escolha é o "grid".</p>
+		<p>Para utiliza-lo, deve ser declarado no elemento pai, fazendo com que apenas seus filhos diretos (e não os dos filhos) ajam como itens flexíveis.</p>
+		<p>Porém, para compreender a flexbox é necessário primeiramente entender todo seu funcionamento e terminologia.
+		</p>
+		<h1 class="title">Propriedades de contêiner e Propriedades de itens</h1>
+		<p>O flexbox é divido em dois grupos, sendo que cada um dos grupos possui propriedades específicas:</p>
+		<p><b>- Flex container:</b> é o contêiner com o display flex, sendo que dentro dele haverão outros elementos.
+			Aqui são encontradas as propriedades:</p>
+		<ul>
+			<li>display</li>
+			<li>flex-direction</li>
+			<li>flex-wrap</li>
+			<li>flex-flow</li>
+			<li>justify-content</li>
+			<li>align-content</li>
+			<li>align-items</li>
+		</ul>
+		<p><b>- Flex item:</b> são os itens que estarão dentro de um flex containêr. Aqui são encontradas as seguintes propriedades:</p>
+		<ul>
+			<li>order</li>
+			<li>flex</li>
+			<li>flex-grow</li>
+			<li>flex-shrink</li>
+			<li>align-self</li>
+		</ul>
+		<p><b>Exemplo (a parte azul é o container flex, e as divs numeradas são os itens flex):</b></p>
+		<div class="box0">
+			<section class="overlay">
+				<p>Flex Contêiner</p>
+			</section>
+			<div>Flex Item 1</div>
+			<div>Flex Item 2</div>
+			<div>Flex Item 3</div>
+		</div>
+		<h1 class="title">Eixo principal e Eixo transverssal</h1>
+		<p>
+			Agora, sabendo que há dois grupos diferentes em um flexbox com suas diversas propriedades específicas, é
+			necessário compreender o funcionamento dos eixos de uma flexbox, que são eles: o eixo principal (main axis)
+			e o
+			eixo transverssal (cross axis).
+		</p>
+		<p>
+			<b>- Main axis:</b>
+			o eixo principal de um flex container é o eixo onde os flex items estarão fluindo.
+		</p>
+		<p>
+			<b>- Cross axis:</b>
+			o eixo perpenpicular ao eixo principal, sua direção depende da direção do eixo principal..
+		</p>
+		<img src="images/flex1.jpg" />
+		<h1 class="title">Entendendo a direção dos eixos</h1>
+		<p>
+			Porém, com as propriedades de flex container é possível mudar a direção do main axis, fazendo com que o
+			conteúdo
+			seja alinhado de outra forma. A propriedade "flex-direction" é a responsável pela alteração da direção do
+			eixo
+			principal, ela será usada para exemplificar o funcionamento do main axis e do cross axis.
+		</p>
+		<p>
+			<b>• flex-direction: row:</b>
+			é o valor padrão visto acima. O main axis fica na horizontal, indo da esquerda para a direita, enquanto o
+			cross
+			exis fica na vertical, indo de cima para baixo. Isso cria para os flex items uma direção em linha de forma
+			crescente.
+		</p>
+		<img src="images/flex1.jpg" />
+		<p>
+			<b>• flex-direction: row-reverse:</b>
+			o main axis fica na horizontal, indo da direita para a esquerda, enquanto o cross exis fica na vertical,
+			indo de
+			cima para baixo. Isso cria para os flex items uma direção em linha de forma crescente.
+		</p>
+		<img src="images/flex2.jpg" />
+		<p>
+			<b>• flex-direction: column:</b>
+			o main axis fica na vertical, indo de cima para baixo, enquanto o cross exis fica na horizontal, indo da
+			para
+			baixo. Isso cria para os flex items uma direção em linha de forma crescente.
+		</p>
+		<img src="images/flex3.jpg" />
+		<p>
+			<b>• flex-direction: column-reverse:</b>
+			o main axis fica na vertical, indo de cima para baixo, enquanto o cross exis fica na horizontal, indo da
+			para
+			baixo. Isso cria para os flex items uma direção em linha de forma crescente.
+		</p>
+		<img src="images/flex4.jpg" />
+		<h1 class="title">Início e fim dos eixos</h1>
+		<p>
+			Outro detalhe a se atentar é o início e fim dos eixos, pois eles também fazem parte do direcionamento, e
+			entender como eles funcionam é essencial para entender os eixos na sua totalidade.
+		</p>
+		<img src="images/flex5.jpg" />
+		<h1 class="title">Propriedades de Flex Container</h1>
+		<p>O módulo flex dispõe de diversas propriedades para personalizar o flex container:</p>
+		<p>
+			<b>1) flex-flow:</b>
+			é a shorthand property para o flex-direction e o flex-wrap. É definido primeiro pelo valor de direction e
+			depois
+			pelo valor de wrap.
+		</p>
+		<div class="space1">
+			<p>
+				<b>1.1) flex-direction:</b>
+				define a direção do main axis e do cross axis.
+			</p>
+			<div class="space2">
+				<p>
+					<b>1.1.1) column:</b>
+					os flex itens ficarão empilhados, como uma coluna. O main axis ficará na vertical e irá de cima para
+					baixo,
+					e o cross axis ficará na horizontal.
+				</p>
+				<p>
+					<b>Exemplo:</b>
+				</p>
+				<div class="box1">
+					<div>div1</div>
+					<div>div2</div>
+					<div>div3</div>
+				</div>
+				<!--box1-->
+				<p>
+					<b>1.1.2) column-reverse:</b>
+					os flex itens ficarão empilhados, como uma coluna, porém em ordem decrescente. O main axis ficará na
+					vertical e irá de baixo para cima, e o cross axis ficará na horizontal.
+				</p>
+				<p>
+					<b>Exemplo:</b>
+				</p>
+				<div class="box2">
+					<div>div1</div>
+					<div>div2</div>
+					<div>div3</div>
+				</div>
+				<!--box2-->
+				<p>
+					<b>1.1.3) row:</b>
+					os flex itens ficarão um ao lado do outro. O main axis ficará na horizontal e irá da esquerda para a
+					direita, e o cross axis ficará na vertical de cima para baixo. É o valor padrão.
+				</p>
+				<p>
+					<b>Exemplo:</b>
+				</p>
+				<div class="box3">
+					<div>div1</div>
+					<div>div2</div>
+					<div>div3</div>
+				</div>
+				<!--box3-->
+				<p>
+					<b>1.1.4) row-reverse:</b>
+					os flex itens ficarão um ao lado do outro. O main axis ficará na horizontal e irá da direita para a
+					esquerda, e o cross axis ficará na vertical de cima para baixo. É o valor padrão.
+				</p>
+				<p>
+					<b>Exemplo:</b>
+				</p>
+				<div class="box4">
+					<div>div1</div>
+					<div>div2</div>
+					<div>div3</div>
+				</div>
+				<!--box4-->
+			</div>
+			<!--space2-->
+			<p>
+				<b>1.2) flex-wrap:</b>
+				define o comportamento de wrap (envolvimento) dos flex itens. Compreende os seguintes valores:
+			</p>
+			<div class="space2">
+				<p>
+					<b>1.2.1) nowrap:</b>
+					os flex itens não realizarão um wrap nunca. É o valor padrão do flex-wrap.
+				</p>
+				<p>
+					<b>Exemplo:</b>
+				</p>
+				<div class="box5">
+					<div>div1</div>
+					<div>div2</div>
+					<div>div3</div>
+					<div>div4</div>
+					<div>div5</div>
+					<div>div6</div>
+					<div>div7</div>
+					<div>div8</div>
+					<div>div9</div>
+					<div>div10</div>
+					<div>div11</div>
+					<div>div12</div>
+					<div>div13</div>
+					<div>div14</div>
+					<div>div15</div>
+				</div>
+				<!--box6-->
+				<p>
+					<b>1.2.2) wrap:</b>
+					os flex itens realizarão um wrap quando necessário.
+				</p>
+				<p>
+					<b>Exemplo (tente redimensionar a viewport):</b>
+				</p>
+				<div class="box6">
+					<div>div1</div>
+					<div>div2</div>
+					<div>div3</div>
+					<div>div4</div>
+					<div>div5</div>
+					<div>div6</div>
+					<div>div7</div>
+					<div>div8</div>
+					<div>div9</div>
+					<div>div10</div>
+					<div>div11</div>
+					<div>div12</div>
+					<div>div13</div>
+					<div>div14</div>
+					<div>div15</div>
+				</div>
+				<!--box5-->
+				<p>
+					<b>1.2.3) wrap-reverse:</b>
+					os flex itens realizarão um wrap quando necessário, porém de forma invertida (ao invés dos próximos
+					itens
+					caíram para baixo, eles irão "cair para cima").
+				</p>
+				<p>
+					<b>Exemplo:</b>
+				</p>
+				<div class="box7">
+					<div>div1</div>
+					<div>div2</div>
+					<div>div3</div>
+					<div>div4</div>
+					<div>div5</div>
+					<div>div6</div>
+					<div>div7</div>
+					<div>div8</div>
+					<div>div9</div>
+					<div>div10</div>
+					<div>div11</div>
+					<div>div12</div>
+					<div>div13</div>
+					<div>div14</div>
+					<div>div15</div>
+				</div>
+				<!-- box7 -->
+			</div>
+			<!-- space-2 -->
+		</div>
+		<!-- space1 -->
+		<p>
+			<b>2) justify-content:</b>
+			é a propriedade utilizada para definir o alinhamento dos flex items segundo o main axis.
+		</p>
+		<div class="space1">
+			<p>
+				<b>2.1) flex-start</b>
+				alinha os flex itens ao início do main axis, é o valor padrão.
+			</p>
+			<p>
+				<b>Exemplo:</b>
+			</p>
+			<div class="box9">
+				<div>div1</div>
+				<div>div2</div>
+				<div>div3</div>
+				<div>div4</div>
+				<div>div5</div>
+			</div>
+			<!-- box9 -->
+			<p>
+				<b>2.3) flex-end</b>
+				alinha os flex itens ao final do main axis.
+			</p>
+			<p>
+				<b>Exemplo:</b>
+			</p>
+			<div class="box10">
+				<div>div1</div>
+				<div>div2</div>
+				<div>div3</div>
+				<div>div4</div>
+				<div>div5</div>
+			</div>
+			<!-- box10 -->
+			<p>
+				<b>2.3) center</b>
+				alinha os flex itens ao centro do main axis
+			</p>
+			<p>
+				<b>Exemplo:</b>
+			</p>
+			<div class="box8">
+				<div>div1</div>
+				<div>div2</div>
+				<div>div3</div>
+				<div>div4</div>
+				<div>div5</div>
+			</div>
+			<!-- box8 -->
+			<p>
+				<b>2.4) space-around</b>
+				alinha os flex items entre todo o main axis, porém com um espaço antes, entre e depois de cada item. Ou
+				seja,
+				há um espaço "em volta" cada flex item, mas não "entre" de cada flex item.
+			</p>
+			<p>
+				<b>Exemplo:</b>
+			</p>
+			<div class="box11">
+				<div>div1</div>
+				<div>div2</div>
+				<div>div3</div>
+				<div>div4</div>
+				<div>div5</div>
+			</div>
+			<!-- box11 -->
+			<p>
+				<b>2.5) space-evenly</b>
+				alinha os flex items entre todo o main axis, porém com um espaço antes, entre e depois de cada item,
+				porém, o
+				espaço que fica entre os itens é igual. Ou seja, há um espaço "em volta" cada flex item, mas não "entre"
+				de
+				cada flex item, e ainda, o espaço entre um item e outro se colide, fazendo com que todos tenham a mesma
+				distância. Por fim, é necessário presta a devida atenção se o flex conteiner possui algum padding
+				definido,
+				pois isso fará com que o espaço no flex item inicial e final não seja igual aos outros que estão no
+				meio.
+			</p>
+			<p>
+				<b>Exemplo:</b>
+			</p>
+			<div class="box11-1">
+				<div>div1</div>
+				<div>div2</div>
+				<div>div3</div>
+				<div>div4</div>
+				<div>div5</div>
+			</div>
+			<!-- box11 -->
+			<p>
+				<b>2.6) space-between</b>
+				alinha os flex items entre todo o main axis, porém com um espaço entre cada item. Ou seja, há um espaço
+				entre
+				cada flex item, mas não "em volta" de cada flex item.
+			</p>
+			<p>
+				<b>Exemplo:</b>
+			</p>
+			<div class="box12">
+				<div>div1</div>
+				<div>div2</div>
+				<div>div3</div>
+				<div>div4</div>
+				<div>div5</div>
+			</div>
+			<!-- box12 -->
+		</div>
+		<!-- space1 -->
+		<p>
+			<b>3) align-items:</b>
+			é a propriedade utilizada para definir o alinhamento dos flex items segundo o cross axis, respeitando um
+			espaço
+			igual entre cada um deles.
+		</p>
+		<div class="space1">
+			<p>
+				<b>3.1) flex-start</b>
+				alinha os flex itens ao início do cross axis.
+			</p>
+			<p>
+				<b>Exemplo:</b>
+			</p>
+			<div class="box14">
+				<div>div1</div>
+				<div>div2</div>
+				<div>div3</div>
+				<div>div4</div>
+				<div>div5</div>
+				<div>div6</div>
+				<div>div7</div>
+				<div>div8</div>
+				<div>div9</div>
+				<div>div10</div>
+				<div>div11</div>
+				<div>div12</div>
+				<div>div13</div>
+				<div>div14</div>
+				<div>div15</div>
+				<div>div16</div>
+				<div>div17</div>
+				<div>div18</div>
+				<div>div19</div>
+				<div>div20</div>
+			</div>
+			<!-- box14 -->
+			<p>
+				<b>3.2) flex-end</b>
+				alinha os flex itens ao fim do cross axis.
+			</p>
+			<p>
+				<b>Exemplo:</b>
+			</p>
+			<div class="box15">
+				<div>div1</div>
+				<div>div2</div>
+				<div>div3</div>
+				<div>div4</div>
+				<div>div5</div>
+				<div>div6</div>
+				<div>div7</div>
+				<div>div8</div>
+				<div>div9</div>
+				<div>div10</div>
+				<div>div11</div>
+				<div>div12</div>
+				<div>div13</div>
+				<div>div14</div>
+				<div>div15</div>
+				<div>div16</div>
+				<div>div17</div>
+				<div>div18</div>
+				<div>div19</div>
+				<div>div20</div>
+			</div>
+			<!-- box15 -->
+			<p>
+				<b>3.3) center</b>
+				alinha os flex itens ao centro do cross axis.
+			</p>
+			<p>
+				<b>Exemplo:</b>
+			</p>
+			<div class="box13">
+				<div>div1</div>
+				<div>div2</div>
+				<div>div3</div>
+				<div>div4</div>
+				<div>div5</div>
+				<div>div6</div>
+				<div>div7</div>
+				<div>div8</div>
+				<div>div9</div>
+				<div>div10</div>
+				<div>div11</div>
+				<div>div12</div>
+				<div>div13</div>
+				<div>div14</div>
+				<div>div15</div>
+				<div>div16</div>
+				<div>div17</div>
+				<div>div18</div>
+				<div>div19</div>
+				<div>div20</div>
+			</div>
+			<!-- box13 -->
+			<p>
+				<b>3.4) baseline</b>
+				alinha os flex itens segundo a linha de base de cada flex item.
+			</p>
+			<p>
+				<b>Exemplo sem o baseline (center):</b>
+			</p>
+			<div class="box16-1">
+				<div class="border"></div>
+				<div>
+					<h1>h1</h1>
+				</div>
+				<div>
+					<h6>h6</h6>
+				</div>
+				<div>
+					<h3>h3</h3>
+				</div>
+				<div>
+					<h2>h2</h2>
+				</div>
+				<div>
+					<small>small</small>
+				</div>
+			</div>
+			<!-- box16 -->
+			<p>
+				<b>Exemplo com o baseline:</b>
+			</p>
+			<div class="box16">
+				<div class="border"></div>
+				<div>
+					<h1>h1</h1>
+				</div>
+				<div>
+					<h6>h6</h6>
+				</div>
+				<div>
+					<h3>h3</h3>
+				</div>
+				<div>
+					<h2>h2</h2>
+				</div>
+				<div>
+					<small>small</small>
+				</div>
+			</div>
+			<!-- box16 -->
+			<p>
+				<b>3.5) strech</b>
+				alinha os flex itens do início ao fim do cross axis.
+			</p>
+			<p>
+				<b>Exemplo:</b>
+			</p>
+			<div class="box17">
+				<div>div1</div>
+				<div>div2</div>
+				<div>div3</div>
+				<div>div4</div>
+				<div>div5</div>
+				<div>div6</div>
+				<div>div7</div>
+				<div>div8</div>
+				<div>div9</div>
+				<div>div10</div>
+				<div>div11</div>
+				<div>div12</div>
+				<div>div13</div>
+				<div>div14</div>
+				<div>div15</div>
+				<div>div16</div>
+				<div>div17</div>
+				<div>div18</div>
+				<div>div19</div>
+				<div>div20</div>
+			</div>
+			<!-- box17 -->
+		</div>
+		<p>
+			<b>4) align-content:</b>
+			é a propriedade utilizada para definir o alinhamento dos flex items segundo o cross axis, sem respeitar um
+			espaço igual entre cada um deles.
+		</p>
+		<div class="space1">
+			<p>
+				<b>4.1) flex-start</b>
+				alinha os flex itens ao início do cross axis.
+			</p>
+			<p>
+				<b>Exemplo:</b>
+			</p>
+			<div class="box18">
+				<div>div1</div>
+				<div>div2</div>
+				<div>div3</div>
+				<div>div4</div>
+				<div>div5</div>
+				<div>div6</div>
+				<div>div7</div>
+				<div>div8</div>
+				<div>div9</div>
+				<div>div10</div>
+				<div>div11</div>
+				<div>div12</div>
+				<div>div13</div>
+				<div>div14</div>
+				<div>div15</div>
+				<div>div16</div>
+				<div>div17</div>
+				<div>div18</div>
+				<div>div19</div>
+				<div>div20</div>
+			</div>
+			<!-- box18 -->
+			<p>
+				<b>4.2) flex-end</b>
+				alinha os flex itens ao fim do cross axis.
+			</p>
+			<p>
+				<b>Exemplo:</b>
+			</p>
+			<div class="box19">
+				<div>div1</div>
+				<div>div2</div>
+				<div>div3</div>
+				<div>div4</div>
+				<div>div5</div>
+				<div>div6</div>
+				<div>div7</div>
+				<div>div8</div>
+				<div>div9</div>
+				<div>div10</div>
+				<div>div11</div>
+				<div>div12</div>
+				<div>div13</div>
+				<div>div14</div>
+				<div>div15</div>
+				<div>div16</div>
+				<div>div17</div>
+				<div>div18</div>
+				<div>div19</div>
+				<div>div20</div>
+			</div>
+			<!-- box19 -->
+			<p>
+				<b>4.3) center</b>
+				alinha os flex itens ao centro do cross axis.
+			</p>
+			<p>
+				<b>Exemplo:</b>
+			</p>
+			<div class="box20">
+				<div>div1</div>
+				<div>div2</div>
+				<div>div3</div>
+				<div>div4</div>
+				<div>div5</div>
+				<div>div6</div>
+				<div>div7</div>
+				<div>div8</div>
+				<div>div9</div>
+				<div>div10</div>
+				<div>div11</div>
+				<div>div12</div>
+				<div>div13</div>
+				<div>div14</div>
+				<div>div15</div>
+				<div>div16</div>
+				<div>div17</div>
+				<div>div18</div>
+				<div>div19</div>
+				<div>div20</div>
+			</div>
+			<!-- box20 -->
+			<p>
+				<b>4.4) space-between:</b>
+				alinha os flex items entre todo o cross axis, porém com um espaço entre cada item. Ou seja, há um espaço
+				entre
+				cada flex item, mas não "em volta" de cada flex item.
+			</p>
+			<p>
+				<b>Exemplo:</b>
+			</p>
+			<div class="box21">
+				<div>div1</div>
+				<div>div2</div>
+				<div>div3</div>
+				<div>div4</div>
+				<div>div5</div>
+				<div>div6</div>
+				<div>div7</div>
+				<div>div8</div>
+				<div>div9</div>
+				<div>div10</div>
+				<div>div11</div>
+				<div>div12</div>
+				<div>div13</div>
+				<div>div14</div>
+				<div>div15</div>
+				<div>div16</div>
+				<div>div17</div>
+				<div>div18</div>
+				<div>div19</div>
+				<div>div20</div>
+			</div>
+			<!-- box21 -->
+			<p>
+				<b>4.5) space-around:</b>
+				alinha os flex items entre todo o cross axis, porém com um espaço antes, entre e depois de cada item. Ou
+				seja,
+				há um espaço "em volta" cada flex item, mas não "entre" de cada flex item.
+			</p>
+			<p>
+				<b>Exemplo:</b>
+			</p>
+			<div class="box22">
+				<div>div1</div>
+				<div>div2</div>
+				<div>div3</div>
+				<div>div4</div>
+				<div>div5</div>
+				<div>div6</div>
+				<div>div7</div>
+				<div>div8</div>
+				<div>div9</div>
+				<div>div10</div>
+				<div>div11</div>
+				<div>div12</div>
+				<div>div13</div>
+				<div>div14</div>
+				<div>div15</div>
+				<div>div16</div>
+				<div>div17</div>
+				<div>div18</div>
+				<div>div19</div>
+				<div>div20</div>
+			</div>
+			<!-- box22 -->
+			<p>
+				<b>4.6) strech:</b>
+				alinha os flex itens do início ao fim do cross axis.
+			</p>
+			<p>
+				<b>Exemplo:</b>
+			</p>
+			<div class="box23">
+				<div>div1</div>
+				<div>div2</div>
+				<div>div3</div>
+				<div>div4</div>
+				<div>div5</div>
+				<div>div6</div>
+				<div>div7</div>
+				<div>div8</div>
+				<div>div9</div>
+				<div>div10</div>
+				<div>div11</div>
+				<div>div12</div>
+				<div>div13</div>
+				<div>div14</div>
+				<div>div15</div>
+				<div>div16</div>
+				<div>div17</div>
+				<div>div18</div>
+				<div>div19</div>
+				<div>div20</div>
+			</div>
+			<!-- box23 -->
+		</div>
+		<!-- space-1 -->
+		<h1 class="title">Propriedades de Flex Items</h1>
+		<p>O módulo flex dispõe de diversas propriedades para personalizar o flex item:</p>
+		<p>
+			<b>1) order:</b>
+			modifica a posição de item flex item segundo o seu número de ordem. Quanto menor o número, mais oo início o
+			flex
+			item ficará, e quanto maior o número, mais ao fim o flex item ficará. Vale destacar que números negativos
+			também
+			são aceitos nesta propriedade.
+		</p>
+		<p>
+			<b>Exemplo:</b>
+		</p>
+		<div class="box24">
+			<div>div1 (order: 3)</div>
+			<div>div2 (order: 1)</div>
+			<div>div3 (order: 4)</div>
+			<div>div4 (order: 2)</div>
+		</div>
+		<!-- box24 -->
+
+		<p>
+			<b>2) flex:</b>
+			é a shorthand property para o flex-grow, flex-shrink e flex-basis (flex: 1 0 200px).
+		</p>
+		<div class="space1">
+			<p>
+				<b>2.1) flex-grow:</b>
+				define o quanto certos flex items irão crescer dentro de um flex conteiner para utilizar um espaço não
+				sendo
+				utilizado.
+			</p>
+			<p>
+				<b>Exemplo com "flex-grow: 1" em todos os flex itens:</b>
+			</p>
+			<div class="box25">
+				<div>div1</div>
+				<div>div2</div>
+				<div>div3</div>
+				<div>div4</div>
+			</div>
+			<!-- box25 -->
+			<p>
+				<b>Exemplo com "flex-grow" variado em cada flex-item:</b>
+			</p>
+			<div class="box26">
+				<div>div1 - 0.5</div>
+				<div>div2 - 2</div>
+				<div>div3 - 1</div>
+				<div>div4 - 5</div>
+			</div>
+			<!-- box26 -->
+			<p>
+				<b>2.2) flex-shrink:</b>
+				define o quanto um flex item irá encolher para caber ao lado de outros flex items dentro do flex
+				conteiner.
+			</p>
+			<p>
+				<b>Exemplo (número 2 e 10 estão com "flex-shrink: 0"):</b>
+			</p>
+			<div class="box27">
+				<div>1</div>
+				<div>2</div>
+				<div>3</div>
+				<div>4</div>
+				<div>5</div>
+				<div>6</div>
+				<div>7</div>
+				<div>8</div>
+				<div>9</div>
+				<div>10</div>
+				<div>11</div>
+			</div>
+			<!-- box27 -->
+			<p>
+				<b>2.3) flex-basis:</b>
+				define o tamanho inicial de um flex item. Ele pode parecer inútil quando o flex conteiner possui a
+				propriedade
+				"flex-wrap" definada como "wrap" (pois itens maiores que o conteiner automaticamente descerão no cross
+				axis),
+				porém, ao utilizar o valor "nowrap" o "flex-basis" é um grande auxílio para manter os flex items dentro
+				do
+				conteiner. Assim, caso a viewport aglobe apenas os flex items com uma largura de 200px, mas então a
+				viewport
+				seja redimensionada, fazendo com que seja possível cabe flex items com a largura de 400px, então assim
+				será.
+			</p>
+			<p>
+				<b>Exemplo (cada div abaixo está com o flex-basis em 400px):</b>
+			</p>
+			<div class="box28">
+				<div>div1</div>
+				<div>div2</div>
+				<div>div3</div>
+				<div>div4</div>
+			</div>
+			<!-- box28 -->
+		</div>
+		<!-- space1 -->
+		<p>
+			<b>3) align-self:</b>
+			define o alinhamento de flex items individuais segundo o cross axis.
+		</p>
+		<div class="space1">
+			<p>
+				<b>3.1) flex-start:</b>
+				define o alinhamento de um flex items individual para o início do cross axis.
+			</p>
+			<p>
+				<b>Exemplo de flex conteiner com "align-items: flex-end":</b>
+			</p>
+			<div class="box29">
+				<div>div1</div>
+				<div>div2 (align-self: flex-start)</div>
+				<div>div3</div>
+				<div>div4</div>
+			</div>
+			<!-- box29 -->
+			<p>
+				<b>3.2) flex-end:</b>
+				define o alinhamento de um flex items individual para o fim do cross axis.
+			</p>
+			<p>
+				<b>Exemplo de flex conteiner com "align-items: flex-start":</b>
+			</p>
+			<div class="box30">
+				<div>div1</div>
+				<div>div2 (align-self: flex-end)</div>
+				<div>div3</div>
+				<div>div4</div>
+			</div>
+			<!-- box29 -->
+			<p>
+				<b>3.3) center:</b>
+				define o alinhamento de um flex items individual para o centro do cross axis.
+			</p>
+			<p>
+				<b>Exemplo de flex conteiner com "align-items: flex-start":</b>
+			</p>
+			<div class="box31">
+				<div>div1</div>
+				<div>div2 (align-self: center)</div>
+				<div>div3</div>
+				<div>div4</div>
+			</div>
+			<!-- box29 -->
+		</div>
+		<!-- space1 -->
+	</div>
+	<!-- center -->
+</body>
+
+</html>

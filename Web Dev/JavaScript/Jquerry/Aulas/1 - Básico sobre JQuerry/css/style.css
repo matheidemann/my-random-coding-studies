@@ -1,0 +1,82 @@
+body {
+	background-color: #1c243f;
+	color: #ffffff;
+	font-family: 'Arial';
+	height: 200vh;
+}
+
+.default {
+	padding: 2rem;
+	text-align: center;
+	font-size: 2rem;
+	transition: 0.5s;
+}
+
+.btn {
+	display: block;
+	width: 20%;
+	background-color: rgb(0, 0, 0);
+	margin: 20px auto;
+	font-size: 1rem;
+	border-radius: 1rem;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.btn:hover {
+	transform: scale(1.1);
+}
+
+.text {
+	color: rgb(17, 179, 30);
+	font-size: 1.5rem;
+}
+
+.div1,
+.div4 {
+	background-color: black;
+	max-width: 1000px;
+	margin: 0px auto;
+}
+
+.div2 {
+	background-color: rgb(114, 114, 114);
+}
+
+.div3 input {
+	width: 100%;
+	max-width: 30rem;
+	padding: 1.4rem;
+	font-size: 1.2rem;
+	transition: 0.2s;
+	background-color: #ccc;
+}
+
+.div3 h1 {
+	margin-bottom: 1rem;
+	font-size: 1.5rem;
+}
+
+.div5 {
+	background-color: aqua;
+}
+
+.div6 {
+	background-color: blueviolet;
+}
+
+.div7 {
+	background-color: brown;
+}
+
+.div8 {
+	background-color: rgb(43, 226, 67);
+}
+
+.div9 {
+	background-color: rgb(228, 33, 153);
+}
+
+.div10 {
+	background-color: rgb(129, 129, 129);
+}

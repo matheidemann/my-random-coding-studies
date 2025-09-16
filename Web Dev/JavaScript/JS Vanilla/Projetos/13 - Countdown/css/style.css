@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+body {
+	background-color: hsl(205.7, 36.8%, 96.3%);
+	color: hsl(208.8, 61%, 16.1%);
+	font-family: 'Open Sans';
+}
+
+.center {
+	max-width: 1280px;
+	margin: 0px auto;
+	padding: 0px 4%;
+}
+
+.grid {
+	display: grid;
+}
+
+section {
+	justify-content: center;
+	align-items: center;
+	padding: 5rem;
+}
+
+.main-container {
+	max-width: 980px;
+	grid-template-columns: 1fr 1fr;
+	gap: 3rem;
+}
+
+.img {
+	background-image: url(../images/xbox360.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.text-content {
+	padding: 1.5rem 0;
+}
+
+.text-content > h1 {
+	font-size: 1.9rem;
+	color: hsl(204.4, 73.5%, 35.5%);
+	font-weight: bold;
+	letter-spacing: 0.2rem;
+	margin-bottom: 0.5rem;
+}
+
+.text-content > h2 {
+	font-size: 1rem;
+	color: hsl(208.8, 61%, 16.1%);
+	font-weight: bold;
+	letter-spacing: 0.2rem;
+	margin-bottom: 1.5rem;
+	line-height: 1.3rem;
+}
+
+.text-content > p {
+	color: hsl(209.5, 21.9%, 49.2%);
+	line-height: 1.3em;
+	margin-bottom: 1rem;
+}
+
+.boxes-container {
+	grid-template-columns: 92px 92px 92px 92px;
+	color: hsl(209.5, 21.9%, 49.2%);
+	min-height: 80px;
+}
+
+.box {
+	background-color: hsl(208.8, 61.9%, 16.5%);
+	color: rgb(245, 245, 245);
+	text-align: center;
+	width: 5rem;
+	height: 5rem;
+	justify-content: center;
+	align-content: center;
+}
+
+.box h3 {
+	font-size: 2rem;
+	font-weight: bold;
+	letter-spacing: 0.3rem;
+	margin-bottom: 0.3rem;
+}
+
+.box h4 {
+	font-size: 0.9rem;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+}
+
+.expired {
+	font-size: 1rem;
+	color: hsl(208.8, 61%, 16.1%);
+	font-weight: bold;
+	letter-spacing: 0.2rem;
+	margin-bottom: 1.5rem;
+	line-height: 1.3rem;
+}

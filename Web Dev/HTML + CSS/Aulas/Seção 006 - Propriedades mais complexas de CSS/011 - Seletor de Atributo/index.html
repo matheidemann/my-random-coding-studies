@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang=”pt-BR”>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Seletor de Atributos</title>
+</head>
+<body>
+
+	<div class="center">
+
+		<h1 class="cap">6 - PROPRIEDADES MAIS COMPLEXAS DE CSS</h1>
+
+		<h1 class="sec">11 - Seletor de Atributos</h1>
+		<p>Os seletores de atributos são seletores que selecionam certos elementos segundo seus atributos. Para utilizar um seletor de atributo, se usa os colchetes [attribute]. Há diversos tipos de seletores de atributo:</p>
+
+		<p><b>1) [attribute="value"]</b> estiliza elementos que possuam determinado atributo específico com valor específico.</p>
+		<p>A string do valor a ser procurada deve ser especificamente igual e completa.</p>
+		<p><b>Exemplo (h2[class="title-middle-2"]):</b></p>
+		<h2 class="title-start-1">title-start-1</h2><br>
+		<h2 class="title start 2">title start 2</h2><br>
+		<h2 class="title middle 2">title middle 2</h2><br>
+		<h2 class="title-middle-2">title-middle-2</h2><br>
+		<h2 class="endtext-1">endtext-1</h2><br>
+
+		<p><b>2) [attribute~="value"]</b> estiliza elementos que possuam uma string completa dentro de algum atributo.</p>
+		<p>A string do valor a ser procurada deve ser especificamente igual.</p>
+		<p>A string do valor a ser procurada pode estar em qualquer lugar.</p>
+		<p>A string do valor a ser procurada não será considerada se estiver escrita colada com outros caracteres (inclusive hífens);</p>
+		<p><b>Exemplo (a[class|="middle"]):</b></p>
+		<a class="middle-1">middle-1</a><br>
+		<a class="middle 2">middle 2</a><br>
+		<a class="title middle 1">title middle 2</a><br>
+		<a class="title-middle-2">text-2</a><br>
+		<a class="endtext-1">endtext-1</a><br><br>
+
+		<p><b>3) [attribute|="value"]</b> estiliza elementos que comecem com uma string com um valor específico.</p>
+		<p>A string do valor a ser procurada deve ser especificamente igual.</p>
+		<p>A string do valor a ser procurada deve estar no início.</p>
+		<p>A string do valor a ser procurada não será considerada se estiver escrita colada com outros caracteres ou se estiver com espaços, porém, funcionará caso esteja colada com hífens;</p>
+		<p><b>Exemplo (p[class|="title"]):</b></p>
+		<p class="title-start-1">title-start-1</p>
+		<p class="text-title-1">text-title-1</p>
+		<p class="title middle 1">title middle 1</p>
+		<p class="text title 2">text title 2</p>
+		<p class="endtext-1">endtext-1</p><br>
+
+		<p><b>4) [attribute^="value"]</b> estiliza elementos que comecem com uma string ou substring com um valor específico.</p>
+		<p>A string do valor a ser procurada não precisa ser especificamente igual (pode ser uma substring).</p>
+		<p>A substring do valor a ser procurada deve estar no início.</p>
+		<p>A substring do valor a ser procurada será considerada se estiver escrita colada com outros caracteres, se estiver com espaços ou hífens;</p>
+		<p><b>Exemplo (span[class|="t"]):</b></p>
+		<span class="title-start-1">title-start-1</span><br>
+		<span class="t-1">t-1</span><br>
+		<span class="t middle-2">t middle-2</span><br>
+		<span class="text t">text t</span><br>
+		<span class="end-t">end-t</span><br><br>
+
+		<p><b>5) [attribute$="value"]</b> estiliza elementos que terminem com uma string ou substring com um valor específico.</p>
+		<p>A string do valor a ser procurada não precisa ser especificamente igual (pode ser uma substring).</p>
+		<p>A substring do valor a ser procurada deve estar no final.</p>
+		<p>A substring do valor a ser procurada será considerada se estiver escrita colada com outros caracteres, se estiver com espaços ou hífens;</p>
+		<p><b>Exemplo (pre[class|="ext"]):</b></p>
+		<pre class="title-start-text">title-start-text</pre>
+		<pre class="text-1-ext">text-1-ext</pre>
+		<pre class="title middle ext">title middle ext</pre>
+		<pre class="text-2">text-2</pre>
+		<pre class="ext-endtext-1">ext-endtext-1</pre><br>
+
+		<p><b>6) [attribute*="value"]</b> estiliza elementos que possuam uma string ou substring específica em qualquer lugar.</p>
+		<p>A string do valor a ser procurada não precisa ser especificamente igual (pode ser uma substring).</p>
+		<p>A substring do valor a ser procurada pode estar em qualquer lugar (início, meio, fim ou mesmo junta de outros caracteres).</p>
+		<p>A substring do valor a ser procurada será considerada se estiver escrita colada com outros caracteres, se estiver com espaços ou hífens;</p>
+		<p><b>Exemplo (h3[class*="tex"]):</b></p>
+		<h3 class="title-start-1-ex">title-start-1-ex</h3>
+		<h3 class="middle-text-1">middle-text-1</h3>
+		<h3 class="title-middletext-2">title-middletext-2</h3>
+		<h3 class="my text 2">my text 2</h3>
+		<h3 class="end tex-1">end tex-1</h3><br>
+
+	</div>
+
+</body>
+</html> 

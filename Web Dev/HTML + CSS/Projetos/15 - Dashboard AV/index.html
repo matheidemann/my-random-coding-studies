@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" id="pdf-content">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Relatório de Antivírus - CNP</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- S - REPORT INFO -->
+    <section class="report-info">
+      <div class="section-center">
+        <h1 class="report-title">Relatório diário de Antivírus</h1>
+        <h2 class="report-subtitle">Sobre</h2>
+        <p><strong>Cliente: </strong>CNP Seguros</p>
+        <p><strong>Fabricante: </strong>Trend Micro</p>
+        <p><strong>Solução: </strong>Apex One, Cloud One Workload</p>
+        <p><strong>Licenças adquirias: </strong>2036</p>
+        <p><strong>Data: </strong>28/12/2023</p>
+        <p><strong>Link da dashboard: </strong>https://c2ranl.manage.trendmicro.com/webapp/index.html</p>
+        <p><strong>Relatório revisado por: </strong>Matheus Heidemann</p>
+        <p><strong>Relatório referente ao dia: </strong>24/12/2023</p>
+      </div>
+    </section>
+    <!-- E - REPORT INFO -->
+    <!-- S - REPORT INTRO -->
+    <section class="report-intro">
+      <div class="section-center">
+        <h2 class="report-subtitle">Introdução</h3>
+        <p>Relatório de envio para acompanhamento e atualizações de máquinas de usuários que necessitam de ação da equipe CNP e Focaldata, bem qual para orientar a abertura de chamado interno entre a múltiplas equipes.</p>
+      </div>
+    </section>
+    <!-- E - REPORT INTRO -->
+    <!-- S - THREATS -->
+    <section class="report-threats">
+      <div class="section-center">
+        <h2 class="report-subtitle">Situação de ameaças</h2>
+        <div class="square-grid">
+          <div class="square square-1">
+            <img src="images/critical_malware_icon.png" alt="icon" class="square-icon"/>
+            <p class="square-title">ameaças críticas</p>
+            <p class="square-number">1</p>
+          </div>
+          <div class="square square-2">
+            <img src="images/bug_icon2.png" alt="icon" class="square-icon"/>
+            <p class="square-title">ameaças comuns</p>
+            <p class="square-number">17</p>
+          </div>
+          <div class="square square-1">
+            <img src="images/user_icon.png" alt="icon" class="square-icon"/>
+            <p class="square-title">usuários afetados</p>
+            <p class="square-number">2</p>
+          </div>
+          <div class="square square-2">
+            <img src="images/endpoint_icon.png" alt="icon" class="square-icon"/>
+            <p class="square-title">endpoints afetados</p>
+            <p class="square-number">3</p>
+          </div>
+        </div>
+        <p class="obs-text"><strong>OBS¹: </strong>As ameças críticas são baseadas nas detecções de “Ransomware”,  “Know Advanced Persistent Threats (APTs)”, “Social engineering attacks”, “Vulnerability attacks”, “Lateral movement”, “Unknow threats” e “C&C Callbacks”.</p>
+        <p class="obs-text"><strong>OBS²: </strong>As ameças comuns são baseadas nas detecções de “Predictive Machine Learning”, “Behavior Monitoring”, “Suspicious Connections” e “Suspicious File Objects” .</p>
+      </div>
+    </section>
+    <!-- E - THREATS -->
+    <!-- S - ENDPOINTS -->
+    <section class="report-endpoints">
+      <div class="section-center">
+        <h2 class="report-subtitle">Situação dos endpoints</h2>
+        <div class="square-grid">
+          <div class="square square-1">
+            <img src="images/endpoint_icon2.png" alt="icon" class="square-icon"/>
+            <p class="square-title">endpoints gerenciados</p>
+            <p class="square-number">2167</p>
+          </div>
+          <div class="square square-2">
+            <img src="images/endpoint-icon3.png" alt="icon" class="square-icon"/>
+            <p class="square-title">endpoints com agentes desatualizados</p>
+            <p class="square-number">22</p>
+          </div>
+          <div class="square square-1">
+            <img src="images/endpoint_icon4.png" alt="icon" class="square-icon"/>
+            <p class="square-title">endpoints sem políticas</p>
+            <p class="square-number">1</p>
+          </div>
+          <div class="square square-2">
+            <img src="images/endpoint_icon5.png" alt="icon" class="square-icon"/>
+            <p class="square-title">violações de políticas</p>
+            <p class="square-number">2472</p>
+          </div>
+        </div>
+        <p class="obs-text"><strong>OBS¹: </strong>As ameças críticas são baseadas nas detecções de “Ransomware”,  “Know Advanced Persistent Threats (APTs)”, “Social engineering attacks”, “Vulnerability attacks”, “Lateral movement”, “Unknow threats” e “C&C Callbacks”.</p>
+        <p class="obs-text"><strong>OBS²: </strong>As ameças comuns são baseadas nas detecções de “Predictive Machine Learning”, “Behavior Monitoring”, “Suspicious Connections” e “Suspicious File Objects” .</p>
+      </div>
+    </section>
+    <button id="download-pdf">Download PDF</button>
+
+    <!-- E - ENDPOINTS -->
+  </body>
+</html>
+<!-- Include html2pdf.js library from CDN -->
+<!-- Include jsPDF and html2canvas libraries -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+<script>
+  document.getElementById('download-pdf').addEventListener('click', function() {
+    var element = document.getElementById('pdf-content'); // Replace with the ID of the HTML element you want to convert
+
+    html2canvas(element).then(function(canvas) {
+      var pdf = new jsPDF('p', 'mm', 'a4');
+      pdf.addImage(canvas.toDataURL('image/png'), 'PNG', 0, 0, pdf.internal.pageSize.width, pdf.internal.pageSize.height);
+      pdf.save('output.pdf');
+    });
+  });
+</script>
+
+
+

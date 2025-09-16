@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang=”pt-BR”>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Altura e largura</title>
+</head>
+<body>
+	<div class="center">
+		<h1 class="cap">5 - PROPRIEDADES BÁSICAS DE CSS</h1>
+		
+		<h1 class="sec">8 - Altura e largura</h1>
+		<p>Assim como é possível definir a altura e largura de imagens, é possível definir estas propriedades para qualquer elemento. Como padrão, podemos utilizar qualquer tipo de medida para definir a altura e largura de um elemento.</p>
+
+		<p><b>1) width:</b> define a largura do elemento;</p>
+		<p><b>2) height:</b> define a altura do elemento.</p>
+
+		<p>Porém, caso usemos estas propriedades, uma vez que redimensonamos nosso navegador, o elemento continuará possuindo 1280x720px, e isso pode ser um problema para telas menores, ou mesmo para dispositivos mobile (tente redimensionar seu navegador e veja que a imagem não ficará do tamanho do navegador).</p>
+
+		<p><b>Exemplo:</b></p>
+		<img src="images/landscape1.jpg" width="1280px" height="720px">
+		<br>
+
+		<p>Para resolver isso, há quatro propriedades essenciais para auxiliar com o design responsivo (página que responde corretamente para qualquer tamanho de tela):</p>
+
+		<p><b>1) max-width:</b> define a largura máxima do elemento;</p>
+		<p><b>2) max-height:</b> define a altura máxima do elemento.</p>
+		<p><b>3) min-width:</b> define a largura mínima do elemento;</p>
+		<p><b>4) min-height:</b> define a altura mínima do elemento.</p>
+
+		<br>
+		<p><b>Exemplo:</b></p>
+		<p>Imagem de 1920x1080px com max width e height de 480x270px.</p>
+		<img class="imgspace" src="images/space1.jpg">
+		<p>Assim, caso fosse redimensionado o navegador, ainda assim o elemento cabeira normalmente e funcionalmente na tela, sem o problema de parte dele ficar escondido na lateral, fazendo com que o usuário seja obrigado a utilizar a barra de scroll inferior para poder vê-lo novamente. </p>
+		<br>
+
+		<p><b>Exemplo:</b></p>
+		<p>Imagem de 480x270px com min width e height de 1280x720px.</p>
+		<img class="imgland" src="images/landscape1.jpg">	
+		<p>Ainda, a ideia com o “min” é a mesma, porém de forma invertida, ou seja, se o meu documento tem a largura mínima de 500px, quando eu abrir a página em uma tela de 1920px de largura, o elemento irá ocupar os 1920px da tela, e na medida que ele for sendo redimensionado, quando chegar em 500px, ele irá parar de diminuir de largura e ficar fixo em 500px, criando uma barra de scroll inferior dos 499px para baixo.</p>
+
+		<br>
+		<div class="obs">
+			<p><b>OBS¹:</b> o valor da propriedade “max-width” sobrescreve o valor da propriedade “width”, e o mesmo se aplica ao “max-height” e “height”.</p>
+		</div><!--obs-->
+	</div>
+
+</body>
+</html> 

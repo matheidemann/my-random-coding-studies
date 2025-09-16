@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang=”pt-BR”>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Formas de utilizar o CSS em um documento HTML</title>
+</head>
+<body>
+	<div class="center">
+		<h1 class="cap">4 - INTRODUÇÃO AO CSS</h1>
+
+		<h1 class="sec">3 - Formas de utilizar o CSS em um documento HTML</h1>
+		<p>Há três formas diferentes para se usar o CSS dentro de um documento em HTML, são elas:</p>
+
+		<p><b>1) CSS inline:</b> a estilização será feita na mesma linha da tag que se pretende estilizar. Para fazer isso, basta abrir uma tag qualquer e dentro dela digitar:</p>
+
+		<p><b>Exemplo:</b></p>
+		
+		<xmp>> DENTRO DO HTML
+
+<!DOCTYPE html>
+<html lang=”pt-BR”>
+<body>
+	<h1 style="color:blue;text-align:center;">This is a heading</h1>
+	<p style="color:red;">This is a paragraph.</p>
+</body>
+</html>
+
+		</xmp>
+
+		<p><b>2) CSS inline:</b> a estilização será feita no documento HTML sendo estilizado, sendo que toda a configuração do CSS ficará no início do documento. Para fazer isso, basta abrir uma tag &lt;style&gt; logo após a tag &lt;head&gt; e começar a estilizar o documento o CSS:</p>
+
+		<p><b>Exemplo:</b></p>
+
+		<xmp> > DENTRO DO HTML
+
+<!DOCTYPE html>
+<html lang=”pt-BR”>
+<head>
+<style>
+	body {
+		background-color: linen;
+	}
+
+	h1 {
+		color: blue;
+		margin-left: 40px;
+	}
+</style>
+</head>
+<body>
+
+	<h1>This is a heading</h1>
+	<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+		</xmp>
+
+		<p><b>3) CSS external:</b> a estilização será feita em um documento próprio com a extensão “.css”, e toda a configutração do CSS ficará dentro deste documento, sendo que no documento HTML apenas será feita a linkagem com o documento “.css”. Para fazer isso, é necessário criar uma tag &lt;link&gt; no documento de HTML e então colocar os atributos “rel”, “type” e "href”:</p>
+
+		<p><b>Exemplo:</b></p>
+
+		<xmp> > DENTRO DO HTML
+
+	<!DOCTYPE html>
+	<html lang=”pt-BR”>
+	<head>
+	<link rel="stylesheet" type="text/css" href="cstyle.css">
+	<body>
+
+		<h1>This is a heading</h1>
+		<p>This is a paragraph.</p>
+
+	</body>
+	</html>
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+> DENTRO DO CSS
+
+	body {
+		background-color: lightblue;
+	}
+
+	h1 {
+		color: navy;
+		margin-left: 20px;
+	}
+
+	</xmp>		
+
+	<div class="obs">
+		<p><b>OBS¹:</b> o atributo “rel” é para identificar que o documento sendo linkado é um documento .css; o atributo type é opcional, apenas é colocado por boa prática; o atributo href é o caminho onde está localizado o documento .css, sendo que o caminho de origem será onde o documento .html se encontra.</p>
+		<p><b>OBS²:</b> é possível utilizar as 3 maneiras distintas de se chamar o CSS em um mesmo documento .html.</p>
+		<p><b>OBS³:</b> quando há mais de um estilo igual sendo especificado dentro de um mesmo documento .html, haverá maior prioridade para a forma “inline”..</p>
+	</div><!--obs-->
+</div>
+</body>
+</html> 

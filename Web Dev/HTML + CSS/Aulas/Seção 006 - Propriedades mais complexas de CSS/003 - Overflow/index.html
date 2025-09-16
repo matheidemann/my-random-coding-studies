@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang=”pt-BR”>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Overflow</title>
+</head>
+<body>
+	<div class="center">
+		<h1 class="cap">6 - PROPRIEDADES MAIS COMPLEXAS DE CSS</h1>
+
+		<h1 class="sec">3 - Overflow</h1>
+		<p>A propriedade overflow (transbordar) é utilizada para controlar o que acontece com o conteúdo de um elemento quando ele é grande demais para caber em determinada área.</p>
+		<p>Ainda, o overflow pode definir se um conteúdo será cortado da tela caso "transborde" ou se será adicionado uma barra de scroll.</p>
+		<p>A propriedade overflow pode receber os seguintes valores:</p>
+
+		<p><b>1) visible:</b> é o valor padrão de overflow para os elemento. Os elementos "transbordarão" para fora da área e não será adicionada nenhuma barra de scroll;</p>
+
+		<p><b>Exemplo:</b></p>
+		<div class="overflow1">
+			<p class="font">Elemento com "overflow: visible"</p>
+		</div>
+		<br><br><br><br><br><br><br><br>
+
+		<p><b>2) hidden:</b> os elementos não "transbordarão" para fora da área (tudo que estiver fora da área ficará invisível) e não será adicionada nenhuma barra de scroll;</p>
+
+		<p><b>Exemplo:</b></p>
+		<div class="overflow2">
+			<p class="font">Elemento com "overflow: hidden"</p>
+		</div>
+		<br>
+
+		<p><b>3) scroll:</b> os elementos não "transbordarão" para fora da área, porém será adicionada uma barra de scroll para mostrar todo o conteúdo dentro da área;</p>
+
+		<p><b>Exemplo:</b></p>
+		<div class="overflow3">
+			<p class="font">Elemento com "overflow: scroll"</p>
+		</div>
+		<br>
+
+		<p><b>4) auto:</b> os elementos não "transbordarão" para fora da área, porém, apenas quando necessário, será adicionada uma barra de scroll para mostrar todo o conteúdo dentro da área;</p>
+
+		<p><b>Exemplo:</b></p>
+		<div class="overflow4">
+			<p class="font">Elemento com "overflow: auto"</p>
+		</div>
+		<br>
+		<div class="overflow4">
+			<p>Elemento com "overflow: auto"</p>
+		</div>
+		<br>
+		<br>
+		<p>Todos estes valores também podem ser usados para o overflow direções diferentes, isto é, é possível definir um valor de overflow na vertical e outro na horizontal.</p>
+
+		<p><b>• overflow-x + overflow-y:</b> define o overflow separadamente na direção vertical e horizontal. Aceita todos os valores utilizados no "overflow".</p>
+
+		<p><b>Exemplo de elemento com "overflow-x: scroll" e "overflow-y: hidden;":</b></p>
+		<div class="overflow5">
+			<p class="font">Elemento com "overflow-x: scroll" e "overflow-y: hidden;"</p>
+		</div>
+		<br>
+
+		<div class="obs">
+			<p><b>OBS¹:</b> os elementos com o "overflow: visible", quando "transbordarem" para fora de sua área limite, eles não ocuparão de fato o espaço de fora da área, isto é, sua parte visual estará fora da área e ficará por cima de outros elementos, mesmo ela apenas ocupando "fisicamente" a área que está inserida.</p>
+			<p><b>OBS¹:</b> os elementos com o valor scroll ou auto criam uma barra de scroll, porém, é válido destacar que, a área que eles ocupavam "aumenta de tamanho" para poder receber os elementos que estão "transbordando", portanto, caso um elemento esteja "transbordando" para fora de uma área com o fundo azul, quando for colocado o valor scroll ou auto, todo o conteúdo que estava transbordando para fora fica dentro da área, porém o fundo azul não muda de tamanho, e sim o que acontece é apenas o deslocamento do texto na frente de um fundo.</p>
+		</div><!--obs-->
+
+
+
+
+	</div>
+</body>
+</html> 

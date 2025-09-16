@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+body {
+	background-color: hsl(205.7, 36.8%, 96.3%);
+	color: hsl(208.8, 61%, 16.1%);
+	font-family: 'Open Sans';
+}
+
+.grid {
+	display: grid;
+}
+
+.flex {
+	display: flex;
+}
+
+.section-center {
+	width: 90vw;
+	max-width: 35rem;
+	margin: 4vh auto;
+	padding: 2rem 2rem;
+	background-color: hsl(0, 0%, 100%);
+	text-align: center;
+	border-radius: 1rem;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.grocery-form {
+	margin-bottom: 2rem;
+}
+
+.alert {
+	height: 1.4rem;
+	font-size: 0.8rem;
+	margin-bottom: 1rem;
+	padding: 0.3rem;
+	text-transform: capitalize;
+	letter-spacing: 0.2rem;
+	border-radius: 0.4rem;
+}
+
+.grocery-form h3 {
+	font-size: 1.8rem;
+	font-weight: bold;
+	text-transform: capitalize;
+	letter-spacing: 0.2rem;
+	margin-bottom: 1.5rem;
+}
+
+.form-control {
+	grid-template-columns: 80% 1fr;
+	justify-content: center;
+	align-items: center;
+}
+
+.form-control input {
+	padding: 0.5rem 1rem;
+	border-radius: 0.3rem 0 0 0.3rem;
+	background-color: rgb(240, 243, 246);
+	border: 0;
+}
+
+.submit-btn {
+	padding: 0.55rem 0.8rem;
+	border: 0;
+	border-radius: 0 0.3rem 0.3rem 0;
+	background-color: hsl(205.3, 83.8%, 80.6%);
+	cursor: pointer;
+	letter-spacing: 0.1rem;
+	transition: 0.2s;
+	font-size: 0.9rem;
+}
+
+.submit-btn:hover {
+	background-color: hsl(205, 81%, 65%);
+	color: #f6f6f6;
+}
+
+.grocery-container {
+	width: 100%;
+	max-height: 0px;
+	text-align: left;
+	overflow: hidden;
+	transition: 0.2s;
+}
+
+.grocery-item {
+	text-transform: capitalize;
+	padding: 0.5rem 1rem;
+	border-radius: 0.3rem;
+	transition: 0.2s;
+	justify-content: space-between;
+	margin-bottom: 0.5rem;
+}
+
+.grocery-item:hover {
+	background-color: rgb(240, 243, 246);
+}
+
+.edit-btn {
+	color: hsl(115, 72%, 72%);
+	background-color: transparent;
+	margin-right: 0.5rem;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.edit-btn:hover {
+	color: hsl(115, 65%, 54%);
+}
+
+.delete-btn {
+	color: hsl(0, 72%, 72%);
+	background-color: transparent;
+	margin-right: 0.5rem;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.delete-btn:hover {
+	color: hsl(0, 65%, 54%);
+}
+
+.clear-btn {
+	display: block;
+	margin: 1.5rem auto 0px auto;
+	background-color: transparent;
+	color: hsl(0, 72%, 72%);
+	cursor: pointer;
+	letter-spacing: 0.2rem;
+	max-height: 0px;
+}
+
+.clear-btn:hover {
+	color: hsl(0, 65%, 54%);
+}
+
+.clear-confirmation {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: hsla(0, 0%, 0%, 0.253);
+	grid-template-columns: 1fr;
+	align-content: center;
+	justify-items: center;
+	visibility: hidden;
+	transition: 0.2s;
+}
+
+.clear-form {
+	padding: 3rem 1rem;
+	border-radius: 1rem;
+	align-content: center;
+	justify-items: center;
+	width: 50%;
+	min-width: 300px;
+	height: 180px;
+	background-color: hsl(205.7, 36.8%, 96.3%);
+}
+
+.clear-text {
+	margin-bottom: 2rem;
+}
+
+.clear-text h4 {
+	letter-spacing: 0.1rem;
+	font-weight: bold;
+	font-size: 1.4rem;
+}
+
+.clear-btns button {
+	padding: 1rem 1.4rem;
+	border: 0;
+	border-radius: 0.3rem;
+	cursor: pointer;
+	letter-spacing: 0.1rem;
+	transition: 0.2s;
+	font-size: 1.2rem;
+}
+
+.clear-btns button:nth-of-type(1) {
+	background: hsl(205.3, 83.8%, 80.6%);
+	margin-right: 1.2rem;
+}
+
+.clear-btns button:nth-of-type(1):hover {
+	background: rgb(200, 223, 240);
+}
+
+.clear-btns button:nth-of-type(2) {
+	background: hsl(0, 79%, 81%);
+}
+
+.clear-btns button:nth-of-type(2):hover {
+	background: hsl(0, 56%, 89%);
+}
+
+/* JS-CLASS */
+
+.show-confirmation {
+	visibility: visible !important;
+}
+
+.show-container {
+	max-height: 1000px !important;
+}
+
+.alert-green {
+	background-color: hsl(150, 89%, 93%);
+}
+
+.alert-blue {
+	background-color: hsl(214, 89%, 93%);
+}
+
+.alert-red {
+	background-color: hsl(0, 89%, 93%);
+}

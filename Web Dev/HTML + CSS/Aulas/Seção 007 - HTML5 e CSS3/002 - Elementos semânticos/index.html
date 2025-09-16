@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang=”pt-BR”>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, inital-scale=1.0, maximum-scale=1.0">
+	<meta name="description" content="Descrição do site.">
+	<meta name="keywords" content="palavras-chave, separadas, por, vírgula">
+	<meta name="author" content="Autor da page">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Elementos semânticos</title>
+</head>
+<body>
+
+	<div class="center">
+
+		<h1 class="cap">7 - HTML5 e CSS3</h1>
+
+		<h1 class="sec">2 - Elementos semânticos</h1>
+		<p>Elementos semânticos são aqueles que irão descrever claramente sua função tanto para o navegador quanto para o desenvolvedor.</p>
+		<p>Podemos ver elementos não-semânticos em &lt;div&gt; e &lt;span&gt;, pois eles não dizem nada a respeito do seu conteúdo, pode haver qualquer coisa lá dentro.</p>
+		<p>Por outro lado, podemos ver elementos emânticos em &lt;form&gt; e &lt;table&gt;, pois eles já especificam o que há dentro deles (dentro de um elemento table há uma tabela, e de um elemento form há um formulário).</p>
+		<p>Porém, no HTML4 não haviam elementos específicos para cada parte da página, tudo era dividido com divs, e então, a partir do HTML5 foram introduzidas tags justamente com a função de separar melhor o código, para que tanto o navegador quanto o desenvolvedor saibam exatamente sobre o que aquela divisão se trata. São os novos elementos semânticos do HTML5:</p>
+		<p><b>1) header:</b> é utilizado para representar o cabeçalho de um documento ou seção declarado no HTML. Nele podemos inserir elementos de &lt;h1&gt; a &lt;h6&gt; até elementos para representar imagens, parágrafos ou mesmo listas de navegação.</p>
+
+		<p><b>2) section:</b> é utilizado para representar uma seção dentro de um documento e geralmente contém um título, o qual é definido por meio de um dos elementos entre &lt;h1&gt; e &lt;h6&gt;. Podemos utilizar o section, por exemplo, para descrever as seções/tópicos de um documento. E ainda, segundo o W3C, "uma seção é um agrupamento temático de conteúdo, normalmente com um título."</p>
+
+		<p><b>3) article:</b> é utilizado para declarar um conteúdo que não precisa de outro para fazer sentido em um documento HTML, por exemplo, um artigo em um blog. É recomendado identificar cada &lt;article&gt; com um título.</p>
+
+
+		<p><b>4) nav:</b> é utilizado quando precisamos representar um agrupamento de links de navegação, que, por sua vez, são criados com os elementos &lt;ul&gt;, &lt;li&gt; e &lt;a&gt;.</p>
+
+		<p><b>5) aside:</b> é utilizado para criar um conteúdo de apoio/adicional ao conteúdo principal, como por exemplo sidebars. O conteúdo do aside deve estar indiretamente relacionado ao conteúdo que o cerca.</p>
+
+		<p><b>6) main:</b> é utilizado para especificar o conteúdo principal e, consequentemente, de maior relevância dentro da página. Para ser considerada bem construída, uma página deve apresentar apenas um conteúdo principal.</p>
+
+		<p><b>7) figure:</b>é uma marcação de uso específico para a inserção de uma figura.</p>
+
+		<p><b>8) figcaption:</b> é utilizado para incluir a descrição de uma figura. Deve estar sempre dentro do figure.</p>
+
+		<p><b>9) details:</b> é utilizado para especificar detalhes adicionais que o usuário pode abrir ou fechar caso ele precise. O details comumente é criado como um widget interativo que o usuário pode abrir e fechar, sendo que por padrão ele vem fechado.</p>
+
+		<p><b>10) summary:</b> é utilizado em conjunto com o details, e serve para definir um título para o details, fazendo com que esse título possa ser clicado para mostrar ou esconder conteúdo. Detalhe que o summary deve ser o primeiro elemento dentro do details.</p>
+
+		<p><b>11) footer:</b> é utilizado para representar um rodapé de um documento, como a área presente no final de uma página web. Normalmente é utilizado para descrever informações de autoria, como nome e contato do autor, e data de criação do conteúdo. </p>
+
+	</div>
+
+</body>
+</html> 

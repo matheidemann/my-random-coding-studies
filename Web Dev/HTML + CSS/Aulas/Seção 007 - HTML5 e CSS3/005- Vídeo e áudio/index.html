@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang=”pt-BR”>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, inital-scale=1.0, maximum-scale=1.0">
+	<meta name="description" content="Descrição do site.">
+	<meta name="keywords" content="palavras-chave, separadas, por, vírgula">
+	<meta name="author" content="Autor da page">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Vídeo e áudio</title>
+</head>
+<body>
+
+	<div class="center">
+
+		<h1 class="cap">7 - HTML5 e CSS3</h1>
+
+		<h1 class="sec">5 - Vídeo e áudio</h1>
+		<p>Para adicionar vídeo a uma page de HTML basta utilizar a tag &lt;video&gt;.</p>
+		<p>Vale destacar que o vídeo deve estar em formato .mp4, e o vídeo sempre terá a mesma proporção, independetemente do tamanho que seja definido no CSS.</p>
+		<p><b>Exemplo (não há como fazer nada no vídeo abaixo pois ele não possui controles):</b></p>
+		<video>
+			<source src="videos/ads.mp4" type="video/mp4"></source>
+		</video><br><br>
+		<p>O vídeo possui certos atributos para deixa-lo mais complexo:</p>
+
+		<p><b>1) controls:</b> adicione os controles para poder iniciar o vídeo, pausar, mudar o volume e deixar em tela cheia;</p>
+
+		<p><b>Exemplo:</b></p>
+		<video controls>
+			<source src="videos/ads.mp4" type=""></source>
+		</video><br><br>
+
+		<p><b>2) loop:</b> o vídeo ficará em loop (quando ele acabar, começará a tocar novamente);</p>
+		
+		<p><b>Exemplo:</b></p>
+		<video controls loop>
+			<source src="videos/ads.mp4" type=""></source>
+		</video><br><br>
+
+		<p><b>3) muted:</b> o vídeo iniciará mutado;</p>
+		
+		<p><b>Exemplo:</b></p>
+		<video controls loop muted>
+			<source src="videos/ads.mp4" type=""></source>
+		</video><br><br>
+
+		<p><b>4) autoplay:</b> o vídeo será tocado automaticamente quando a page for aberta. Detalhe que, para funcionar em todos os navegadores, o vídeo precisa estar com o atributo "muted".</p>
+		
+		<p><b>Exemplo:</b></p>
+		<video controls loop muted autoplay>
+			<source src="videos/ads.mp4" type=""></source>
+		</video><br><br><br>
+
+		<p>É possível personalizar inteiramente a caixa de vídeo pelo CSS, podendo criar resultados muito interessantes como o de baixo, onde o vídeo é colocado como plano de fundo com um overlay vermelho com opacidade de 0.5 por cima:</p>
+
+		<div class="video1">
+			<div class="background">
+				<h1>Meu site</h1>
+			</div>
+			<video class="video2" loop muted autoplay>
+				<source src="videos/ads.mp4" type=""></source>
+			</video>
+		</div><br><br>
+
+		<p>Agora, já se tratando do áudio, ele segue na mesma linha vídeo, mas com a tag &lt;audio&gt;. Todas os atributos do video funcionam aqui da mesma forma:</p>
+		<p><b>Exemplo (com controls e loop):</b></p>
+		<audio controls loop>
+			<source src="audio/resonance.mp3" type="audio/mp3"></source>
+		</audio>
+	</div>
+	
+	
+
+
+
+</body>
+</html> 

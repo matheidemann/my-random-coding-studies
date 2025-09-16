@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang=”pt-BR”>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Colunas</title>
+</head>
+<body>
+	<div class="center">
+
+		<h1 class="cap">5 - PROPRIEDADES BÁSICAS DE CSS</h1>
+
+		<h1 class="sec">15 - Colunas</h1>
+		<p>As colunas permitem que o texto seja escrito em colunas separadas, sendo altamente personalizáveis.</p>
+
+		<p><b>1) columns:</b> shorthand property para estilizar colunas (columns: tamanho-da-coluna quantidade-de-colunas);</p>
+
+		<p class="space1"><b>1.1) column-count:</b> define o número de colunas;</p>
+
+		<p class="space1"><b>Exemplo (column-count: 3;):</b></p>
+		<p class="coluna1"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer efficitur sit amet ipsum ut egestas. Nam viverra lectus in tristique pretium. Donec vitae quam quis ex euismod bibendum. Suspendisse vitae felis tincidunt, ullamcorper nisi vitae, congue quam. Donec accumsan justo nec laoreet viverra. Donec vehicula elementum neque, eget interdum velit scelerisque tempor. Nunc volutpat nisi ut velit semper, ut viverra ante efficitur. Suspendisse vestibulum ante non lorem vestibulum ullamcorper. Phasellus vel nulla ultricies, maximus felis eu, interdum quam. Quisque a aliquam nunc. Pellentesque rutrum, dui et ornare lobortis, justo nunc vestibulum mi, eu cursus purus orci eget lorem. Etiam varius est eget arcu congue finibus. Sed venenatis lacinia libero sit amet interdum. Maecenas auctor arcu pellentesque iaculis malesuada.
+		Nulla auctor sed massa id interdum. Nullam bibendum metus eget diam pellentesque, et fermentum lectus molestie. Mauris convallis porta lacus consequat pharetra. Duis eget elementum metus. Morbi quis sagittis dolor. Cras in dui vulputate, ultricies eros vitae, tincidunt ligula. Sed gravida posuere sagittis. Sed ut sem orci. Pellentesque ornare odio neque, vitae ornare erat mattis quis. Nam vehicula massa lorem, et elementum mi tincidunt vitae. </p><br>
+
+		<p class="space1"><b>1.2) column-gap:</b> define o tamanho do espaço entre colunas;</p>
+
+		<p class="space1"><b>Exemplo (column-gap: 150px;):</b></p>
+		<p class="coluna2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer efficitur sit amet ipsum ut egestas. Nam viverra lectus in tristique pretium. Donec vitae quam quis ex euismod bibendum. Suspendisse vitae felis tincidunt, ullamcorper nisi vitae, congue quam. Donec accumsan justo nec laoreet viverra. Donec vehicula elementum neque, eget interdum velit scelerisque tempor. Nunc volutpat nisi ut velit semper, ut viverra ante efficitur. Suspendisse vestibulum ante non lorem vestibulum ullamcorper. Phasellus vel nulla ultricies, maximus felis eu, interdum quam. Quisque a aliquam nunc. Pellentesque rutrum, dui et ornare lobortis, justo nunc vestibulum mi, eu cursus purus orci eget lorem. Etiam varius est eget arcu congue finibus. Sed venenatis lacinia libero sit amet interdum. Maecenas auctor arcu pellentesque iaculis malesuada.
+		Nulla auctor sed massa id interdum. Nullam bibendum metus eget diam pellentesque, et fermentum lectus molestie. Mauris convallis porta lacus consequat pharetra. Duis eget elementum metus. Morbi quis sagittis dolor. Cras in dui vulputate, ultricies eros vitae, tincidunt ligula. Sed gravida posuere sagittis. Sed ut sem orci. Pellentesque ornare odio neque, vitae ornare erat mattis quis. Nam vehicula massa lorem, et elementum mi tincidunt vitae. </p><br>
+
+		<p><b>2) column-rule:</b> shorthand property para definir as propridades da linha que separa as colunas;</p>
+
+		<p class="space1"><b>2.1) column-rule-width:</b> define a grossura da linha;</p>
+
+		<p class="space1"><b>2.2) column-rule-style:</b> define o estilo da linha (aceita os valores de estilo para bordas, contornos etc);</p>
+
+		<p class="space1"><b>2.3) column-rule-color:</b> define a cor da linha;</p>
+
+		<p><b>Exemplo (column-rule: 15px groove red;):</b></p>
+		<p class="coluna3"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer efficitur sit amet ipsum ut egestas. Nam viverra lectus in tristique pretium. Donec vitae quam quis ex euismod bibendum. Suspendisse vitae felis tincidunt, ullamcorper nisi vitae, congue quam. Donec accumsan justo nec laoreet viverra. Donec vehicula elementum neque, eget interdum velit scelerisque tempor. Nunc volutpat nisi ut velit semper, ut viverra ante efficitur. Suspendisse vestibulum ante non lorem vestibulum ullamcorper. Phasellus vel nulla ultricies, maximus felis eu, interdum quam. Quisque a aliquam nunc. Pellentesque rutrum, dui et ornare lobortis, justo nunc vestibulum mi, eu cursus purus orci eget lorem. Etiam varius est eget arcu congue finibus. Sed venenatis lacinia libero sit amet interdum. Maecenas auctor arcu pellentesque iaculis malesuada.
+		Nulla auctor sed massa id interdum. Nullam bibendum metus eget diam pellentesque, et fermentum lectus molestie. Mauris convallis porta lacus consequat pharetra. Duis eget elementum metus. Morbi quis sagittis dolor. Cras in dui vulputate, ultricies eros vitae, tincidunt ligula. Sed gravida posuere sagittis. Sed ut sem orci. Pellentesque ornare odio neque, vitae ornare erat mattis quis. Nam vehicula massa lorem, et elementum mi tincidunt vitae. </p><br><br>
+
+		<p><b>3) column-span:</b> define se algum conteúdo deve ignorar as colunas para ser escrito em toda uma linha (ficar acima de todas as colunas, e não ficar dentro de uma coluna);</p>
+
+		<p><b>Exemplo (sem o column-span;):</b></p>
+		<div class="coluna4">
+			<h2 class="no-span">Este é o texto de teste para ver o que acontece</h2>
+			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer efficitur sit amet ipsum ut egestas. Nam viverra lectus in tristique pretium. Donec vitae quam quis ex euismod bibendum. Suspendisse vitae felis tincidunt, ullamcorper nisi vitae, congue quam. Donec accumsan justo nec laoreet viverra. Donec vehicula elementum neque, eget interdum velit scelerisque tempor. Nunc volutpat nisi ut velit semper, ut viverra ante efficitur. Suspendisse vestibulum ante non lorem vestibulum ullamcorper. Phasellus vel nulla ultricies, maximus felis eu, interdum quam. Quisque a aliquam nunc. Pellentesque rutrum, dui et ornare lobortis, justo nunc vestibulum mi, eu cursus purus orci eget lorem. Etiam varius est eget arcu congue finibus. Sed venenatis lacinia libero sit amet interdum. Maecenas auctor arcu pellentesque iaculis malesuada.
+			</p>
+		</div><br><br>
+
+		<p><b>Exemplo (column-span: all;):</b></p>
+		<div class="coluna4">
+			<h2 class="span">Este é o texto de teste para ver o que acontece</h2>
+			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer efficitur sit amet ipsum ut egestas. Nam viverra lectus in tristique pretium. Donec vitae quam quis ex euismod bibendum. Suspendisse vitae felis tincidunt, ullamcorper nisi vitae, congue quam. Donec accumsan justo nec laoreet viverra. Donec vehicula elementum neque, eget interdum velit scelerisque tempor. Nunc volutpat nisi ut velit semper, ut viverra ante efficitur. Suspendisse vestibulum ante non lorem vestibulum ullamcorper. Phasellus vel nulla ultricies, maximus felis eu, interdum quam. Quisque a aliquam nunc. Pellentesque rutrum, dui et ornare lobortis, justo nunc vestibulum mi, eu cursus purus orci eget lorem. Etiam varius est eget arcu congue finibus. Sed venenatis lacinia libero sit amet interdum. Maecenas auctor arcu pellentesque iaculis malesuada.
+			</p>
+		</div>
+		<br>
+
+	</div>
+
+</body>
+</html> 

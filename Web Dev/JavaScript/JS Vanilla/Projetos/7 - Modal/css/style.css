@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+body {
+	color: #222224;
+	font-family: 'Open Sans', sans-serif;
+	height: 100vh;
+}
+
+main {
+	position: relative;
+}
+
+.center {
+	max-width: 1280px;
+	margin: 0px auto;
+	padding: 0px 2%;
+}
+
+.flex {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+/* STYLE */
+
+.background {
+	width: 100%;
+	height: 100vh;
+	background-image: url(../images/space.jpg);
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.box {
+	position: relative;
+	z-index: 2;
+	width: 90vw;
+	max-width: 600px;
+	height: 250px;
+	background-color: #ffffff;
+	border-radius: 15px;
+	text-align: center;
+	box-shadow: 0px 0px 25px 0px #0000003f;
+}
+
+.box h1 {
+	font-size: 3rem;
+	text-transform: capitalize;
+	font-weight: 700;
+}
+
+.box button {
+	background-color: #2e86ce;
+	border: 2px solid #2e86ce;
+	color: #ffffff;
+	letter-spacing: 0.2rem;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	margin-top: 30px;
+	border-radius: 0.4rem;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.box button:hover {
+	background-color: #ffffff;
+	border: 2px solid #2e86ce;
+	color: #2e86ce;
+}
+
+.modal-conteiner {
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	z-index: 2;
+	background-color: #2e86ce6e;
+	transition: 0.5s;
+	z-index: -10;
+	opacity: 0;
+}
+
+.modal {
+	width: 90vw;
+	max-width: 650px;
+	height: 300px;
+	text-align: center;
+	background-color: #ffffff;
+	border-radius: 15px;
+	position: absolute;
+	box-shadow: 0px 0px 25px 0px #0000003f;
+}
+
+.modal h1 {
+	font-size: 3rem;
+	text-transform: capitalize;
+	font-weight: 700;
+}
+
+.modal i {
+	font-size: 2rem;
+	color: #d80e0e;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.modal i:hover {
+	transform: rotate(90deg);
+	color: #f75252;
+}
+
+/* JS CLASS */
+
+.modal-view-hide {
+	z-index: 10;
+	opacity: 1;
+}

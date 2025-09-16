@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang=”pt-BR”>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Regras, seletores, declarações, propriedades e valores</title>
+</head>
+<body>
+	<div class="center">
+		<h1 class="cap">4 - INTRODUÇÃO AO CSS</h1>
+		
+		<h1 class="sec">2 - Regras, seletores, declarações, propriedades e valores</h1>
+		<p>CSS significa Cascading Style Sheets (Folha de Estilos em Cascata);</p>
+
+		<p><b>1) Regra (rule):</b> consiste em um selector (seletor) e um declaration block (bloco de declaração), sendo que dentro deste ficarão as properties (propriedades) e os values (valores). Ela possui uma sintaxe própria que define como será aplicado estilo a um ou mais elementos da marcação HTML de uma página. Um conjunto de regras CSS formam uma folha de estilos.</p>
+
+		<div class="space1">
+			<p><b>1.1) Seletor (selector):</b> é um elemento da marcação HTML identificado pelo nome da tag (&lt;p&gt;, &lt;h1&gt;, &lt;form&gt;, etc), classe (topo, .principal, .menu, etc), identificador (#tudo, #auxiliar, #rodape, etc), conjunto de tags, classes e identificadores, ou asterisco (* seleciona todo o documento HTML). O selector é dividido em cinco categorias:</p>
+		</div>
+
+		<div class="space2">
+			<p><b>1.1.1) Seletor simples (simple selector):</b> seleciona elementos com base no nome da tag, classe ou id;</p>
+
+			<p><b>1.1.2) Seletor combinado (combined selector):</b> seleciona os elementos com base em uma relação específica entre eles;</p>
+
+			<p><b>1.1.3) Seletor de pseudo-classe (pseudo-class selector):</b> seleciona os elementos com base em uma determinada situação;</p>
+
+			<p><b>1.1.4) Seletor de pseudo-elementos (pseudo-elements selector):</b> seleciona apenas parte de um elemento;</p>
+
+			<p><b>1.1.5) Seletor de atributo (attribute selector):</b> seleciona elementos com base em um atributo ou valor de um atributo.</p>
+		</div>
+
+		<div class="space1">
+			<p><b>1.2) Bloco de declaração (declaration block):</b> é o conjunto de uma ou mais propriedades e um valores, aqui é onde ocorre a estilização das marcações de HTML.</p>
+		</div>
+		
+		<div class="space2">
+			<p><b>1.2.1) Propriedade (property):</b> é a propriedade do elemento HTML ao qual será aplicada a estilização definida no valor;</p>
+
+			<p><b>1.2.2) Seletor de atributo (attribute selector):</b> é a característica específica a ser assumida pela propriedade.</p>
+		</div>
+
+		<table class="tabela" width="100%" border="1">
+			<thead>
+				<tr class="tableaux1">
+					<th colspan="4">Regra de CSS</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="tableaux2">
+					<td>Seletor</td>
+					<td colspan="2">Declaração</td>
+				</tr>
+				<tr>
+					<td>h1 (ou qualquer outra forma de seleção)</td>
+					<td>{font-size:</td>
+					<td>12;}</td>
+				</tr>
+				<tr class="tableaux2">
+					<td></td>
+					<td>Propriedade</td>
+					<td>Valor</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<br>
+		<span><b>Resultado:</b></span><span>h1 {font-size:12;}</span>
+		<br><br><br><br>
+
+		<table class="tabela" width="100%" border="1">
+			<thead>
+				<tr class="tableaux1">
+					<th colspan="5">Regra de CSS com mais de um seletor e declração</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="tableaux2">
+					<td>Seletor</td>
+					<td colspan="2">Declaração</td>
+					<td colspan="2">Declaração</td>
+				</tr>
+				<tr>
+					<td>h1, .classe (ou qualquer outra forma de seleção)</td>
+					<td>{font-size:</td>
+					<td>12;</td>
+					<td>color:</td>
+					<td>red;}</td>
+				</tr>
+				<tr class="tableaux2">
+					<td></td>
+					<td>Propriedade</td>
+					<td>Valor</td>
+					<td>Propriedade</td>
+					<td>Valor</td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+		<span><b>Resultado:</b></span><span>h1, .classe {font-size:12; color:red;}</span>
+		<br><br><br><br>
+
+		<div class="obs">
+			<p><b>OBS¹:</b>é possível utilizar mais de uma declaration dentro de uma rule, assim possibilitando estilizar mais de uma propriedade de um selector. Para isso, basta colocar um ; após cada declaration, e então prosseguir escrevendo a próxima declaration. Exemplo: h1 {font-size:12; color:blue;}</p>
+			<p><b>OBS²:</b>caso o valor da propriedade seja uma palavra composta, esta deverá estar entre aspas simples ou duplas, como no caso de definir o tipo de fonte Exemplo: h1 {font-family:”Comic Sans MS”;)</p>
+			<p><b>OBS³:</b>é recomendável sempre colocar um ; após a última declaration, para no caso de futuramente ter que se acrescentar mais declarações na regra de CSS (evitando correr o risco de esquecer eventual ponto-e-vírgula inicialmente omitido).</p>
+		</div><!--obs-->
+	</div>
+</body>
+</html> 

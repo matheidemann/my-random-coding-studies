@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+body {
+	color: #f5f5f5;
+	font-family: 'Open Sans', sans-serif;
+	position: relative;
+}
+
+.background {
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url(../images/mountains.jpg);
+	background-size: cover;
+	background-position: center;
+	z-index: 1;
+}
+
+.center {
+	max-width: 1280px;
+	margin: 0px auto;
+	padding: 0px 2%;
+	font-family: 'Arial';
+}
+
+.grid {
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+}
+
+.flex {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+/* STYLE */
+
+.sidebar {
+	width: 400px;
+	height: 100vh;
+	position: relative;
+	z-index: 2;
+	transform: translate(-100%);
+	transition: 0.3s;
+}
+
+.sidebar-toggle {
+	position: absolute;
+	z-index: 1;
+	top: 1rem;
+	right: 2rem;
+}
+
+.sidebar-toggle i {
+	font-size: 3rem;
+	cursor: pointer;
+	animation: toggle-idle 2s ease-in-out infinite;
+}
+
+@keyframes toggle-idle {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.2);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+.sidebar-header {
+	padding: 1rem 1.5rem;
+	background: linear-gradient(to right, #000000cb, #1d1d1dcc);
+}
+
+.sidebar-header h1 {
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+
+.sidebar-header i {
+	font-size: 2rem;
+	color: #c80000;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.sidebar-header i:hover {
+	color: #b9b9b9;
+	transform: rotate(90deg);
+}
+
+.links {
+	padding: 1rem 0rem;
+	background: linear-gradient(to right, #3a3a3acb, #535353c4);
+}
+
+.links li {
+	width: 100%;
+}
+
+.links li a {
+	width: 100%;
+	font-size: 1.4rem;
+	padding: 1rem 1.5rem;
+	display: inline-block;
+	color: #f5f5f5;
+	transition: 0.3s;
+}
+
+.links li a:hover {
+	background: linear-gradient(to right, #ffffffcb, transparent);
+	padding-left: 2rem;
+	color: #444444;
+}
+
+.social-media {
+	padding: 1rem 1.5rem;
+	background-color: #20202080;
+	justify-content: center;
+}
+
+.social-media li {
+	padding: 0px 1rem;
+}
+
+.social-media li i {
+	font-size: 1.8rem;
+	cursor: pointer;
+}
+
+.social-media li i:hover {
+	color: #b9b9b9;
+}
+
+/* JS CLASS */
+
+.show-hide-sidebar {
+	transform: translate(0);
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 620px) {
+	.sidebar {
+		width: 100%;
+	}
+
+	.links {
+		text-align: center;
+	}
+
+	.links li a:hover {
+		background: linear-gradient(to right, transparent, #b6b5b5cb, transparent);
+		padding-left: 1.4rem;
+		color: #444444;
+	}
+}

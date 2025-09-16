@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang=”pt-BR”>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Pseudo-classes - Parte 1</title>
+</head>
+<body>
+
+	<div class="center">
+		<h1 class="cap">6 - PROPRIEDADES MAIS COMPLEXAS DE CSS</h1>
+
+		<h1 class="sec">8 - Pseudo-classes - Parte 1</h1>
+		<p>As pseudo-classes são utilizadas para definir um estado especial de um elemento (ou mesmo para deixar o seletor mais específico). Há diversas pseudo-classes com diveras funcionalidades diferentes. Na parte 1 sobre pseudo-classes o foco será sobre as mais simples e fáceis de entender:</p>
+
+		<p><b>1) link:</b> estiliza links não visitados;</p>
+		<p><b>Exemplo (.link1:link):</b></p>
+		<a class="link1" href="https://www.testetestetesteste123.com">Meu link.</a><br><br>
+
+		<p><b>2) visited:</b> estiliza links visitados;</p>
+		<p><b>Exemplo (.link2:visited):</b></p>
+		<a class="link2" href="https://www.google.com">Meu link.</a><br><br>
+
+		<p><b>3) active:</b> estiliza elementos ativos;</p>
+		<p><b>Exemplo (.p1:active):</b></p>
+		<p class="p1">Clique e segure em cima para ver o que acontece;</p><br><br>
+
+		<p><b>4) hover:</b> estiliza elementos ativos;</p>
+		<p><b>Exemplo (.p1:active):</b></p>
+		<p class="p2">Passe o mouse por cima para ver o que acontece;</p><br><br>
+
+		<p><b>5) empty:</b> estiliza elementos que não possuem conteúdo (o elemento precisa possuir alguma largura e altura para funcionar);</p>
+		<p><b>Exemplo (.p3:empty):</b></p>
+		<p class="p3"></p><br><br>
+
+		<p><b>6) focus:</b> estiliza todos os elementos que estão em foco;</p>
+		<p><b>Exemplo (p4:focus):</b></p>
+		<input class="p4" type="text" placeholder="Clique neste input"><br><br>
+
+		<p><b>7) checked:</b> estiliza todos os elementos que estão checados/verificados;</p>
+		<p><b>Exemplo (p5:checked):</b></p>
+		<input class="p5" type="radio"  value="male" name="gender">Radio 1<br>
+		<input class="p5" type="radio"  value="male" name="gender">Radio 2<br><br>
+
+		<p><b>7) valid:</b> estiliza um elemento quando seu valor inserido é válido;</p>
+		<p><b>Exemplo (p6:valid):</b></p>
+		<input class="p6" type="email"  placeholder="Insira seu email."><br><br>
+
+		<p><b>8) invalid:</b> estiliza um elemento quando seu valor inserido é inválido;</p>
+		<p><b>Exemplo (p7:invalid):</b></p>
+		<input class="p7" type="email"  placeholder="Insira seu email."><br><br>
+
+		<p><b>8) in-range:</b> estiliza um elemento quando seu valor inserido está dentro do alcance permitido;</p>
+		<p><b>Exemplo (p8:in-range) - alance numérico de 0 a 10:</b></p>
+		<input class="p8" type="number" min="0" max="10" value="5"><br><br>
+
+		<p><b>9) out-of-range:</b> estiliza um elemento quando seu valor inserido está fora do alcance permitido;</p>
+		<p><b>Exemplo (p9:out-of-range) - alance numérico de 0 a 10:</b></p>
+		<input class="p9" type="number" min="0" max="10" value="5"><br><br>
+
+		<p><b>10) required:</b> estiliza um elemento quando possuir um atributo dizendo que ele é necessário ser preenchido;</p>
+		<p><b>Exemplo (p10:required):</b></p>
+		<input class="p10" type="text" placeholder="Necessário" required><br><br>
+
+		<p><b>10) optional:</b> estiliza um elemento quando possuir um atributo dizendo que ele é opcional ser preenchido;</p>
+		<p><b>Exemplo (p10:optional):</b></p>
+		<input class="p10" type="text" placeholder="Necessário" optional><br><br>
+
+		<p><b>11) lang:</b> estiliza um elemento quando possuir texto na lingua definida no atributo da pseudo-classe;</p>
+		<p><b>Exemplo:</b></p>
+		<p lang="pt-br" class="p11">Texto em português do Brasil.</p>
+		<p lang="en" class="p11">Text in English.</p>
+		<p lang="es" class="p11">Texto en español.</p>
+		<p lang="it" class="p11">Testo spagnolo.</p>
+
+	</div>
+	
+</body>
+</html> 

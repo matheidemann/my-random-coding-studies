@@ -1,0 +1,183 @@
+/* DEFAULT */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+body {
+	color: #202022;
+	font-family: 'Open Sans', sans-serif;
+}
+
+main {
+	position: relative;
+	min-height: 100vh;
+}
+
+.background {
+	background: linear-gradient(to right, #e0e0e0, #f8f8f8, #e0e0e0, #f8f8f8);
+	background-size: 500%;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+	animation: bg-anim 8s ease infinite alternate;
+}
+
+.center {
+	max-width: 600px;
+	margin: 0px auto;
+	padding: 2% 2%;
+	position: relative;
+	z-index: 2;
+}
+
+.flex {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.center > .flex {
+	height: auto;
+}
+
+@keyframes bg-anim {
+	from {
+		background-position-x: 0%;
+	}
+
+	to {
+		background-position-x: 100%;
+	}
+}
+
+@keyframes movie-anim {
+	from {
+		transform: scale(1);
+	}
+
+	to {
+		transform: scale(1.05);
+	}
+}
+
+/* STYLE */
+
+.movie-conteiner {
+	background-color: #fdfdfd;
+	padding: 8% 10%;
+	border-radius: 35px;
+	box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.075);
+	margin: 2%;
+}
+
+.movie-details {
+	width: 100%;
+	text-align: center;
+}
+
+.movie-img-conteiner {
+	width: 100%;
+	max-width: 350px;
+	height: 350px;
+}
+
+.movie-img {
+	width: 100%;
+	max-width: 300px;
+	height: 300px;
+	border-radius: 150px;
+	box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.089);
+	background-image: url(../images/interstellar.png);
+	background-size: cover;
+	background-position: center;
+	animation: movie-anim 2.5s ease infinite alternate;
+}
+
+.movie-details h1 {
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: 300;
+	color: #e1f4ff;
+	background-color: #14b4b4;
+	padding: 10px;
+	border-radius: 10px;
+	margin: 20px 0px;
+}
+
+.movie-details h2 {
+	font-size: 20px;
+	margin: 20px 0px;
+	font-style: italic;
+	font-weight: 400;
+	color: #0fa8c3;
+}
+
+.movie-details p {
+	font-size: 18px;
+	text-align: justify;
+	color: #6e6e6e;
+	max-height: 3rem;
+	overflow: hidden;
+	transition: 0.2s;
+}
+
+.movie-details span {
+	font-size: 18px;
+	color: #14b4b4;
+	display: inline-block;
+	margin: 20px 0px 0px 0px;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.movie-details span:hover {
+	transform: scale(0.97);
+}
+
+.btn-conteiner button {
+	background-color: transparent;
+}
+
+.btn-conteiner i {
+	background: transparent;
+	color: #14b4b4;
+	font-size: 30px;
+	margin: 20px 10px;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.btn-conteiner i:hover {
+	color: #0f7c7c;
+}
+
+.random-btn-conteiner {
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
+
+.random-btn {
+	background-color: #14b4b4;
+	cursor: pointer;
+	padding: 5px 10px;
+	color: #ffffff;
+	font-size: 16px;
+	border-radius: 5px;
+	transition: 0.2s;
+}
+
+.random-btn:hover {
+	transform: scale(1.1);
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 500px) {
+	.movie-conteiner {
+		background-color: #fdfdfd;
+		padding: 20px;
+	}
+}

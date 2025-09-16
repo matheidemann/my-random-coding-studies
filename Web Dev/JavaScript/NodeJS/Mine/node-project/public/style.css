@@ -1,0 +1,15 @@
+.btn {
+	padding: 1rem 2rem;
+	margin-bottom: 2rem;
+	background-color: cornflowerblue;
+	color: white;
+	border: none;
+	border-radius: 2rem;
+	cursor: pointer;
+}
+
+.color {
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+}

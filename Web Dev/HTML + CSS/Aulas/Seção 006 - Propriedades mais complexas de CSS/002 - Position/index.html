@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang=”pt-BR”>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Position</title>
+</head>
+<body>
+
+	<div class="center">
+
+		<h1 class="cap">6 - PROPRIEDADES MAIS COMPLEXAS DE CSS</h1>
+
+		<h1 class="sec">2 - Position</h1>
+		<p>A propriedade position (posição) é utilizada para definir o método de posicionamento de um elemento. Ainda, é possível utilizar quatro propriedades para personalizar a propriedade de posicionamento, que pode ser resumido como TBLR (“top”, “bottom”, “left” e “right”). Há cinco valores que podem ser utilizados na propriedade position:</p>
+
+		<p><b>1) static:</b> é um elemento que não é posicionado de nenhum forma especial, ele simplesmente segue o fluxo do layout da page.</p>
+		<p>Este é o valor padrão dos elementos HTML. Elementos com posição estática não aceitam as propriedades “top”, “bottom”, “left” e “right”;</p>
+
+		<p><b>Exemplo:</b></p>
+		<p>Elemento com "position: static"</p>
+		<br>
+
+		<p><b>2) relative:</b> é um elemento posicionado de forma relativa da sua posição padrão. Para utiliza-lo, ainda é necessário fazer o uso das propriedades de TBLR, pois caso não elas não sejam utilizadas, o posicionamento relativo não fará nenhuma diferença.</p>
+		<p>Ainda, a posição relativa não faz com que outros conteúdos preencham espaços que forem eventualmente deixados pelo elemento com tal posição, isto é, se ele ocupa o topo de uma page, o espaço dele continuará lá, pouco importando se, graças ao TBLR, ele se encontra na parte mais inferior da page.</p>
+		<p>E por fim, se houver um &lt;span&gt; com posição relativa e outro não, e este primeiro &lt;span&gt; ter sua propriedade “left” em 30px, este span irá ficar literalmente por cima do outro &lt;span&gt;, portanto, é como se o espaço ocupado pelo elemento continuasse no mesmo local, mas sua parte visual fosse para outro lugar. Também, como dito no parágrafo anterior, o espaço ocupado pelo span com posição relativo continuará lá, e portanto, deixará um vão em branco onde seria sua posição original;</p>
+
+		<p><b>Exemplo (perceba que o SPAN1 se moveu para a direita, mas o SPAN2 não se moveu no lugar):</b></p>
+
+		<div class="relative1">
+			<span>Elemento SPAN1 com "position: static;"..</span>
+			<span>/ = / = / Elemento SPAN2 com "position: static;"</span>
+			<br><br>
+			<span class="relative2">Elemento SPAN1 com "position: relative;"</span>
+			<span>/ = / = / Elemento SPAN2 com "position: static;"</span>
+			<br><br>
+		</div>
+
+		<p><b>3) fixed:</b> é um elemento que terá sua posição fixa na viewport, isto é, mesmo que a página possua uma barra de scroll longa, independetemente onde o usuário estiver, este elemento estará fixo no mesmo local.</p>
+		<p>Ele se sobrepõe visualmente sobre outros elementos caso suas propriedades de TBLR façam com que ele esteja em cima de outros elementos, e também ele não deixa espaços em branco na page, portanto, se difere da posição relativa neste aspecto, isto é, se um elemento com posição fixa estiver originalmente no topo, mas sua posição for modificada através do TBLR, logo o espaço que ele ocupava na parte do topo não será mais considerada, e outros elementos preencherão este vão;</p>
+
+		<p><b>Exemplo:</b></p>
+		<p>Olhe para o canto superior direito da tela.</p>
+		<div class="fixed">
+			<span>Elemento SPAN com "position: fixed"</span>
+		</div>
+		<br>
+
+		<p><b>4) absolute:</b> é um elemento que terá sua posição definida com base no elemento posicionado pai do qual ele está inserido, ao invés de ser posicionado com base na viewport.</p>
+		<p>Porém, caso o elemento com posição absoluta não estiver dentro de algum elemento posicionado, ele usará o próprio elemento &lt;body&gt; para se posicionar. Portanto, para a posição absoluta funcionar corretamente, ela deve estar dentro de algum elemento posicionado (não funciona corretamente com a posição estática);</p>
+
+		<p><b>Exemplo (perceba que o elemento P1 está funcionando como deve estar, enquanto o P2, mesmo com a posição absoluta, foi colocado no canto inferior direito da viewport (tente redimensionar o navegador para ver o que acontece com o P2)):</b></p>
+		<div class="square1">DIV1
+			<div class="square2">DIV2
+				<p>Elemento P1 com "position: absolute" dentro de um elemento posicionado.</p>
+			</div>
+			<p>Elemento P2 com "position: absolute" fora de um elemento posicionado.</p>
+		</div>
+		<br>
+
+		<p><b>5) sticky:</b> é um elemento que terá sua posição definida com base no scroll do mouse do usuário.</p>
+		<p>A posição sticky (grudenta) alterna entre a posição relative e fixed com base no scroll do mouse do usuário, isto é, o elemento possui primeiramente uma posição relativa, com exatamente o mesmo comportamento do valor relative, porém, quando o elemento for sair da tela do usuário ele entrará com a posição em valor fixed, e dessa forma, ele sempre estará visível na tela a partir de determinada rolação de scroll da page, e ainda, sua posição por padrão ficará no topo, mas com as propriedades TBLR ele poderá ficar mais abaixo, mais a direita etc.</p>
+
+		<p><b>Exemplo:</b></p>
+		<p>Tente rolar o scroll para baixo e ver o que acontece com o elemento logo abaixo</p>
+		<div class="sticky1">
+			<div class="sticky2">
+				<p>Elemento P com a "position: sticky;"</p>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html> 

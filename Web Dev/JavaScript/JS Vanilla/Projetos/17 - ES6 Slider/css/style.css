@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
+
+body {
+	background-image: url('../images/background.jpg');
+	background-color: rgba(0, 0, 0, 0.5);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #f6f6f6;
+	font-family: 'Open Sans';
+	min-height: 100vh;
+}
+
+.flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.slider {
+	flex-flow: column nowrap;
+	margin: 0px auto;
+	padding: 20px 20px;
+	width: 100%;
+	max-width: 600px;
+	position: relative;
+}
+
+.slider-container {
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	width: 100%;
+	max-width: 600px;
+	position: relative;
+	min-height: 600px;
+	margin-bottom: 3rem;
+	padding-top: 3rem;
+	overflow: hidden;
+}
+
+.slide {
+	/* padding-top: 3.5rem; */
+	flex-flow: column nowrap;
+	position: absolute;
+}
+
+.header {
+	margin-top: 3rem;
+}
+
+.head-text {
+	font-size: 4.5rem;
+	text-transform: uppercase;
+	font-family: 'Girassol';
+	letter-spacing: 0.15rem;
+	text-shadow: 5px 5px 10px black;
+	color: rgb(240, 240, 157);
+}
+
+.img {
+	width: 280px;
+	height: 280px;
+	text-align: center;
+	border-radius: 25rem;
+	margin-bottom: 2rem;
+	border: 5px solid #f6f6f6;
+	box-shadow: 0px 0px 30px 15px rgba(0, 0, 0, 0.5);
+}
+
+.name {
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	margin-bottom: 0.2rem;
+	letter-spacing: 0.15rem;
+	font-weight: bold;
+	color: rgb(158, 236, 229);
+	text-shadow: 5px 5px 10px black;
+}
+
+.role {
+	font-size: 1.3rem;
+	margin-bottom: 1rem;
+	letter-spacing: 0.15rem;
+	color: rgb(96, 182, 173);
+	text-shadow: 5px 5px 10px black;
+	text-transform: capitalize;
+}
+
+.text {
+	max-width: 600px;
+	max-height: 4rem;
+	overflow: hidden;
+	text-align: justify;
+	letter-spacing: 0.1rem;
+	line-height: 1.5rem;
+	border-top: 2px solid rgba(255, 255, 255, 0.452);
+	padding-top: 1rem;
+	transition: 0.2s;
+}
+
+.read-more {
+	width: 100%;
+	text-align: center;
+	margin-top: 1rem;
+	padding-bottom: 1rem;
+	cursor: pointer;
+
+	border-bottom: 2px solid rgba(255, 255, 255, 0.452);
+}
+
+.read-more span {
+	color: #f6f6f6;
+	font-size: 1.5rem;
+	letter-spacing: 0.1rem;
+	color: rgb(238, 238, 192);
+	transition: 0.1s;
+}
+
+.read-more span:hover {
+	color: rgb(228, 228, 135);
+}
+
+.quote {
+	flex-flow: row wrap;
+	margin-top: 3rem;
+	max-width: 600px;
+	text-align: center;
+}
+
+.quote-text {
+	font-size: 1.4rem;
+	margin-right: 1rem;
+	letter-spacing: 0.1rem;
+}
+
+.quote-icon i {
+	font-size: 2rem;
+}
+
+.btn {
+	position: absolute;
+	z-index: 10;
+	background-color: transparent;
+	top: 417px;
+}
+
+.btn i {
+	font-size: 3rem;
+	color: #fff;
+	cursor: pointer;
+	transition: 0.1s;
+}
+
+.btn i:hover {
+	transform: scale(1.2);
+	color: rgb(158, 236, 229);
+}
+
+.prev-btn {
+	transform: translateY(-50%);
+	left: 65px;
+}
+
+.next-btn {
+	transform: translateY(-50%);
+	right: 65px;
+}
+
+.top-line {
+	top: 15px;
+	width: 100%;
+	max-width: 600px;
+	height: 97px;
+	background-image: url(../images/top-line.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+.bot-line {
+	bottom: 15px;
+	width: 100%;
+	max-width: 600px;
+	height: 97px;
+	background-image: url(../images/bot-line.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+@media screen and (max-width: 720px) {
+	.top-line,
+	.bot-line {
+		display: none;
+	}
+
+	.btn {
+		top: 308px;
+	}
+
+	.prev-btn {
+		left: 20px;
+	}
+
+	.next-btn {
+		right: 20px;
+	}
+
+	.slider-container {
+		margin-bottom: 0rem;
+	}
+}
+
+@media screen and (max-width: 520px) {
+	.img {
+		width: 180px;
+		height: 180px;
+	}
+
+	.btn {
+		top: 235px;
+	}
+
+	.header {
+		margin-bottom: 0;
+	}
+
+	.head-text {
+		font-size: 3.5rem;
+	}
+
+	.quote-text {
+		font-size: 1.2rem;
+	}
+}
+
+/* JS CLASS */
+.show {
+	max-height: 20rem;
+}
+
+.slide.active {
+	opacity: 1;
+	transform: translateX(0);
+	transition: 0.2s;
+	position: relative;
+}
+
+.slide.next {
+	transform: translateX(100%);
+	transition: 0.2s;
+}
+
+.slide.last {
+	transform: translateX(-100%);
+	transition: 0.2s;
+}

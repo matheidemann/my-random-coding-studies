@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang=”pt-BR”>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Fontes de texto</title>
+</head>
+<body>
+	<div class="center">
+		<h1 class="cap">5 - PROPRIEDADES BÁSICAS DE CSS</h1>
+
+		<h1 class="sec">10 - Fontes de texto</h1>
+		<p>No CSS há cinco tipos diferentes de fontes genéricas:</p>
+
+		<p><b>1) Serif:</b> são fontes que possuem pequenos contornos nas bordas de cada letra, trazendo um visual mais elegante e formal.</p>
+
+		<p><b>Exemplo:</b></p>
+		<p class="font1">Times New Roman</p>
+		<br>
+
+		<p><b>2) Sans-Serif:</b> são fontes limpas, que não possuem contornos em suas bordas, trazendo um visual mais simples e minimalista.</p>
+
+		<p><b>Exemplo:</b></p>
+		<p class="font2">Verdana</p>
+		<br>
+
+		<p><b>3) Monoscape:</b> são fontes que todas as letras possuem exatamente a mesma largura, trazendo um visual mais mecânico.</p>
+
+		<p><b>Exemplo:</b></p>
+		<p class="font3">Consolas</p>
+		<br>
+
+		<p><b>4) Cursive:</b> são fontes que imitam a escrita à mão.</p>
+
+		<p><b>Exemplo:</b></p>
+		<p class="font4">Comic Sans MS</p>
+		<br>
+
+		<p><b>5) Fantasy:</b> são fontes que trazem visuais mais decorativos.</p>
+
+		<p><b>Exemplo:</b></p>
+		<p class="font5">Impact</p>
+		<br>
+
+		<p>Podemos utilizar qualquer fonte para estilizar nossa página, e para isso o CSS fornece diversas propriedades:</p>
+
+		<p><b>1) font-family:</b> define a fonte que será usada. Aqui deve ser introduzido o nome da fonte;</p>
+
+		<p><b>Exemplo:</b></p>
+		<p class="font6">Elemento de parágrafo com "font-family: 'Courier';</p>
+		<br>
+
+		<p><b>2) font-size:</b> define o tamanho da fonte, aceitando todos os tipos de medidas;</p>
+
+		<p><b>Exemplo:</b></p>
+		<p class="font7">Elemento de parágrafo com "font-size 24px"</p>
+		<br>
+
+		<p><b>3) font-style:</b> define se a fonte será normal, itálica ou oblíqua (é a mesma coisa que itálico);</p>
+
+		<p><b>Exemplo:</b></p>
+		<p class="font8">Elemento de parágrafo com "font-style: italic;"</p>
+		<br>
+
+		<p><b>4) font-variant:</b> define se a fonte será normal ou então será em “small-caps” (todas as letras permanecem do mesmo tamanho, porém ficam em CAPS LOCK);</p>
+
+		<p><b>Exemplo:</b></p>
+		<p class="font9">Elemento de parágrafo com "font-variant: small-caps"</p>
+		<br>
+
+		<p><b>5) font-weight:</b> define se a fonte será normal ou em bold (negrito). Essa propriedade aceita outras valores, mas dificilmente são utilizados, como “bolder”, “lighter” e até valores de 100 a 900, mudando apenas a centena;</p>
+
+		<p><b>Exemplo:</b></p>
+		<p class="font10">Elemento de parágrafo com "font-weight: bold"</p>
+		<br>
+
+		<p><b>6) font:</b> é a shorthand property para modificar a fonte, para especificar todas as propriedades individualmente em uma única linha.</p>
+
+		<p><b>Exemplo:</b></p>
+		<p class="font11">Elemento de parágrafo com "font: italic small-caps bold 22px 'Arial Black';"</p>
+		<br>
+
+		<p>Por fim, é válido destacar que é possível importar fontes customizadas para dentro da page. Para isso, é necessário definir no CSS um comando que criará uma nova fonte:</p>
+		<p>@font-face {font-family:'Nome da fonte'; src:url(caminho/fonte.ttf)};</p>
+		<p>Após isto, basta utilizar a fonte normalemente com o nome inserido no "font-family".</p>
+
+		<p><b>Exemplo:</b></p>
+		<p class="font12">Elemento de parágrafo com "font-family: base-02.ttf";"</p>
+		<br>
+
+		<div class="obs">
+			<p><b>OBS¹:</b> as melhores fontes para serem utilizadas em uma page são: Arial, Verdana, Helvetica, Tahoma, Trebuchet MS, Times New Roman, Georgia, Garamond, Courier New, Brush Script MT.</p>
+			<p><b>OBS²:</b> as melhores fontes para serem utilizadas em uma page são: Arial, Verdana, Helvetica, Tahoma, Trebuchet MS, Times New Roman, Georgia, Garamond, Courier New, Brush Script MT.</p>
+		</div><!--obs-->
+	</div>
+</body>
+</html> 

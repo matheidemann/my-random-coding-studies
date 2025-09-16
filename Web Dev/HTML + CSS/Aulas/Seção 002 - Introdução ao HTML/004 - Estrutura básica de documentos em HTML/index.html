@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang=”pt-BR”>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, inital-scale=1.0, maximum-scale=1.0">
+	<meta name="description" content="Descrição do site.">
+	<meta name="keywords" content="palavras-chave, separadas, por, vírgula">
+	<meta name="author" content="Autor da page">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Estrutura básica de documentos em HTML</title>
+</head>
+<body>
+	<div class="center">
+		<h1 class="cap">2 - INTRODUÇÃO AO HTML</h1>
+
+		<h1 class="sec">4 - Estrutura básica de documentos em HTML</h1>
+		<p><b>1) &lt;!DOCTYPE html&gt;:</b> é a declaração que define que o documento é um documento em HTML5. Todos os documentos em HTML devem ser declarados com esta tag antes de qualquer tag. Ainda, todo documento de HTML não é case-sensitive.</p>
+
+		<p><b>2) &lt;html&gt;:</b> é o elemento raiz de uma página em HTML.</p>
+
+		<div class="space1">
+			<p><b>2.1) lang:</b> é um atributo para definir qual o idioma da webpage, sua utilidade se dá principalmente a respeito de search engines (mecanismos de pesquisa).</p>
+		</div>
+		
+		<p><b>3) &lt;head&gt;:</b> é o elemento que contém a metainformação da página em HTML.</p>
+
+		<div  class="space1">
+			<p><b>3.1) &lt;meta&gt;:</b> é comumente utilizado para definir o conjunto de caracteres da página, que no caso para todos os caracteres do português brasileiro funcionar é necessário o atributo "charset" com o valor "utf-8"</p>
+		</div>
+		
+		<p><b>4) &lt;title&gt;:</b> é o elemento que define o título da página em HTML.</p>
+
+		<p><b>5) &lt;body&gt;:</b> é o elemento que define todo o corpo do documento, é o container que abrigará todo o conteúdo visual da página.</p>
+
+		<br>
+		<p><b>Exemplo:</b></p><!-- EXEMPLO -->
+		<xmp><!DOCTYPE html>
+<html lang=”pt-BR”>
+<head>
+	<meta charset="utf-8">
+	<title>Título</title>
+</head>
+<body>
+	TODO A ESTRUTURA DA PAGE FICA AQUI
+</body>
+</html> 
+	</xmp>
+
+	<div class="obs">
+			<p><b>OBS¹:</b> case-sensitive significa “sensível a maiúsculas e minúsculas”. Ou seja, aquilo que não é case-sensitive não precisa diferenciar maiúsculas ou minúsculas para funcionar corretamente.</p>
+			<p><b>OBS²:</b> mesmo que o HTML não seja case-sensitive, é recomendável pela própria W3C que as tags e atributos sejam escritas em lowercase (caixa baixa), para assim funcionar em documentos mais restritos como os de XHTML.</p>
+		</div><!--obs-->
+	</div>
+</body>
+</html> 

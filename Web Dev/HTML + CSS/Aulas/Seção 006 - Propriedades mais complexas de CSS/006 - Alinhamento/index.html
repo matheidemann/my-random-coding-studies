@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang=”pt-BR”>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Alinhamento</title>
+</head>
+<body>
+	<div class="center">
+		<h1 class="cap">6 - PROPRIEDADES MAIS COMPLEXAS DE CSS</h1>
+
+		<h1 class="sec">6 - Alinhamento de texto</h1>
+		<p>Há diversas formas para se alinhar texto no CSS. Para tal, serão utilizadas diversas propriedades que já foram vistas até agora. Vale destacar que certas propriedades também servem para outros elementos.</p>
+
+		<p><b>1) Alinhando bloco de texto no meio com margens:</b> utilize a propriedade "margin: 0px auto" no elemento que ficará alinhado ao centro (preferencialmente uma div). Isso acontece pois a altura das laterais são dividas igualmente com o valor "auto".</p>
+
+		<p><b>Exemplo:</b></p>
+		<div class="doc1">
+			<div class="box1">Elemento alinhado ao centro.</div>
+		</div><br>
+
+		<p><b>2) Alinhando texto com o "text-align":</b> utilize a propriedade "text-align" e defina o valor desejado ("left", "right" ou "center")</p>
+
+		<p><b>Exemplo:</b></p>
+		<div class="doc1">
+			
+			<div class="box2">Texto alinhado ao centro do elemento.</div>
+		</div><br>
+
+		<p><b>3) Alinhando texto verticalmente com o "padding":</b> utilize o padding para definir um valor para todos os lados igualmente. Detalhe que esta forma de alinha o texto verticalmente ao centro não funciona caso o elemento possua uma altura definida.</p>
+
+		<p><b>Exemplo:</b></p>
+		<div class="doc1">
+			
+			<div class="box3">Texto alinhado no meio do elemento com padding.</div>
+		</div><br>
+
+		<p><b>4) Alinhando texto verticalmente com o "line-height":</b> utilize o line-height para definir um valor qualquer, sendo que, quanto maior este valor, maior será a altura do elemento. Detalhe que para calcular a altura total do elemento é necessário: calcular o tamanho da altura da linha + (o tamanho da fonte * a quantidade de linhas).</p>
+
+		<p><b>Exemplo:</b></p>
+		<div class="doc1">
+			
+			<div class="box4">Texto alinhado meio do elemento com line-height.</div>
+		</div>
+
+	</div>
+
+</body>
+</html> 
